@@ -2,212 +2,429 @@
 
 {% block title %}Allenamento{% endblock %}
 
-{% block content %}
-<div id="wrapper" class="container mt-4 mb-5">
+{% block css %}
+<style>
+  /* ── Design tokens ──────────────────────────────────────────── */
+  :root {
+    --al-primary: #4f6df5;
+    --al-primary-soft: rgba(79, 109, 245, .08);
+    --al-success: #22c55e;
+    --al-success-soft: rgba(34, 197, 94, .08);
+    --al-warning: #f59e0b;
+    --al-warning-soft: rgba(245, 158, 11, .08);
+    --al-muted: #64748b;
+    --al-muted-soft: rgba(100, 116, 139, .06);
+    --al-danger: #ef4444;
+    --al-card-radius: 14px;
+    --al-transition: .25s cubic-bezier(.4,0,.2,1);
+  }
 
-  <!-- Header della pagina -->
-  <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
-    <h2 class="mb-0 text-dark"><i class="fas fa-graduation-cap text-primary me-2"></i> Allenamento</h2>
-    <a class="btn btn-primary shadow-sm" href="{% url 'engine:allenamento-create' %}">
-      <i class="fas fa-plus"></i> Crea allenamento
+  /* ── Page wrapper ───────────────────────────────────────────── */
+  .al-page { max-width: 960px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+
+  /* ── Page header ────────────────────────────────────────────── */
+  .al-page-header {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    margin-bottom: 2rem; padding-bottom: 1.25rem;
+    border-bottom: 2px solid #eef1f6;
+  }
+  .al-page-header h2 { font-size: 1.65rem; font-weight: 700; color: #1e293b; margin: 0; }
+  .al-page-header h2 i { color: var(--al-primary); }
+  .al-btn-create {
+    background: linear-gradient(135deg, var(--al-primary), #7c5cf7);
+    border: none; color: #fff; padding: .55rem 1.35rem; border-radius: 10px;
+    font-weight: 600; font-size: .92rem;
+    box-shadow: 0 4px 14px rgba(79,109,245,.35);
+    transition: transform var(--al-transition), box-shadow var(--al-transition);
+  }
+  .al-btn-create:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79,109,245,.45);
+    color: #fff; text-decoration: none;
+  }
+
+  /* ── Section cards ──────────────────────────────────────────── */
+  .al-section {
+    background: #fff;
+    border-radius: var(--al-card-radius);
+    box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.04);
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+    border: 1px solid #eef1f6;
+    transition: box-shadow var(--al-transition);
+  }
+  .al-section:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 8px 28px rgba(0,0,0,.06); }
+
+  .al-section-header {
+    display: flex; align-items: center; gap: .65rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem; font-weight: 700;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .al-section-header .al-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+  }
+  .al-section-header .al-count {
+    margin-left: auto; font-size: .78rem; font-weight: 600;
+    padding: 2px 10px; border-radius: 20px;
+  }
+
+  /* Color variants */
+  .al-section--pending .al-section-header { color: var(--al-primary); }
+  .al-section--pending .al-dot { background: var(--al-primary); }
+  .al-section--pending .al-count { background: var(--al-primary-soft); color: var(--al-primary); }
+
+  .al-section--running .al-section-header { color: var(--al-success); }
+  .al-section--running .al-dot { background: var(--al-success); animation: al-pulse 1.6s infinite; }
+  .al-section--running .al-count { background: var(--al-success-soft); color: var(--al-success); }
+
+  .al-section--archive .al-section-header { color: var(--al-muted); }
+  .al-section--archive .al-dot { background: var(--al-muted); }
+  .al-section--archive .al-count { background: var(--al-muted-soft); color: var(--al-muted); }
+
+  .al-section--error .al-section-header { color: var(--al-warning); }
+  .al-section--error .al-dot { background: var(--al-warning); }
+  .al-section--error .al-count { background: var(--al-warning-soft); color: var(--al-warning); }
+
+  @keyframes al-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,.55); }
+    50%      { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+  }
+
+  /* ── Table styling ──────────────────────────────────────────── */
+  .al-table { width: 100%; margin: 0; border-collapse: collapse; }
+  .al-table thead th {
+    font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+    color: #94a3b8; padding: .65rem 1.5rem;
+    border-bottom: 1px solid #f1f5f9;
+    background: #fafbfd;
+  }
+  .al-table tbody td {
+    padding: .85rem 1.5rem; font-size: .9rem; color: #334155;
+    border-bottom: 1px solid #f8fafc;
+    vertical-align: middle;
+  }
+  .al-table tbody tr { transition: background var(--al-transition); }
+  .al-table tbody tr:hover { background: #f8fafc; }
+  .al-table tbody tr:last-child td { border-bottom: none; }
+
+  .al-name-link {
+    font-weight: 600; color: #1e293b; text-decoration: none;
+    transition: color var(--al-transition);
+  }
+  .al-name-link:hover { color: var(--al-primary); text-decoration: none; }
+
+  .al-id { color: #94a3b8; font-weight: 600; font-size: .82rem; }
+  .al-date { color: #64748b; font-size: .84rem; }
+  .al-base { color: #64748b; font-size: .85rem; }
+
+  /* Badges */
+  .al-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: .75rem; font-weight: 600; padding: 3px 10px;
+    border-radius: 20px;
+  }
+  .al-badge--teams { background: #ede9fe; color: #7c3aed; }
+  .al-badge--alive { background: var(--al-success-soft); color: var(--al-success); }
+  .al-badge--dead  { background: rgba(239,68,68,.1); color: var(--al-danger); }
+  .al-badge--pid   { background: #f1f5f9; color: #64748b; font-family: monospace; font-size: .72rem; }
+
+  /* Action buttons */
+  .al-btn-action {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: .4rem 1rem; border-radius: 8px; font-size: .82rem; font-weight: 600;
+    border: none; cursor: pointer; text-decoration: none;
+    transition: transform var(--al-transition), box-shadow var(--al-transition);
+  }
+  .al-btn-action:hover { transform: translateY(-1px); text-decoration: none; }
+  .al-btn-start {
+    background: linear-gradient(135deg, var(--al-success), #16a34a);
+    color: #fff; box-shadow: 0 3px 10px rgba(34,197,94,.3);
+  }
+  .al-btn-start:hover { color: #fff; box-shadow: 0 5px 16px rgba(34,197,94,.4); }
+
+  /* ── Empty state ────────────────────────────────────────────── */
+  .al-empty {
+    text-align: center; padding: 2.5rem 1.5rem; color: #94a3b8;
+  }
+  .al-empty i { font-size: 2rem; opacity: .35; margin-bottom: .5rem; display: block; }
+  .al-empty p { margin: 0; font-size: .9rem; }
+
+  /* ── Error log ──────────────────────────────────────────────── */
+  .al-log-box {
+    background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px;
+    padding: .75rem 1rem; max-height: 100px; overflow-y: auto;
+    font-family: monospace; font-size: .78rem; color: var(--al-danger);
+    margin-bottom: .5rem;
+  }
+  .al-btn-ai {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff; border: none; padding: .35rem .9rem; border-radius: 8px;
+    font-size: .78rem; font-weight: 600; cursor: pointer;
+    transition: transform var(--al-transition), box-shadow var(--al-transition);
+  }
+  .al-btn-ai:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99,102,241,.4);
+  }
+
+  /* ── Modal refinement ───────────────────────────────────────── */
+  .al-modal .modal-content {
+    border: none; border-radius: var(--al-card-radius);
+    box-shadow: 0 20px 60px rgba(0,0,0,.18);
+  }
+  .al-modal .modal-header {
+    border-bottom: 1px solid #f1f5f9; padding: 1.25rem 1.5rem;
+  }
+  .al-modal .modal-title {
+    font-weight: 700; font-size: 1.1rem; color: #1e293b;
+  }
+  .al-modal .modal-title i { color: var(--al-primary); }
+  .al-modal .modal-body { padding: 1.5rem; }
+
+  /* ── Responsive tweaks ──────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .al-page { padding: 1rem .5rem 3rem; }
+    .al-table thead th, .al-table tbody td { padding: .65rem .75rem; }
+    .al-page-header h2 { font-size: 1.3rem; }
+  }
+
+  /* ── Alerts ─────────────────────────────────────────────────── */
+  .al-alert {
+    border-radius: 10px; border: none; font-size: .92rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="al-page">
+
+  <!-- ── Page Header ──────────────────────────────────────── -->
+  <div class="al-page-header">
+    <h2><i class="fas fa-graduation-cap mr-2"></i>Allenamento</h2>
+    <a class="al-btn-create" href="{% url 'engine:allenamento-create' %}">
+      <i class="fas fa-plus mr-1"></i> Crea allenamento
     </a>
   </div>
 
-  <!-- Messaggi di sistema -->
+  <!-- ── System Messages ──────────────────────────────────── -->
   {% if messages %}
     <div class="mb-4">
       {% for message in messages %}
-        <div class="alert alert-{{ message.tags }} alert-dismissible fade show shadow-sm" role="alert">
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show al-alert" role="alert">
           {{ message }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       {% endfor %}
     </div>
   {% endif %}
 
-  <!-- SEZIONE: Da iniziare -->
-  <div class="card border-0 shadow-sm mb-4">
-    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
-      <h5 class="text-primary mb-0"><i class="fas fa-hourglass-start"></i> Da iniziare</h5>
-    </div>
-    <div class="card-body">
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SECTION: Da iniziare                                    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="al-section al-section--pending">
+    <div class="al-section-header">
+      <span class="al-dot"></span>
+      Da iniziare
       {% if allenamenti_da_iniziare %}
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead class="table-light">
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Gara base</th>
-              <th>Squadre umane</th>
-              <th>Creato</th>
-              <th class="text-end">Azione</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for a in allenamenti_da_iniziare %}
-            <tr>
-              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
-              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none">{{ a.gara.nome }}</a></td>
-              <td>{{ a.base_anno }} &ndash; {{ a.base_nome }}</td>
-              <td><span class="badge bg-secondary rounded-pill px-3">{{ a.num_squadre_umane }}</span></td>
-              <td class="text-muted small">{{ a.created_at|date:"d M Y H:i" }}</td>
-              <td class="text-end">
-                <a class="btn btn-sm btn-success shadow-sm" href="{% url 'engine:allenamento-start' a.pk %}">
-                  <i class="fas fa-play"></i> Avvia
-                </a>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      {% else %}
-      <div class="text-center py-4 text-muted">
-        <i class="fas fa-clipboard-check fa-2x mb-2 opacity-50"></i>
-        <p class="mb-0">Nessun allenamento in attesa di essere avviato.</p>
-      </div>
+        <span class="al-count">{{ allenamenti_da_iniziare|length }}</span>
       {% endif %}
     </div>
+
+    {% if allenamenti_da_iniziare %}
+    <div class="table-responsive">
+      <table class="al-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Gara base</th>
+            <th>Squadre umane</th>
+            <th>Creato</th>
+            <th style="text-align:right">Azione</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in allenamenti_da_iniziare %}
+          <tr>
+            <td><span class="al-id">#{{ a.gara.pk }}</span></td>
+            <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="al-name-link">{{ a.gara.nome }}</a></td>
+            <td class="al-base">{{ a.base_anno }} &ndash; {{ a.base_nome }}</td>
+            <td><span class="al-badge al-badge--teams">{{ a.num_squadre_umane }}</span></td>
+            <td class="al-date">{{ a.created_at|date:"d M Y H:i" }}</td>
+            <td style="text-align:right">
+              <a class="al-btn-action al-btn-start" href="{% url 'engine:allenamento-start' a.pk %}">
+                <i class="fas fa-play"></i> Avvia
+              </a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="al-empty">
+      <i class="fas fa-clipboard-check"></i>
+      <p>Nessun allenamento in attesa di essere avviato.</p>
+    </div>
+    {% endif %}
   </div>
 
-  <!-- SEZIONE: In corso -->
-  <div class="card border-0 shadow-sm mb-4">
-    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
-      <h5 class="text-success mb-0"><i class="fas fa-running"></i> In corso</h5>
-    </div>
-    <div class="card-body">
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SECTION: In corso                                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="al-section al-section--running">
+    <div class="al-section-header">
+      <span class="al-dot"></span>
+      In corso
       {% if allenamenti_in_corso %}
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead class="table-light">
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Avviato il</th>
-              <th>Fine prevista</th>
-              <th>Stato Processo</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for a in allenamenti_in_corso %}
-            <tr>
-              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
-              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none">{{ a.gara.nome }}</a></td>
-              <td>{{ a.avviato_il|date:"d M Y H:i" }}</td>
-              <td>{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
-              <td>
-                <span class="text-monospace text-muted small">PID: {{ a.runner_pid }}</span>
-                {% if not a.runner_alive %} 
-                  <span class="badge bg-danger ms-2"><i class="fas fa-skull-crossbones"></i> Non vivo</span>
-                {% else %}
-                  <span class="badge bg-success ms-2"><i class="fas fa-heartbeat"></i> Attivo</span>
-                {% endif %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      {% else %}
-      <div class="text-center py-4 text-muted">
-        <i class="fas fa-coffee fa-2x mb-2 opacity-50"></i>
-        <p class="mb-0">Nessun allenamento attualmente in corso.</p>
-      </div>
+        <span class="al-count">{{ allenamenti_in_corso|length }}</span>
       {% endif %}
     </div>
+
+    {% if allenamenti_in_corso %}
+    <div class="table-responsive">
+      <table class="al-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Avviato il</th>
+            <th>Fine prevista</th>
+            <th>Stato processo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in allenamenti_in_corso %}
+          <tr>
+            <td><span class="al-id">#{{ a.gara.pk }}</span></td>
+            <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="al-name-link">{{ a.gara.nome }}</a></td>
+            <td class="al-date">{{ a.avviato_il|date:"d M Y H:i" }}</td>
+            <td class="al-date">{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
+            <td>
+              <span class="al-badge al-badge--pid">PID {{ a.runner_pid }}</span>
+              {% if a.runner_alive %}
+                <span class="al-badge al-badge--alive ml-1"><i class="fas fa-heartbeat"></i> Attivo</span>
+              {% else %}
+                <span class="al-badge al-badge--dead ml-1"><i class="fas fa-skull-crossbones"></i> Non vivo</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="al-empty">
+      <i class="fas fa-coffee"></i>
+      <p>Nessun allenamento attualmente in corso.</p>
+    </div>
+    {% endif %}
   </div>
 
-  <!-- SEZIONE: Archivio -->
-  <div class="card border-0 shadow-sm mb-4">
-    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
-      <h5 class="text-secondary mb-0"><i class="fas fa-archive"></i> Archivio terminati</h5>
-    </div>
-    <div class="card-body">
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SECTION: Archivio terminati                             -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="al-section al-section--archive">
+    <div class="al-section-header">
+      <span class="al-dot"></span>
+      Archivio terminati
       {% if allenamenti_archivio %}
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead class="table-light">
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Avviato il</th>
-              <th>Terminato il</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for a in allenamenti_archivio %}
-            <tr>
-              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
-              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none text-secondary">{{ a.gara.nome }}</a></td>
-              <td>{{ a.avviato_il|date:"d M Y H:i" }}</td>
-              <td>{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      {% else %}
-      <div class="text-center py-4 text-muted">
-        <i class="fas fa-box-open fa-2x mb-2 opacity-50"></i>
-        <p class="mb-0">L'archivio è vuoto.</p>
-      </div>
+        <span class="al-count">{{ allenamenti_archivio|length }}</span>
       {% endif %}
     </div>
+
+    {% if allenamenti_archivio %}
+    <div class="table-responsive">
+      <table class="al-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Avviato il</th>
+            <th>Terminato il</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in allenamenti_archivio %}
+          <tr>
+            <td><span class="al-id">#{{ a.gara.pk }}</span></td>
+            <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="al-name-link al-name-link--muted">{{ a.gara.nome }}</a></td>
+            <td class="al-date">{{ a.avviato_il|date:"d M Y H:i" }}</td>
+            <td class="al-date">{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="al-empty">
+      <i class="fas fa-box-open"></i>
+      <p>L'archivio è vuoto.</p>
+    </div>
+    {% endif %}
   </div>
 
-  <!-- SEZIONE: In Errore -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SECTION: In errore                                      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
   {% if allenamenti_errore %}
-  <div class="card border-0 shadow-sm border-start border-warning border-4 mb-4">
-    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
-      <h5 class="text-warning mb-0"><i class="fas fa-exclamation-triangle"></i> In errore</h5>
+  <div class="al-section al-section--error">
+    <div class="al-section-header">
+      <span class="al-dot"></span>
+      In errore
+      <span class="al-count">{{ allenamenti_errore|length }}</span>
     </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead class="table-light">
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Dettaglio Errore (Log)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for a in allenamenti_errore %}
-            <tr>
-              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
-              <td class="fw-bold">{{ a.gara.nome }}</td>
-              <td>
-                <div class="bg-light p-2 rounded text-danger font-monospace small mb-2" style="max-height: 100px; overflow-y: auto;" id="log-{{ a.gara.pk }}">
-                  {{ a.runner_log }}
-                </div>
-                <button class="btn btn-sm btn-outline-primary shadow-sm" onclick="analyzeLog('{{ a.gara.pk }}')">
-                  <i class="fas fa-sparkles"></i> Analizza errore con AI
-                </button>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+
+    <div class="table-responsive">
+      <table class="al-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Dettaglio errore</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in allenamenti_errore %}
+          <tr>
+            <td><span class="al-id">#{{ a.gara.pk }}</span></td>
+            <td class="al-name-link" style="font-weight:600">{{ a.gara.nome }}</td>
+            <td>
+              <div class="al-log-box" id="log-{{ a.gara.pk }}">{{ a.runner_log }}</div>
+              <button class="al-btn-ai" onclick="analyzeLog('{{ a.gara.pk }}')">
+                <i class="fas fa-magic"></i> Analizza con AI
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
   {% endif %}
 
-  <!-- Modale AI -->
-  <div class="modal fade" id="aiModal" tabindex="-1" aria-hidden="true">
+  <!-- ── AI Modal ─────────────────────────────────────────── -->
+  <div class="modal fade al-modal" id="aiModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content border-0 shadow">
-        <div class="modal-header border-bottom-0 pb-0">
-          <h5 class="modal-title fw-bold text-dark"><i class="fas fa-robot text-primary me-2"></i> Analisi Errore con Gemini</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fas fa-robot mr-2"></i>Analisi Errore con Gemini</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           <div id="aiLoading" class="text-center py-5 d-none">
-            <div class="spinner-border text-primary" role="status"></div>
-            <p class="mt-3 text-muted fw-medium">L'AI sta leggendo i log e formulando un'analisi...</p>
+            <div class="spinner-border" style="color: var(--al-primary)" role="status"></div>
+            <p class="mt-3" style="color: var(--al-muted); font-weight: 500;">L'AI sta leggendo i log e formulando un'analisi...</p>
           </div>
-          <div id="aiResult" class="text-dark"></div>
+          <div id="aiResult" style="color: #334155;"></div>
         </div>
       </div>
     </div>
@@ -215,24 +432,19 @@
 
 </div>
 
-<!-- Script per chiamata Gemini API -->
+<!-- ── Gemini API Script ────────────────────────────────────── -->
 <script>
 async function analyzeLog(id) {
     const logText = document.getElementById('log-' + id).innerText;
-    
-    // Mostra il modale di Bootstrap
-    const modalElement = document.getElementById('aiModal');
-    let modal = bootstrap.Modal.getInstance(modalElement);
-    if (!modal) {
-        modal = new bootstrap.Modal(modalElement);
-    }
-    modal.show();
 
-    // Reset e caricamento
+    // Show Bootstrap 4 modal
+    $('#aiModal').modal('show');
+
+    // Reset & loading
     document.getElementById('aiLoading').classList.remove('d-none');
     document.getElementById('aiResult').innerHTML = '';
 
-    const apiKey = ""; // Iniettata dall'ambiente
+    const apiKey = ""; // Injected from environment
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     const payload = {
@@ -251,20 +463,19 @@ async function analyzeLog(id) {
             body: JSON.stringify(payload)
         });
         const result = await response.json();
-        
+
         if (result.candidates && result.candidates[0] && result.candidates[0].content) {
             const text = result.candidates[0].content.parts[0].text;
-            // Converte il markdown di base in HTML per la visualizzazione
             let formattedText = text
                 .replace(/\n/g, '<br>')
-                .replace(/\*\*(.*?)\*\*/g, '<strong class="text-primary">$1</strong>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--al-primary)">$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em>$1</em>');
             document.getElementById('aiResult').innerHTML = formattedText;
         } else {
-            document.getElementById('aiResult').innerHTML = "<div class='alert alert-warning'>Impossibile generare un'analisi per questo log.</div>";
+            document.getElementById('aiResult').innerHTML = "<div class='alert alert-warning al-alert'>Impossibile generare un'analisi per questo log.</div>";
         }
     } catch (error) {
-        document.getElementById('aiResult').innerHTML = "<div class='alert alert-danger'><i class='fas fa-times-circle'></i> Errore di connessione all'API di Gemini.</div>";
+        document.getElementById('aiResult').innerHTML = "<div class='alert alert-danger al-alert'><i class='fas fa-times-circle'></i> Errore di connessione all'API di Gemini.</div>";
     } finally {
         document.getElementById('aiLoading').classList.add('d-none');
     }
