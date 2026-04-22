@@ -1,0 +1,43 @@
+{% extends "baseheader.html" %}
+
+{% block title %}Importa gara{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+
+<h3>Importa una gara</h3>
+
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.non_field_errors }}
+
+    <div class="form-row">
+        <div class="form-group col-md-12">
+        {{ form.gara|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+        {{ form.eventi_futuri|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+        {{ form.eventi_riordina|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+        {{ form.nome_gara|as_crispy_field }}
+        </div>
+        <div class="form-group col-md-6">
+        {{ form.data_gara|as_crispy_field }}
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Carica</button>
+</form>
+</div>
+
+{% endblock %}

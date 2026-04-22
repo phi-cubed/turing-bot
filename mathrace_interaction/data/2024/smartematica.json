@@ -1,0 +1,4397 @@
+{
+    "num_problemi": 27,
+    "k_blocco": 1,
+    "nome": "Smartematica 2024",
+    "n_blocco": 1,
+    "super_mega_bonus": "100,60,40,30,20,10",
+    "fixed_bonus": "20,15,10,8,6,5,4,3,2,1",
+    "inizio": "2024-05-16T14:15:10+00:00",
+    "durata": 100,
+    "durata_blocco": 0,
+    "eventi": [
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:17:11.841480+00:00",
+            "squadra_id": 11,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:17:30.869207+00:00",
+            "squadra_id": 17,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:17:37.872390+00:00",
+            "squadra_id": 5,
+            "problema": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:17:44.738343+00:00",
+            "squadra_id": 7,
+            "problema": 2,
+            "risposta": 88
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:17:56.119064+00:00",
+            "squadra_id": 1,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:17:57.007925+00:00",
+            "squadra_id": 19,
+            "problema": 22
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:18:08.499223+00:00",
+            "squadra_id": 2,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:18:09.802140+00:00",
+            "squadra_id": 11,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:18:20.168796+00:00",
+            "squadra_id": 16,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:18:24.120561+00:00",
+            "squadra_id": 2,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:18:32.543719+00:00",
+            "squadra_id": 8,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:18:42.133023+00:00",
+            "squadra_id": 21,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:18:43.590245+00:00",
+            "squadra_id": 16,
+            "problema": 2,
+            "risposta": 95
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:18:56.218322+00:00",
+            "squadra_id": 5,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:18:57.282180+00:00",
+            "squadra_id": 21,
+            "problema": 2
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:19:15.672504+00:00",
+            "squadra_id": 6,
+            "problema": 2
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:19:28.190889+00:00",
+            "squadra_id": 20,
+            "problema": 2
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:19:37.132998+00:00",
+            "squadra_id": 4,
+            "problema": 12
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:19:48.856619+00:00",
+            "squadra_id": 18,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:19:51.946658+00:00",
+            "squadra_id": 10,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:03.551329+00:00",
+            "squadra_id": 1,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:04.658841+00:00",
+            "squadra_id": 11,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:20:15.028967+00:00",
+            "squadra_id": 9,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:15.468469+00:00",
+            "squadra_id": 8,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:26.281856+00:00",
+            "squadra_id": 19,
+            "problema": 1,
+            "risposta": 2318
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:20:29.012218+00:00",
+            "squadra_id": 22,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:36.655728+00:00",
+            "squadra_id": 20,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:20:40.785063+00:00",
+            "squadra_id": 10,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:20:51.218734+00:00",
+            "squadra_id": 7,
+            "problema": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:00.043780+00:00",
+            "squadra_id": 17,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:07.033648+00:00",
+            "squadra_id": 3,
+            "problema": 20,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:12.781785+00:00",
+            "squadra_id": 22,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:16.977283+00:00",
+            "squadra_id": 14,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:27.020776+00:00",
+            "squadra_id": 18,
+            "problema": 14,
+            "risposta": 8
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:21:29.139759+00:00",
+            "squadra_id": 15,
+            "problema": 19
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:38.974394+00:00",
+            "squadra_id": 12,
+            "problema": 2,
+            "risposta": 58
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:39.324067+00:00",
+            "squadra_id": 2,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:48.764118+00:00",
+            "squadra_id": 14,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:21:57.631796+00:00",
+            "squadra_id": 5,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:22:10.515006+00:00",
+            "squadra_id": 3,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:22:21.625336+00:00",
+            "squadra_id": 16,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:22:22.562944+00:00",
+            "squadra_id": 9,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:22:32.166287+00:00",
+            "squadra_id": 19,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:22:42.130129+00:00",
+            "squadra_id": 4,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:01.290803+00:00",
+            "squadra_id": 17,
+            "problema": 6,
+            "risposta": 3
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:23:01.341207+00:00",
+            "squadra_id": 23,
+            "problema": 3
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:05.638377+00:00",
+            "squadra_id": 19,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:15.535359+00:00",
+            "squadra_id": 9,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:23:19.079185+00:00",
+            "squadra_id": 3,
+            "problema": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:20.601121+00:00",
+            "squadra_id": 17,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:22.088700+00:00",
+            "squadra_id": 15,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:30.089248+00:00",
+            "squadra_id": 8,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:30.936761+00:00",
+            "squadra_id": 18,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:35.737292+00:00",
+            "squadra_id": 9,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:36.030157+00:00",
+            "squadra_id": 16,
+            "problema": 5,
+            "risposta": 1384
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:38.818866+00:00",
+            "squadra_id": 7,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:42.901406+00:00",
+            "squadra_id": 12,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:45.397696+00:00",
+            "squadra_id": 3,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:48.683950+00:00",
+            "squadra_id": 5,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:53.026516+00:00",
+            "squadra_id": 11,
+            "problema": 7,
+            "risposta": 632
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:54.037729+00:00",
+            "squadra_id": 2,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:58.240970+00:00",
+            "squadra_id": 23,
+            "problema": 2,
+            "risposta": 58
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:23:59.197231+00:00",
+            "squadra_id": 16,
+            "problema": 6,
+            "risposta": 72
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:06.756424+00:00",
+            "squadra_id": 16,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:08.444099+00:00",
+            "squadra_id": 18,
+            "problema": 3,
+            "risposta": 84
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:10.419183+00:00",
+            "squadra_id": 21,
+            "problema": 3,
+            "risposta": 14
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:15.282815+00:00",
+            "squadra_id": 11,
+            "problema": 6,
+            "risposta": 3
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:17.701164+00:00",
+            "squadra_id": 7,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:19.103899+00:00",
+            "squadra_id": 15,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:20.624751+00:00",
+            "squadra_id": 3,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:29.278453+00:00",
+            "squadra_id": 1,
+            "problema": 7,
+            "risposta": 2496
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:29.642408+00:00",
+            "squadra_id": 15,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:31.974107+00:00",
+            "squadra_id": 7,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:32.757707+00:00",
+            "squadra_id": 15,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:41.181154+00:00",
+            "squadra_id": 13,
+            "problema": 1,
+            "risposta": 12
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:41.478048+00:00",
+            "squadra_id": 12,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:42.341777+00:00",
+            "squadra_id": 15,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:53.414675+00:00",
+            "squadra_id": 9,
+            "problema": 12,
+            "risposta": 2046
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:53.542932+00:00",
+            "squadra_id": 6,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:53.728580+00:00",
+            "squadra_id": 15,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:24:56.453114+00:00",
+            "squadra_id": 16,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:04.000786+00:00",
+            "squadra_id": 6,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:04.090818+00:00",
+            "squadra_id": 5,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:17.519668+00:00",
+            "squadra_id": 3,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:20.754610+00:00",
+            "squadra_id": 13,
+            "problema": 3,
+            "risposta": 90
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:28.944070+00:00",
+            "squadra_id": 19,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:25:31.071069+00:00",
+            "squadra_id": 18,
+            "problema": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:37.074866+00:00",
+            "squadra_id": 20,
+            "problema": 3,
+            "risposta": 90
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:44.580714+00:00",
+            "squadra_id": 19,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:49.396164+00:00",
+            "squadra_id": 16,
+            "problema": 13,
+            "risposta": 9
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:25:57.287256+00:00",
+            "squadra_id": 17,
+            "problema": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:25:58.483173+00:00",
+            "squadra_id": 16,
+            "problema": 12,
+            "risposta": 1134
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:08.343024+00:00",
+            "squadra_id": 19,
+            "problema": 24,
+            "risposta": 4684
+        },
+        {
+            "subclass": "Jolly",
+            "orario": "2024-05-16T14:26:09.575248+00:00",
+            "squadra_id": 1,
+            "problema": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:19.841192+00:00",
+            "squadra_id": 4,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:29.410994+00:00",
+            "squadra_id": 4,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:31.417207+00:00",
+            "squadra_id": 20,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:39.308357+00:00",
+            "squadra_id": 23,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:44.007074+00:00",
+            "squadra_id": 13,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:50.580925+00:00",
+            "squadra_id": 6,
+            "problema": 12,
+            "risposta": 1023
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:26:54.515806+00:00",
+            "squadra_id": 21,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:00.143704+00:00",
+            "squadra_id": 23,
+            "problema": 3,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:06.567233+00:00",
+            "squadra_id": 8,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:09.161087+00:00",
+            "squadra_id": 6,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:16.481904+00:00",
+            "squadra_id": 11,
+            "problema": 12,
+            "risposta": 1215
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:20.716232+00:00",
+            "squadra_id": 1,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:32.068409+00:00",
+            "squadra_id": 10,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:32.126454+00:00",
+            "squadra_id": 1,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:41.914071+00:00",
+            "squadra_id": 6,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:43.651421+00:00",
+            "squadra_id": 15,
+            "problema": 12,
+            "risposta": 1023
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:54.890581+00:00",
+            "squadra_id": 11,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:27:57.456002+00:00",
+            "squadra_id": 19,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:06.769565+00:00",
+            "squadra_id": 21,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:08.568810+00:00",
+            "squadra_id": 18,
+            "problema": 11,
+            "risposta": 12
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:18.577695+00:00",
+            "squadra_id": 6,
+            "problema": 21,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:20.328469+00:00",
+            "squadra_id": 7,
+            "problema": 15,
+            "risposta": 19
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:32.031547+00:00",
+            "squadra_id": 20,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:35.134025+00:00",
+            "squadra_id": 18,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:44.089216+00:00",
+            "squadra_id": 22,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:47.159502+00:00",
+            "squadra_id": 4,
+            "problema": 7,
+            "risposta": 1030
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:56.563125+00:00",
+            "squadra_id": 15,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:28:59.392601+00:00",
+            "squadra_id": 2,
+            "problema": 12,
+            "risposta": 2046
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:12.467752+00:00",
+            "squadra_id": 9,
+            "problema": 10,
+            "risposta": 6665
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:16.738090+00:00",
+            "squadra_id": 13,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:22.587014+00:00",
+            "squadra_id": 11,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:29.016184+00:00",
+            "squadra_id": 20,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:36.660876+00:00",
+            "squadra_id": 17,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:39.873535+00:00",
+            "squadra_id": 19,
+            "problema": 12,
+            "risposta": 4096
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:50.752337+00:00",
+            "squadra_id": 5,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:29:51.133305+00:00",
+            "squadra_id": 6,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:30:03.617125+00:00",
+            "squadra_id": 11,
+            "problema": 17,
+            "risposta": 225
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:30:17.427644+00:00",
+            "squadra_id": 14,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:30:42.639452+00:00",
+            "squadra_id": 9,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:30:57.026071+00:00",
+            "squadra_id": 22,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:31:16.183691+00:00",
+            "squadra_id": 6,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:31:19.126622+00:00",
+            "squadra_id": 5,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:31:29.413205+00:00",
+            "squadra_id": 19,
+            "problema": 5,
+            "risposta": 1394
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:31:50.486302+00:00",
+            "squadra_id": 13,
+            "problema": 7,
+            "risposta": 2496
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:31:51.899233+00:00",
+            "squadra_id": 11,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:01.415198+00:00",
+            "squadra_id": 11,
+            "problema": 13,
+            "risposta": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:14.008614+00:00",
+            "squadra_id": 2,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:15.946232+00:00",
+            "squadra_id": 17,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:26.068121+00:00",
+            "squadra_id": 11,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:27.816415+00:00",
+            "squadra_id": 12,
+            "problema": 7,
+            "risposta": 2796
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:40.010483+00:00",
+            "squadra_id": 23,
+            "problema": 11,
+            "risposta": 0
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:45.761315+00:00",
+            "squadra_id": 9,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:32:50.807903+00:00",
+            "squadra_id": 1,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:00.922733+00:00",
+            "squadra_id": 10,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:04.282624+00:00",
+            "squadra_id": 16,
+            "problema": 18,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:15.297014+00:00",
+            "squadra_id": 16,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:17.230971+00:00",
+            "squadra_id": 13,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:25.019904+00:00",
+            "squadra_id": 23,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:30.668150+00:00",
+            "squadra_id": 19,
+            "problema": 5,
+            "risposta": 1384
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:37.667852+00:00",
+            "squadra_id": 7,
+            "problema": 18,
+            "risposta": 540
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:43.759828+00:00",
+            "squadra_id": 16,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:49.580948+00:00",
+            "squadra_id": 16,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:56.216134+00:00",
+            "squadra_id": 18,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:33:59.298235+00:00",
+            "squadra_id": 15,
+            "problema": 11,
+            "risposta": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:09.699393+00:00",
+            "squadra_id": 9,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:09.837716+00:00",
+            "squadra_id": 8,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:19.682995+00:00",
+            "squadra_id": 7,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:21.688639+00:00",
+            "squadra_id": 8,
+            "problema": 8,
+            "risposta": 64
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:28.501748+00:00",
+            "squadra_id": 16,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:33.435855+00:00",
+            "squadra_id": 11,
+            "problema": 23,
+            "risposta": 544
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:37.277119+00:00",
+            "squadra_id": 3,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:45.086892+00:00",
+            "squadra_id": 14,
+            "problema": 12,
+            "risposta": 1047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:46.979700+00:00",
+            "squadra_id": 8,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:34:58.344062+00:00",
+            "squadra_id": 22,
+            "problema": 7,
+            "risposta": 1036
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:35:09.628408+00:00",
+            "squadra_id": 17,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:35:12.998032+00:00",
+            "squadra_id": 15,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:35:25.071903+00:00",
+            "squadra_id": 11,
+            "problema": 5,
+            "risposta": 1384
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:35:36.299905+00:00",
+            "squadra_id": 12,
+            "problema": 6,
+            "risposta": 36
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:35:56.494449+00:00",
+            "squadra_id": 21,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:08.560617+00:00",
+            "squadra_id": 8,
+            "problema": 8,
+            "risposta": 48
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:09.666192+00:00",
+            "squadra_id": 3,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:21.667365+00:00",
+            "squadra_id": 2,
+            "problema": 6,
+            "risposta": 26
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:29.466376+00:00",
+            "squadra_id": 15,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:34.414616+00:00",
+            "squadra_id": 1,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:50.722049+00:00",
+            "squadra_id": 23,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:36:53.584950+00:00",
+            "squadra_id": 22,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:04.854560+00:00",
+            "squadra_id": 9,
+            "problema": 10,
+            "risposta": 6745
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:17.821029+00:00",
+            "squadra_id": 18,
+            "problema": 18,
+            "risposta": 540
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:29.213232+00:00",
+            "squadra_id": 14,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:39.366805+00:00",
+            "squadra_id": 23,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:41.513177+00:00",
+            "squadra_id": 5,
+            "problema": 17,
+            "risposta": 3220
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:51.193818+00:00",
+            "squadra_id": 17,
+            "problema": 5,
+            "risposta": 2184
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:37:52.910131+00:00",
+            "squadra_id": 6,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:03.301718+00:00",
+            "squadra_id": 15,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:04.147011+00:00",
+            "squadra_id": 11,
+            "problema": 4,
+            "risposta": 50
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:13.237238+00:00",
+            "squadra_id": 15,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:16.519198+00:00",
+            "squadra_id": 5,
+            "problema": 5,
+            "risposta": 1384
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:23.736250+00:00",
+            "squadra_id": 7,
+            "problema": 12,
+            "risposta": 3455
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:29.708225+00:00",
+            "squadra_id": 5,
+            "problema": 9,
+            "risposta": 878
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:36.864582+00:00",
+            "squadra_id": 6,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:40.764111+00:00",
+            "squadra_id": 4,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:38:52.127597+00:00",
+            "squadra_id": 21,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:02.469697+00:00",
+            "squadra_id": 16,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:07.735263+00:00",
+            "squadra_id": 1,
+            "problema": 18,
+            "risposta": 540
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:20.628664+00:00",
+            "squadra_id": 18,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:38.329153+00:00",
+            "squadra_id": 20,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:45.836756+00:00",
+            "squadra_id": 16,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:39:57.197327+00:00",
+            "squadra_id": 14,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:08.973550+00:00",
+            "squadra_id": 12,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:13.679014+00:00",
+            "squadra_id": 6,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:19.965595+00:00",
+            "squadra_id": 9,
+            "problema": 20,
+            "risposta": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:23.778572+00:00",
+            "squadra_id": 15,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:34.231590+00:00",
+            "squadra_id": 2,
+            "problema": 7,
+            "risposta": 2496
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:40:47.180437+00:00",
+            "squadra_id": 21,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:00.797069+00:00",
+            "squadra_id": 14,
+            "problema": 19,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:09.869795+00:00",
+            "squadra_id": 4,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:13.896492+00:00",
+            "squadra_id": 12,
+            "problema": 17,
+            "risposta": 7452
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:26.533044+00:00",
+            "squadra_id": 1,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:27.770995+00:00",
+            "squadra_id": 23,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:37.238726+00:00",
+            "squadra_id": 13,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:41:49.386818+00:00",
+            "squadra_id": 12,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:00.178484+00:00",
+            "squadra_id": 9,
+            "problema": 13,
+            "risposta": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:01.149913+00:00",
+            "squadra_id": 15,
+            "problema": 12,
+            "risposta": 1535
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:12.183032+00:00",
+            "squadra_id": 10,
+            "problema": 21,
+            "risposta": 48
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:16.769787+00:00",
+            "squadra_id": 20,
+            "problema": 18,
+            "risposta": 540
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:23.556218+00:00",
+            "squadra_id": 21,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:30.801156+00:00",
+            "squadra_id": 19,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:35.526230+00:00",
+            "squadra_id": 18,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:46.275150+00:00",
+            "squadra_id": 17,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:42:56.863335+00:00",
+            "squadra_id": 8,
+            "problema": 20,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:00.223072+00:00",
+            "squadra_id": 22,
+            "problema": 11,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:08.600274+00:00",
+            "squadra_id": 7,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:15.714304+00:00",
+            "squadra_id": 13,
+            "problema": 21,
+            "risposta": 54
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:27.564628+00:00",
+            "squadra_id": 22,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:40.113616+00:00",
+            "squadra_id": 5,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:42.413842+00:00",
+            "squadra_id": 19,
+            "problema": 10,
+            "risposta": 127
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:52.288545+00:00",
+            "squadra_id": 14,
+            "problema": 12,
+            "risposta": 2095
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:43:55.065648+00:00",
+            "squadra_id": 19,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:02.283009+00:00",
+            "squadra_id": 2,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:04.568306+00:00",
+            "squadra_id": 16,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:13.177222+00:00",
+            "squadra_id": 12,
+            "problema": 10,
+            "risposta": 8450
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:21.806681+00:00",
+            "squadra_id": 1,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:28.427030+00:00",
+            "squadra_id": 20,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:44:59.481367+00:00",
+            "squadra_id": 11,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:45:17.607895+00:00",
+            "squadra_id": 12,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:45:20.247188+00:00",
+            "squadra_id": 7,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:45:39.005292+00:00",
+            "squadra_id": 21,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:04.036608+00:00",
+            "squadra_id": 3,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:09.819972+00:00",
+            "squadra_id": 10,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:13.767574+00:00",
+            "squadra_id": 15,
+            "problema": 5,
+            "risposta": 2184
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:25.257489+00:00",
+            "squadra_id": 17,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:25.590849+00:00",
+            "squadra_id": 2,
+            "problema": 1,
+            "risposta": 1128
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:37.992460+00:00",
+            "squadra_id": 20,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:38.291803+00:00",
+            "squadra_id": 18,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:47.672560+00:00",
+            "squadra_id": 16,
+            "problema": 15,
+            "risposta": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:51.827861+00:00",
+            "squadra_id": 21,
+            "problema": 7,
+            "risposta": 2496
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:46:59.096346+00:00",
+            "squadra_id": 19,
+            "problema": 8,
+            "risposta": 32
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:47:03.737717+00:00",
+            "squadra_id": 14,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:47:10.900801+00:00",
+            "squadra_id": 2,
+            "problema": 1,
+            "risposta": 1218
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:47:15.654188+00:00",
+            "squadra_id": 5,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:47:47.100323+00:00",
+            "squadra_id": 6,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:47:47.420460+00:00",
+            "squadra_id": 18,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:00.410371+00:00",
+            "squadra_id": 22,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:11.057331+00:00",
+            "squadra_id": 17,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:30.300174+00:00",
+            "squadra_id": 6,
+            "problema": 15,
+            "risposta": 71
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:38.326166+00:00",
+            "squadra_id": 8,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:42.032055+00:00",
+            "squadra_id": 22,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:48:53.288131+00:00",
+            "squadra_id": 14,
+            "problema": 23,
+            "risposta": 576
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:49:04.339589+00:00",
+            "squadra_id": 18,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:49:18.541051+00:00",
+            "squadra_id": 3,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:49:21.980153+00:00",
+            "squadra_id": 13,
+            "problema": 10,
+            "risposta": 9950
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:49:35.958505+00:00",
+            "squadra_id": 13,
+            "problema": 23,
+            "risposta": 58
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:50:27.234233+00:00",
+            "squadra_id": 16,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:50:50.211083+00:00",
+            "squadra_id": 23,
+            "problema": 14,
+            "risposta": 42
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:51:42.741084+00:00",
+            "squadra_id": 23,
+            "problema": 10,
+            "risposta": 130
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:52:19.685834+00:00",
+            "squadra_id": 9,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:52:58.683530+00:00",
+            "squadra_id": 13,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:09.690866+00:00",
+            "squadra_id": 5,
+            "problema": 27,
+            "risposta": 6500
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:21.991224+00:00",
+            "squadra_id": 17,
+            "problema": 10,
+            "risposta": 79
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:30.548049+00:00",
+            "squadra_id": 7,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:35.313539+00:00",
+            "squadra_id": 5,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:43.367588+00:00",
+            "squadra_id": 8,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:47.889769+00:00",
+            "squadra_id": 10,
+            "problema": 23,
+            "risposta": 6400
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:52.868819+00:00",
+            "squadra_id": 3,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:53:58.329949+00:00",
+            "squadra_id": 2,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:54:13.727150+00:00",
+            "squadra_id": 18,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:54:17.371472+00:00",
+            "squadra_id": 16,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:54:32.479080+00:00",
+            "squadra_id": 22,
+            "problema": 15,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:54:44.068252+00:00",
+            "squadra_id": 11,
+            "problema": 10,
+            "risposta": 1295
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:54:56.893620+00:00",
+            "squadra_id": 11,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:10.189706+00:00",
+            "squadra_id": 21,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:21.820506+00:00",
+            "squadra_id": 20,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:23.413384+00:00",
+            "squadra_id": 10,
+            "problema": 7,
+            "risposta": 687
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:33.732752+00:00",
+            "squadra_id": 14,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:36.065083+00:00",
+            "squadra_id": 23,
+            "problema": 15,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:55:48.941624+00:00",
+            "squadra_id": 6,
+            "problema": 18,
+            "risposta": 1420
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:10.544822+00:00",
+            "squadra_id": 13,
+            "problema": 10,
+            "risposta": 9650
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:19.019315+00:00",
+            "squadra_id": 7,
+            "problema": 17,
+            "risposta": 8040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:20.701769+00:00",
+            "squadra_id": 22,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:30.734418+00:00",
+            "squadra_id": 19,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:31.656579+00:00",
+            "squadra_id": 18,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:54.132285+00:00",
+            "squadra_id": 14,
+            "problema": 6,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:56:57.651103+00:00",
+            "squadra_id": 4,
+            "problema": 6,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:57:08.101384+00:00",
+            "squadra_id": 15,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:57:28.687159+00:00",
+            "squadra_id": 15,
+            "problema": 8,
+            "risposta": 64
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:57:50.070842+00:00",
+            "squadra_id": 5,
+            "problema": 15,
+            "risposta": 47
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:58:05.968553+00:00",
+            "squadra_id": 2,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:58:31.771255+00:00",
+            "squadra_id": 6,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:58:43.502565+00:00",
+            "squadra_id": 20,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:58:57.438261+00:00",
+            "squadra_id": 6,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:58:57.469259+00:00",
+            "squadra_id": 15,
+            "problema": 22,
+            "risposta": 15
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:59:16.139671+00:00",
+            "squadra_id": 20,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:59:31.876823+00:00",
+            "squadra_id": 16,
+            "problema": 16,
+            "risposta": 1214
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:59:33.668962+00:00",
+            "squadra_id": 21,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T14:59:46.958331+00:00",
+            "squadra_id": 19,
+            "problema": 27,
+            "risposta": 6500
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:00.686132+00:00",
+            "squadra_id": 11,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:14.424348+00:00",
+            "squadra_id": 12,
+            "problema": 13,
+            "risposta": 185
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:26.053484+00:00",
+            "squadra_id": 13,
+            "problema": 10,
+            "risposta": 6875
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:26.724351+00:00",
+            "squadra_id": 7,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:41.065662+00:00",
+            "squadra_id": 17,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:48.439181+00:00",
+            "squadra_id": 3,
+            "problema": 22,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:00:52.825650+00:00",
+            "squadra_id": 8,
+            "problema": 10,
+            "risposta": 85
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:00.891690+00:00",
+            "squadra_id": 15,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:02.806479+00:00",
+            "squadra_id": 1,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:14.868979+00:00",
+            "squadra_id": 9,
+            "problema": 6,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:25.042860+00:00",
+            "squadra_id": 5,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:35.354160+00:00",
+            "squadra_id": 1,
+            "problema": 10,
+            "risposta": 81
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:01:50.952709+00:00",
+            "squadra_id": 19,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:02:06.515828+00:00",
+            "squadra_id": 21,
+            "problema": 15,
+            "risposta": 47
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:02:10.930155+00:00",
+            "squadra_id": 13,
+            "problema": 5,
+            "risposta": 1484
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:02:28.747099+00:00",
+            "squadra_id": 23,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:02:53.320782+00:00",
+            "squadra_id": 18,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:03:21.645420+00:00",
+            "squadra_id": 3,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:03:31.005615+00:00",
+            "squadra_id": 15,
+            "problema": 15,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:03:31.530738+00:00",
+            "squadra_id": 22,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:03:59.660460+00:00",
+            "squadra_id": 18,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:04:11.781635+00:00",
+            "squadra_id": 5,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:04:23.070360+00:00",
+            "squadra_id": 1,
+            "problema": 7,
+            "risposta": 2496
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:04:34.238608+00:00",
+            "squadra_id": 18,
+            "problema": 6,
+            "risposta": 41
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:05:04.511154+00:00",
+            "squadra_id": 6,
+            "problema": 10,
+            "risposta": 73
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:05:18.665320+00:00",
+            "squadra_id": 13,
+            "problema": 6,
+            "risposta": 75
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:05:28.798644+00:00",
+            "squadra_id": 10,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:05:29.588342+00:00",
+            "squadra_id": 6,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:05:40.568224+00:00",
+            "squadra_id": 11,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:03.393559+00:00",
+            "squadra_id": 16,
+            "problema": 23,
+            "risposta": 576
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:03.691356+00:00",
+            "squadra_id": 1,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:18.259217+00:00",
+            "squadra_id": 15,
+            "problema": 23,
+            "risposta": 576
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:22.379794+00:00",
+            "squadra_id": 13,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:28.543381+00:00",
+            "squadra_id": 20,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:34.099402+00:00",
+            "squadra_id": 13,
+            "problema": 12,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:41.976181+00:00",
+            "squadra_id": 19,
+            "problema": 14,
+            "risposta": 8
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:45.650794+00:00",
+            "squadra_id": 12,
+            "problema": 18,
+            "risposta": 270
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:06:53.770554+00:00",
+            "squadra_id": 4,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:03.410804+00:00",
+            "squadra_id": 3,
+            "problema": 1,
+            "risposta": 229
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:04.869205+00:00",
+            "squadra_id": 18,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:16.604931+00:00",
+            "squadra_id": 9,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:21.420544+00:00",
+            "squadra_id": 16,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:36.501758+00:00",
+            "squadra_id": 8,
+            "problema": 3,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:46.574728+00:00",
+            "squadra_id": 2,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:07:57.367954+00:00",
+            "squadra_id": 7,
+            "problema": 5,
+            "risposta": 1384
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:08:11.601551+00:00",
+            "squadra_id": 14,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:08:35.482999+00:00",
+            "squadra_id": 20,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:08:58.111871+00:00",
+            "squadra_id": 5,
+            "problema": 7,
+            "risposta": 676
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:09:10.262225+00:00",
+            "squadra_id": 23,
+            "problema": 11,
+            "risposta": 8
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:10:00.122648+00:00",
+            "squadra_id": 8,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:10:15.999556+00:00",
+            "squadra_id": 23,
+            "problema": 7,
+            "risposta": 680
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:10:26.877881+00:00",
+            "squadra_id": 3,
+            "problema": 8,
+            "risposta": 36
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:10:55.639563+00:00",
+            "squadra_id": 5,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:08.365597+00:00",
+            "squadra_id": 12,
+            "problema": 18,
+            "risposta": 90
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:08.700495+00:00",
+            "squadra_id": 23,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:27.783140+00:00",
+            "squadra_id": 16,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:41.074476+00:00",
+            "squadra_id": 4,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:41.221365+00:00",
+            "squadra_id": 21,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:52.738340+00:00",
+            "squadra_id": 7,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:11:54.179223+00:00",
+            "squadra_id": 10,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:05.329811+00:00",
+            "squadra_id": 15,
+            "problema": 18,
+            "risposta": 90
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:12.433847+00:00",
+            "squadra_id": 1,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:15.178023+00:00",
+            "squadra_id": 6,
+            "problema": 7,
+            "risposta": 624
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:23.763828+00:00",
+            "squadra_id": 9,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:24.830260+00:00",
+            "squadra_id": 19,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:12:33.987614+00:00",
+            "squadra_id": 11,
+            "problema": 18,
+            "risposta": 540
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:13:03.680361+00:00",
+            "squadra_id": 14,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:13:13.272340+00:00",
+            "squadra_id": 18,
+            "problema": 6,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:13:27.478449+00:00",
+            "squadra_id": 14,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:13:45.312483+00:00",
+            "squadra_id": 17,
+            "problema": 8,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:14:00.645227+00:00",
+            "squadra_id": 8,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:14:13.432832+00:00",
+            "squadra_id": 20,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:14:49.778320+00:00",
+            "squadra_id": 3,
+            "problema": 7,
+            "risposta": 2288
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:14:59.748292+00:00",
+            "squadra_id": 20,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:15:11.779795+00:00",
+            "squadra_id": 15,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:15:21.683881+00:00",
+            "squadra_id": 15,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:15:31.417758+00:00",
+            "squadra_id": 12,
+            "problema": 8,
+            "risposta": 2
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:16:00.404515+00:00",
+            "squadra_id": 5,
+            "problema": 10,
+            "risposta": 120
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:16:38.395927+00:00",
+            "squadra_id": 16,
+            "problema": 22,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:25:56.202881+00:00",
+            "squadra_id": 18,
+            "problema": 5,
+            "risposta": 2184
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:10.174110+00:00",
+            "squadra_id": 1,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:17.765430+00:00",
+            "squadra_id": 23,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:24.661570+00:00",
+            "squadra_id": 1,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:35.496603+00:00",
+            "squadra_id": 2,
+            "problema": 22,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:35.820991+00:00",
+            "squadra_id": 6,
+            "problema": 6,
+            "risposta": 51
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:47.761532+00:00",
+            "squadra_id": 11,
+            "problema": 26,
+            "risposta": 400
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:51.774339+00:00",
+            "squadra_id": 19,
+            "problema": 10,
+            "risposta": 82
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:26:58.392318+00:00",
+            "squadra_id": 10,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:00.264407+00:00",
+            "squadra_id": 9,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:09.966953+00:00",
+            "squadra_id": 2,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:17.814740+00:00",
+            "squadra_id": 9,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:20.959729+00:00",
+            "squadra_id": 1,
+            "problema": 15,
+            "risposta": 23
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:31.587375+00:00",
+            "squadra_id": 12,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:34.649441+00:00",
+            "squadra_id": 3,
+            "problema": 27,
+            "risposta": 6000
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:42.207112+00:00",
+            "squadra_id": 16,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:48.394869+00:00",
+            "squadra_id": 3,
+            "problema": 18,
+            "risposta": 240
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:55.337123+00:00",
+            "squadra_id": 18,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:27:56.434323+00:00",
+            "squadra_id": 4,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:06.537657+00:00",
+            "squadra_id": 7,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:14.014412+00:00",
+            "squadra_id": 6,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:18.849813+00:00",
+            "squadra_id": 14,
+            "problema": 10,
+            "risposta": 675
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:22.896282+00:00",
+            "squadra_id": 6,
+            "problema": 27,
+            "risposta": 3250
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:30.944664+00:00",
+            "squadra_id": 8,
+            "problema": 14,
+            "risposta": 8
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:31.075613+00:00",
+            "squadra_id": 14,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:40.319018+00:00",
+            "squadra_id": 15,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:41.968965+00:00",
+            "squadra_id": 7,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:51.687961+00:00",
+            "squadra_id": 21,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:28:52.569384+00:00",
+            "squadra_id": 15,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:03.067407+00:00",
+            "squadra_id": 21,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:04.052849+00:00",
+            "squadra_id": 15,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:15.130373+00:00",
+            "squadra_id": 13,
+            "problema": 7,
+            "risposta": 4992
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:25.733975+00:00",
+            "squadra_id": 20,
+            "problema": 22,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:26.423576+00:00",
+            "squadra_id": 17,
+            "problema": 15,
+            "risposta": 63
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:36.834606+00:00",
+            "squadra_id": 20,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:37.735350+00:00",
+            "squadra_id": 17,
+            "problema": 14,
+            "risposta": 128
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:49.217170+00:00",
+            "squadra_id": 13,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:50.852197+00:00",
+            "squadra_id": 12,
+            "problema": 20,
+            "risposta": 100
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:29:59.084724+00:00",
+            "squadra_id": 11,
+            "problema": 8,
+            "risposta": 96
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:01.621068+00:00",
+            "squadra_id": 17,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:11.753602+00:00",
+            "squadra_id": 22,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:13.245820+00:00",
+            "squadra_id": 13,
+            "problema": 9,
+            "risposta": 636
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:23.305911+00:00",
+            "squadra_id": 16,
+            "problema": 6,
+            "risposta": 34
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:23.938188+00:00",
+            "squadra_id": 22,
+            "problema": 22,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:32.996615+00:00",
+            "squadra_id": 16,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:35.066504+00:00",
+            "squadra_id": 10,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:42.945527+00:00",
+            "squadra_id": 4,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:46.649122+00:00",
+            "squadra_id": 10,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:53.598774+00:00",
+            "squadra_id": 2,
+            "problema": 26,
+            "risposta": 4168
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:30:56.371867+00:00",
+            "squadra_id": 22,
+            "problema": 13,
+            "risposta": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:04.000380+00:00",
+            "squadra_id": 19,
+            "problema": 23,
+            "risposta": 512
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:09.423159+00:00",
+            "squadra_id": 22,
+            "problema": 18,
+            "risposta": 1620
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:12.606629+00:00",
+            "squadra_id": 6,
+            "problema": 6,
+            "risposta": 51
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:18.205950+00:00",
+            "squadra_id": 1,
+            "problema": 17,
+            "risposta": 3140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:24.265138+00:00",
+            "squadra_id": 6,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:32.412429+00:00",
+            "squadra_id": 18,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:37.936071+00:00",
+            "squadra_id": 19,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:43.431880+00:00",
+            "squadra_id": 5,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:46.801832+00:00",
+            "squadra_id": 20,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:31:53.739550+00:00",
+            "squadra_id": 11,
+            "problema": 9,
+            "risposta": 828
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:05.221677+00:00",
+            "squadra_id": 10,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:06.036633+00:00",
+            "squadra_id": 8,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:16.935425+00:00",
+            "squadra_id": 9,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:17.168331+00:00",
+            "squadra_id": 12,
+            "problema": 11,
+            "risposta": 8
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:25.524941+00:00",
+            "squadra_id": 4,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:29.502910+00:00",
+            "squadra_id": 22,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:34.052155+00:00",
+            "squadra_id": 16,
+            "problema": 17,
+            "risposta": 180
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:39.317731+00:00",
+            "squadra_id": 2,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:45.407715+00:00",
+            "squadra_id": 21,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:52.249165+00:00",
+            "squadra_id": 18,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:32:56.396954+00:00",
+            "squadra_id": 6,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:04.963462+00:00",
+            "squadra_id": 14,
+            "problema": 3,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:05.953525+00:00",
+            "squadra_id": 18,
+            "problema": 27,
+            "risposta": 6000
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:14.066746+00:00",
+            "squadra_id": 14,
+            "problema": 19,
+            "risposta": 5
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:19.874552+00:00",
+            "squadra_id": 13,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:22.925954+00:00",
+            "squadra_id": 9,
+            "problema": 9,
+            "risposta": 616
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:32.172872+00:00",
+            "squadra_id": 6,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:41.506580+00:00",
+            "squadra_id": 3,
+            "problema": 6,
+            "risposta": 3
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:33:54.935012+00:00",
+            "squadra_id": 10,
+            "problema": 14,
+            "risposta": 48
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:34:06.177816+00:00",
+            "squadra_id": 13,
+            "problema": 17,
+            "risposta": 322
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:34:07.089366+00:00",
+            "squadra_id": 17,
+            "problema": 10,
+            "risposta": 80
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:34:17.688383+00:00",
+            "squadra_id": 19,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:34:47.838651+00:00",
+            "squadra_id": 11,
+            "problema": 1,
+            "risposta": 334
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:34:52.343233+00:00",
+            "squadra_id": 3,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:35:12.312954+00:00",
+            "squadra_id": 5,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:35:23.294737+00:00",
+            "squadra_id": 18,
+            "problema": 1,
+            "risposta": 334
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:35:29.187964+00:00",
+            "squadra_id": 17,
+            "problema": 23,
+            "risposta": 660
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:35:39.901725+00:00",
+            "squadra_id": 15,
+            "problema": 27,
+            "risposta": 4350
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:35:41.615093+00:00",
+            "squadra_id": 11,
+            "problema": 19,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:36:03.982981+00:00",
+            "squadra_id": 4,
+            "problema": 1,
+            "risposta": 1312
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:36:19.792006+00:00",
+            "squadra_id": 11,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:36:39.367795+00:00",
+            "squadra_id": 3,
+            "problema": 6,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:36:43.021649+00:00",
+            "squadra_id": 2,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:36:52.274931+00:00",
+            "squadra_id": 16,
+            "problema": 16,
+            "risposta": 1133
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:37:04.352324+00:00",
+            "squadra_id": 9,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:37:16.104393+00:00",
+            "squadra_id": 17,
+            "problema": 8,
+            "risposta": 32
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:37:26.091380+00:00",
+            "squadra_id": 11,
+            "problema": 1,
+            "risposta": 229
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:37:39.343817+00:00",
+            "squadra_id": 8,
+            "problema": 1,
+            "risposta": 229
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:37:55.411855+00:00",
+            "squadra_id": 17,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:11.616911+00:00",
+            "squadra_id": 14,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:14.748959+00:00",
+            "squadra_id": 13,
+            "problema": 6,
+            "risposta": 3
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:36.875072+00:00",
+            "squadra_id": 1,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:44.834882+00:00",
+            "squadra_id": 3,
+            "problema": 7,
+            "risposta": 1040
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:53.141620+00:00",
+            "squadra_id": 12,
+            "problema": 5,
+            "risposta": 1356
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:38:57.638206+00:00",
+            "squadra_id": 16,
+            "problema": 25,
+            "risposta": 67
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:39:27.538741+00:00",
+            "squadra_id": 8,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:40:06.512130+00:00",
+            "squadra_id": 9,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:40:14.974777+00:00",
+            "squadra_id": 22,
+            "problema": 1,
+            "risposta": 334
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:40:17.413940+00:00",
+            "squadra_id": 7,
+            "problema": 15,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:40:29.851748+00:00",
+            "squadra_id": 1,
+            "problema": 23,
+            "risposta": 6912
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:41:07.602805+00:00",
+            "squadra_id": 11,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:41:08.254354+00:00",
+            "squadra_id": 5,
+            "problema": 7,
+            "risposta": 1664
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:41:17.794469+00:00",
+            "squadra_id": 14,
+            "problema": 1,
+            "risposta": 1218
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:42:11.221511+00:00",
+            "squadra_id": 13,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:42:21.957723+00:00",
+            "squadra_id": 12,
+            "problema": 23,
+            "risposta": 576
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:42:48.426815+00:00",
+            "squadra_id": 18,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:42:59.425209+00:00",
+            "squadra_id": 13,
+            "problema": 7,
+            "risposta": 992
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:08.476297+00:00",
+            "squadra_id": 2,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:17.697141+00:00",
+            "squadra_id": 11,
+            "problema": 7,
+            "risposta": 832
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:25.538169+00:00",
+            "squadra_id": 10,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:29.657077+00:00",
+            "squadra_id": 16,
+            "problema": 25,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:41.239346+00:00",
+            "squadra_id": 19,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:43:54.367551+00:00",
+            "squadra_id": 11,
+            "problema": 12,
+            "risposta": 2047
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:44:13.478360+00:00",
+            "squadra_id": 23,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:44:28.034938+00:00",
+            "squadra_id": 9,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:44:30.623657+00:00",
+            "squadra_id": 12,
+            "problema": 1,
+            "risposta": 4913
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:45:15.753518+00:00",
+            "squadra_id": 15,
+            "problema": 15,
+            "risposta": 19
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:45:20.582154+00:00",
+            "squadra_id": 14,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:45:31.734104+00:00",
+            "squadra_id": 18,
+            "problema": 8,
+            "risposta": 48
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:45:33.357318+00:00",
+            "squadra_id": 19,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:46:01.660615+00:00",
+            "squadra_id": 14,
+            "problema": 1,
+            "risposta": 1312
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:46:31.510175+00:00",
+            "squadra_id": 11,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:46:44.719563+00:00",
+            "squadra_id": 4,
+            "problema": 11,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:46:55.884868+00:00",
+            "squadra_id": 13,
+            "problema": 18,
+            "risposta": 360
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:08.412260+00:00",
+            "squadra_id": 22,
+            "problema": 4,
+            "risposta": 10
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:16.779399+00:00",
+            "squadra_id": 3,
+            "problema": 10,
+            "risposta": 6245
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:27.194496+00:00",
+            "squadra_id": 8,
+            "problema": 14,
+            "risposta": 12
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:43.112250+00:00",
+            "squadra_id": 6,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:56.711220+00:00",
+            "squadra_id": 7,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:47:58.394338+00:00",
+            "squadra_id": 10,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:48:08.088495+00:00",
+            "squadra_id": 1,
+            "problema": 1,
+            "risposta": 149
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:48:22.314753+00:00",
+            "squadra_id": 3,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:48:35.849909+00:00",
+            "squadra_id": 8,
+            "problema": 25,
+            "risposta": 8
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:48:37.387863+00:00",
+            "squadra_id": 11,
+            "problema": 2,
+            "risposta": 98
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:03.737402+00:00",
+            "squadra_id": 15,
+            "problema": 22,
+            "risposta": 5
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:10.436640+00:00",
+            "squadra_id": 17,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:13.804980+00:00",
+            "squadra_id": 14,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:19.480279+00:00",
+            "squadra_id": 8,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:28.920960+00:00",
+            "squadra_id": 2,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:49:48.100596+00:00",
+            "squadra_id": 14,
+            "problema": 23,
+            "risposta": 48
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:01.929033+00:00",
+            "squadra_id": 12,
+            "problema": 24,
+            "risposta": 4682
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:04.596484+00:00",
+            "squadra_id": 4,
+            "problema": 11,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:20.141079+00:00",
+            "squadra_id": 19,
+            "problema": 21,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:22.631196+00:00",
+            "squadra_id": 10,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:31.032126+00:00",
+            "squadra_id": 9,
+            "problema": 23,
+            "risposta": 544
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:33.720830+00:00",
+            "squadra_id": 11,
+            "problema": 3,
+            "risposta": 30
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:41.122896+00:00",
+            "squadra_id": 16,
+            "problema": 26,
+            "risposta": 69
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:47.350210+00:00",
+            "squadra_id": 22,
+            "problema": 15,
+            "risposta": 3
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:50.971955+00:00",
+            "squadra_id": 20,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:50:58.080037+00:00",
+            "squadra_id": 8,
+            "problema": 25,
+            "risposta": 7
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:11.740407+00:00",
+            "squadra_id": 16,
+            "problema": 18,
+            "risposta": 40
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:11.983957+00:00",
+            "squadra_id": 4,
+            "problema": 17,
+            "risposta": 4140
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:21.731177+00:00",
+            "squadra_id": 9,
+            "problema": 6,
+            "risposta": 13
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:23.124328+00:00",
+            "squadra_id": 22,
+            "problema": 13,
+            "risposta": 21
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:31.927721+00:00",
+            "squadra_id": 4,
+            "problema": 1,
+            "risposta": 1128
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:39.007262+00:00",
+            "squadra_id": 17,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:51:59.631662+00:00",
+            "squadra_id": 4,
+            "problema": 5,
+            "risposta": 1284
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:10.906990+00:00",
+            "squadra_id": 4,
+            "problema": 14,
+            "risposta": 16
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:11.851331+00:00",
+            "squadra_id": 16,
+            "problema": 6,
+            "risposta": 36
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:21.647427+00:00",
+            "squadra_id": 13,
+            "problema": 25,
+            "risposta": 9
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:28.791374+00:00",
+            "squadra_id": 9,
+            "problema": 23,
+            "risposta": 512
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:32.427084+00:00",
+            "squadra_id": 17,
+            "problema": 22,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:52:46.650349+00:00",
+            "squadra_id": 12,
+            "problema": 25,
+            "risposta": 160
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:01.081907+00:00",
+            "squadra_id": 2,
+            "problema": 15,
+            "risposta": 63
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:10.425848+00:00",
+            "squadra_id": 5,
+            "problema": 1,
+            "risposta": 334
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:19.885836+00:00",
+            "squadra_id": 4,
+            "problema": 5,
+            "risposta": 1294
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:21.351780+00:00",
+            "squadra_id": 8,
+            "problema": 20,
+            "risposta": 24
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:34.582774+00:00",
+            "squadra_id": 16,
+            "problema": 25,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:35.724709+00:00",
+            "squadra_id": 12,
+            "problema": 25,
+            "risposta": 20
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:53:49.322987+00:00",
+            "squadra_id": 13,
+            "problema": 12,
+            "risposta": 994
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:01.558589+00:00",
+            "squadra_id": 16,
+            "problema": 26,
+            "risposta": 240
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:05.898449+00:00",
+            "squadra_id": 10,
+            "problema": 16,
+            "risposta": 1150
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:15.560281+00:00",
+            "squadra_id": 1,
+            "problema": 1,
+            "risposta": 1312
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:19.157277+00:00",
+            "squadra_id": 4,
+            "problema": 6,
+            "risposta": 42
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:26.123223+00:00",
+            "squadra_id": 13,
+            "problema": 25,
+            "risposta": 14
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:38.196051+00:00",
+            "squadra_id": 6,
+            "problema": 19,
+            "risposta": 6
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:46.872090+00:00",
+            "squadra_id": 11,
+            "problema": 17,
+            "risposta": 2484
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:54:50.926469+00:00",
+            "squadra_id": 8,
+            "problema": 3,
+            "risposta": 28
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:00.855401+00:00",
+            "squadra_id": 14,
+            "problema": 26,
+            "risposta": 200
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:14.057059+00:00",
+            "squadra_id": 2,
+            "problema": 9,
+            "risposta": 858
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:23.049998+00:00",
+            "squadra_id": 1,
+            "problema": 3,
+            "risposta": 43
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:25.781946+00:00",
+            "squadra_id": 19,
+            "problema": 1,
+            "risposta": 229
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:33.441766+00:00",
+            "squadra_id": 12,
+            "problema": 20,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:37.437040+00:00",
+            "squadra_id": 9,
+            "problema": 1,
+            "risposta": 149
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:44.091483+00:00",
+            "squadra_id": 5,
+            "problema": 25,
+            "risposta": 4
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:46.838196+00:00",
+            "squadra_id": 16,
+            "problema": 15,
+            "risposta": 11
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:56.751902+00:00",
+            "squadra_id": 22,
+            "problema": 1,
+            "risposta": 236
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:55:57.909174+00:00",
+            "squadra_id": 20,
+            "problema": 16,
+            "risposta": 1132
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:56:09.047280+00:00",
+            "squadra_id": 6,
+            "problema": 22,
+            "risposta": 15
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:56:19.759778+00:00",
+            "squadra_id": 19,
+            "problema": 27,
+            "risposta": 6000
+        },
+        {
+            "subclass": "Consegna",
+            "orario": "2024-05-16T15:56:30.377540+00:00",
+            "squadra_id": 6,
+            "problema": 5,
+            "risposta": 1384
+        }
+    ],
+    "soluzioni": [
+        {
+            "problema": 1,
+            "nome": "I figli di Sonia",
+            "risposta": 229,
+            "punteggio": 20
+        },
+        {
+            "problema": 2,
+            "nome": "Tra 10 anni",
+            "risposta": 98,
+            "punteggio": 20
+        },
+        {
+            "problema": 3,
+            "nome": "Il plotone di soldati",
+            "risposta": 28,
+            "punteggio": 20
+        },
+        {
+            "problema": 4,
+            "nome": "Canta che ti passa",
+            "risposta": 10,
+            "punteggio": 20
+        },
+        {
+            "problema": 5,
+            "nome": "Una partita a tris",
+            "risposta": 2184,
+            "punteggio": 20
+        },
+        {
+            "problema": 6,
+            "nome": "Le pietre colorate",
+            "risposta": 13,
+            "punteggio": 20
+        },
+        {
+            "problema": 7,
+            "nome": "Il terreno della nonna",
+            "risposta": 1040,
+            "punteggio": 20
+        },
+        {
+            "problema": 8,
+            "nome": "Le prelibatezze di zia Paola",
+            "risposta": 48,
+            "punteggio": 20
+        },
+        {
+            "problema": 9,
+            "nome": "Gotta Catch'em All!",
+            "risposta": 858,
+            "punteggio": 20
+        },
+        {
+            "problema": 10,
+            "nome": "Il regalo",
+            "risposta": 80,
+            "punteggio": 20
+        },
+        {
+            "problema": 11,
+            "nome": "Il cacciatore",
+            "risposta": 4,
+            "punteggio": 20
+        },
+        {
+            "problema": 12,
+            "nome": "La sequenza",
+            "risposta": 2047,
+            "punteggio": 20
+        },
+        {
+            "problema": 13,
+            "nome": "I quadrati",
+            "risposta": 21,
+            "punteggio": 20
+        },
+        {
+            "problema": 14,
+            "nome": "Aurora's cafe",
+            "risposta": 16,
+            "punteggio": 20
+        },
+        {
+            "problema": 15,
+            "nome": "Frazioni: che sfida!",
+            "risposta": 63,
+            "punteggio": 20
+        },
+        {
+            "problema": 16,
+            "nome": "Arte per pranzo",
+            "risposta": 1150,
+            "punteggio": 20
+        },
+        {
+            "problema": 17,
+            "nome": "Hortus NON conclusus",
+            "risposta": 4140,
+            "punteggio": 20
+        },
+        {
+            "problema": 18,
+            "nome": "La Via del Serpente",
+            "risposta": 540,
+            "punteggio": 20
+        },
+        {
+            "problema": 19,
+            "nome": "L'area",
+            "risposta": 6,
+            "punteggio": 20
+        },
+        {
+            "problema": 20,
+            "nome": "L'allevatore",
+            "risposta": 24,
+            "punteggio": 20
+        },
+        {
+            "problema": 21,
+            "nome": "I calzini spaiati",
+            "risposta": 4,
+            "punteggio": 20
+        },
+        {
+            "problema": 22,
+            "nome": "Le mele",
+            "risposta": 7,
+            "punteggio": 20
+        },
+        {
+            "problema": 23,
+            "nome": "Caramelle al cubo",
+            "risposta": 512,
+            "punteggio": 20
+        },
+        {
+            "problema": 24,
+            "nome": "Al ladro!",
+            "risposta": 4682,
+            "punteggio": 20
+        },
+        {
+            "problema": 25,
+            "nome": "Il parallelogrammo",
+            "risposta": 10,
+            "punteggio": 20
+        },
+        {
+            "problema": 26,
+            "nome": "Le lunule",
+            "risposta": 200,
+            "punteggio": 20
+        },
+        {
+            "problema": 27,
+            "nome": "Dritti al centro",
+            "risposta": 6000,
+            "punteggio": 20
+        }
+    ],
+    "squadre": [
+        {
+            "nome": "Gli squadrati perfetti",
+            "num": 1,
+            "ospite": false
+        },
+        {
+            "nome": "Ultraritmetici 2.0",
+            "num": 2,
+            "ospite": false
+        },
+        {
+            "nome": "I cartesiani",
+            "num": 3,
+            "ospite": false
+        },
+        {
+            "nome": "I matematici di Butis\u00ec",
+            "num": 4,
+            "ospite": false
+        },
+        {
+            "nome": "I periodici",
+            "num": 5,
+            "ospite": false
+        },
+        {
+            "nome": "I mateamici",
+            "num": 6,
+            "ospite": false
+        },
+        {
+            "nome": "I matematleti",
+            "num": 7,
+            "ospite": false
+        },
+        {
+            "nome": "MathTeamAtica",
+            "num": 8,
+            "ospite": false
+        },
+        {
+            "nome": "Pi\u00f9omeno",
+            "num": 9,
+            "ospite": false
+        },
+        {
+            "nome": "I rogamatici",
+            "num": 10,
+            "ospite": false
+        },
+        {
+            "nome": "Gli artematici",
+            "num": 11,
+            "ospite": false
+        },
+        {
+            "nome": "I polinomi",
+            "num": 12,
+            "ospite": false
+        },
+        {
+            "nome": "I positivi",
+            "num": 13,
+            "ospite": false
+        },
+        {
+            "nome": "I teorema team",
+            "num": 14,
+            "ospite": false
+        },
+        {
+            "nome": "I matemitici",
+            "num": 15,
+            "ospite": false
+        },
+        {
+            "nome": "Pozzomatici",
+            "num": 16,
+            "ospite": false
+        },
+        {
+            "nome": "Gli indecifrabili",
+            "num": 17,
+            "ospite": false
+        },
+        {
+            "nome": "I triangolini",
+            "num": 18,
+            "ospite": false
+        },
+        {
+            "nome": "I pitagormiti",
+            "num": 19,
+            "ospite": false
+        },
+        {
+            "nome": "Gli indeterminati",
+            "num": 20,
+            "ospite": false
+        },
+        {
+            "nome": "Gli irrazionali",
+            "num": 21,
+            "ospite": false
+        },
+        {
+            "nome": "I congruenti",
+            "num": 22,
+            "ospite": false
+        },
+        {
+            "nome": "Gli ultimi",
+            "num": 23,
+            "ospite": false
+        }
+    ]
+}

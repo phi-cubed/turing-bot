@@ -1,0 +1,20 @@
+{% extends "basegara.html" %}
+{% block title %}{{object.nome}} reset{% endblock %}
+
+{% block content %}
+<h3>Gara: <a href="{% url 'engine:gara-detail' object.pk %}">{{ object.nome }}</a> - ripresa gara</h3>
+
+
+{% if object.sospensione is not null %}
+<p>
+Questa azione farà ripartire la gara, consentendo nuovamente l'inserimento di nuovi eventi e la visualizzazione della classifica. Sei sicuro di voler procedere?<br/>
+<form method="post">{% csrf_token %}
+    <input type="hidden" name="delete" value=1>
+    <input type="submit" value="Sì, fai ripartire la gara!" id="submit">
+</form>
+</p>
+{% else %}
+<p>La gara non è temporanemante sospesa, e dunque non è nemmeno possibile farla ripartire.</p>
+{% endif %}
+
+{% endblock %}

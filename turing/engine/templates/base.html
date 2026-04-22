@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+{%load static%}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap & jQuery -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/SB_Admin/css/sb-admin.css' %}" rel="stylesheet" type="text/css">
+
+
+    <link href="{% static 'engine/css/main.css' %}" rel="stylesheet" type="text/css" >
+
+    {% block css %}{% endblock %}
+    {% block head %}{% endblock %}
+</head>
+<body class="d-flex flex-column min-vh-100">
+  {% block header %}{% endblock %}
+    <div class="flex-fill container-fluid">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+              {{message}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% block content %}{% endblock %}
+    </div>
+    {% block footer %}{% endblock %}
+    <script>
+    window.onerror = function(msg, url, linenumber) {
+      alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+      return true;
+    }
+    </script>
+</body>
+</html>

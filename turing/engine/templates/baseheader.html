@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{%load static%}
+{% block header %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <a class="navbar-brand mr-1 text-truncate" style="max-width:75%" href="/engine/">
+        <img src="{% static 'logo.png' %}" class="img-thumbnail" style="height:2.5rem"></img>
+        <span class="ml-2">Turing - Gestione Gara a Squadre</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-0 mr-md-3 my-2 my-md-0">
+
+          {% block navitems %}
+          {% if gare_attive %}
+          <li class="nav-item dropdown">
+              <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                Gare attive <i class="fas fa-bars" style="color:gray"></i>
+              </button>
+            <ul class="dropdown-menu dropdown-menu-right bg-dark text-white">
+              {% for g in gare_attive %}
+              <li><a class="text-white" href="{% url 'engine:gara-detail' g.pk %}">{{g}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% endblock %}
+
+          <li class="nav-item dropdown">
+            {% if user.is_authenticated %}
+              <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                {{ user.first_name }} <i class="fas fa-user" style="color:gray"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right bg-dark text-white">
+                {% if user.is_staff %}
+                <li><a class="text-white" href="{% url 'admin:index' %}" target="_blank">Admin <i class="fas fa-user-circle"></i></a></li>
+                {% endif %}
+                {% if user.can_create_gara %}
+                <li><a class="text-white" href="{% url 'engine:gara-new' %}">Nuova gara  <i class="fas fa-plus-circle"></i></a></li>
+                {% endif %}
+                <li><a class="text-white" href="{% url 'engine:allenamento-list' %}">Allenamento <i class="fas fa-graduation-cap"></i></a></li>
+                <li><a class="text-white" href="{% url 'password_change' %}">Cambio password <i class="fas fa-key"></i></a></li>
+                <li><form id="logout-form" action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button class="text-white" type="submit">Logout <i class="fas fa-sign-out-alt"></i></button>
+                </form>
+              </ul>
+            {% else %}
+            {% if registration_open %}
+              <a class="nav-link" href="{% url 'signup' %}">
+                Registrati <i class="fas fa-user-plus"></i>
+              </a>
+              </li>
+            {% endif %}
+              <li class="nav-item dropdown">
+              <a class="nav-link" href="{% url 'login' %}">
+                Login <i class="fas fa-sign-in-alt"></i>
+              </a>
+            {% endif %}
+          </li>
+        </ul>
+    </div>
+  </nav>
+{% endblock %}
+{% block footer %}
+    <footer class="font-small text-light bg-dark mt-3 py-1 pl-2">
+        <div class="pull-left">
+          Powered by <a href="{% url 'engine:about' %}">Turing</a> (customized by <a href="https://github.com/phi-cubed/turing-bot">Turing-bot</a>).
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "basegara.html" %}
+{% block title %}Soluzioni {{object.nome}}{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h3>Gara: <a href="{% url 'engine:gara-admin' object.pk %}">{{object.nome}}</a> - imposta soluzioni corrette</h3>
+<form method="post">{% csrf_token %}
+    {{ form.management_form }}
+    {{ form.non_form_errors }}
+    {% for f in form %}
+    {{ f.id }}
+    <div class="form-row">
+        <div class="col-md-3">
+            <div class="form-group">
+            {{ f.nome|as_crispy_field }}
+            </div>
+        </div>
+        {{ f.problema }}
+        <div class="col-md-3">
+            <div class="form-group">
+            {{ f.risposta|as_crispy_field }}
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+            {{ f.punteggio|as_crispy_field }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <input type="submit" class="btn btn-primary" value="Salva le soluzioni">
+</form>
+{% endblock %}

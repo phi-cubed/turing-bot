@@ -1,0 +1,281 @@
+.progress {
+    height: 24px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+
+.progress-bar-dark {
+    background-color: #004cc5;
+}
+
+.progress-bar-light {
+    background-color: #71afff;
+}
+
+.progress-bar-zero {
+    background-color: #495057;
+}
+
+.ospite {
+    background-color: gray;
+}
+
+.small-padding {
+    padding: 2px 0px 2px 0.75rem !important;
+}
+
+.table-responsive {
+    position: relative;
+}
+
+th.squadra {
+    padding: 0.1em;
+    font-size: small;
+}
+
+td.wrong-answer {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+}
+
+td.right-answer {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+}
+
+td.bonus {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    vertical-align: middle;
+    color: black;
+}
+
+tr:nth-child(even) .wrong-answer {
+    background-color: #dc3545;
+}
+tr:nth-child(odd) .wrong-answer {
+    background-color: firebrick;
+}
+
+tr:nth-child(even) .right-answer {
+    background-color: forestgreen;
+}
+tr:nth-child(odd) .right-answer {
+    background-color: darkgreen;
+}
+
+@keyframes blink-wrong-even {
+    0% {
+        background-color: #dc3545;
+        color: white;
+    }
+    50% {
+        background-color: transparent;
+        color: #dc3545;
+    }
+    100% {
+        background-color: #dc3545;
+        color: white;
+    }
+}
+
+@keyframes blink-wrong-odd {
+    0% {
+        background-color: firebrick;
+        color: white;
+    }
+    50% {
+        background-color: transparent;
+        color: firebrick;
+    }
+    100% {
+        background-color: firebrick;
+        color: white;
+    }
+}
+
+@keyframes blink-right-even {
+    0% {
+        background-color: forestgreen;
+        color: white;
+    }
+    50% {
+        background-color: transparent;
+        color: forestgreen;
+    }
+    100% {
+        background-color: forestgreen;
+        color: white;
+    }
+}
+
+@keyframes blink-right-odd {
+    0% {
+        background-color: darkgreen;
+        color: white;
+    }
+    50% {
+        background-color: transparent;
+        color: darkgreen;
+    }
+    100% {
+        background-color: darkgreen;
+        color: white;
+    }
+}
+
+tr:nth-child(even) .wrong-answer.blink {
+    animation: blink-wrong-even 1s 20;
+}
+
+tr:nth-child(odd) .wrong-answer.blink {
+    animation: blink-wrong-odd 1s 20;
+}
+
+tr:nth-child(even) .right-answer.blink {
+    animation: blink-right-even 1s 20;
+}
+
+tr:nth-child(odd) .right-answer.blink {
+    animation: blink-right-odd 1s 20;
+}
+
+.position_warn_overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 16%;
+    width: 84%;
+    background-color: transparent;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position_warn_show {
+    height: 100%;
+    line-height: 1;
+    font-size: 70vh;
+    transform: scale(0);
+    animation: grow 3s ease forwards;
+    color: black;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.position_warn_hide {
+    display: none;
+}
+
+.position_warn_1 {
+    color: gold;
+}
+
+.position_warn_2 {
+    color: slategray;
+}
+
+.position_warn_3 {
+    color: peru;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+td.prize {
+    border: 3px solid black;
+}
+
+td.prize-gold {
+    border-color: gold;
+}
+
+td.prize-silver {
+    border-color: slategray;
+}
+
+td.prize-bronze {
+    border-color: peru;
+}
+
+td.prize-dashed {
+    border-style: dashed;
+}
+
+td.prize-solid {
+    border-style: solid;
+}
+
+td.unica_giuste {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.points-value {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.jolly-fa-stack {
+    position: relative;
+    margin-left: 0.1em;
+    min-width: 1em;
+    min-height: 1em;
+    display: inline-block;
+}
+
+.arrow-fa-stack {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow-fa-stack i {
+    font-size: 100%;
+}
+
+.punteggio_unica {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+td.wrong-answer .jolly-fa-stack,
+td.right-answer .jolly-fa-stack {
+    position: absolute;
+    bottom: 3px;
+    right: 1px;
+    z-index: 1;
+}
+
+
+/* Following */
+div.following {
+    background-color: rebeccapurple;
+}
+
+tr.following {
+    background-color: yellow !important;
+}

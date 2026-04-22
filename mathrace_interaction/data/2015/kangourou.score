@@ -1,0 +1,39 @@
+# http://www.disfida.it/kangourou/2015/moviola/index.php
+# Vedi file del 2014 per la notazione
+# "squadra X, conflitto d'ordine jolly con problema Y per precedente risposta sbagliata"
+[177,
+230,
+185,
+219,
+176,
+308,
+190,
+273,
+139,
+# squadra 10, conflitto d'ordine jolly con problema 5 per precedente risposta sbagliata:
+# punteggio originale 71, modificato in 61.
+61,
+558,
+293,
+33,
+260,
+280,
+164,
+291,
+313,
+174,
+119,
+329,
+229,
+293,
+209,
+181,
+521,
+265,
+275,
+# squadra 29: la moviola non permette di andare in negativo, mentre turing lo permette. In assenza di una
+# fonte di confronto ho copiato in questo file il dato fornito da turing.
+-29,
+225,
+236,
+188]

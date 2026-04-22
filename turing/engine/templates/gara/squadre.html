@@ -1,0 +1,83 @@
+{% extends "basegara.html" %}
+{% block title %}Squadre {{object.nome}}{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<script>
+function add_one() {
+    var form_idx = $('#id_form-TOTAL_FORMS').val();
+    var form_idx_num = parseInt(form_idx);
+    $('#form_set').append($('#empty_form').html().replace(/__prefix__/g, form_idx));
+    $('#id_form-'+form_idx_num+'-num').val(form_idx_num+1)
+    $('#id_form-TOTAL_FORMS').val(form_idx_num + 1);
+    $("#id_form-"+form_idx_num+"-nome").focus();
+    $('form input').on('keypress', prevent_submit);
+}
+
+function prevent_submit(e) {
+    if (e.which === 13) {
+        add_one();
+        return false;
+    }
+}
+
+$('document').ready(function() {
+    $("#add_more").on('click', add_one);
+    $('form input').on('keypress', prevent_submit);
+    var form_idx = $('#id_form-TOTAL_FORMS').val();
+    var form_idx_num = parseInt(form_idx);
+    if(form_idx_num == 0){
+        add_one(); // add one first team by default if empty
+        $('#id_form-0-nome').focus();
+    }
+    else{
+        $('#id_form-'+(form_idx_num-1)+'-nome').focus().select();
+    }
+})
+</script>
+
+<h3>Gara: <a href="{% url 'engine:gara-admin' object.pk %}">{{object.nome}}</a> - inserisci squadre</h3>
+{{ form.non_form_errors}}
+<form method="post" id="form_set" class="m-3">
+    {% csrf_token %}
+    {{ form.management_form }}
+    {% for f in form %}
+    {{ f.id }}
+    <div class="form-row form-inline m-1">
+        <div class="col-sm-1">
+            {{ f.num|as_crispy_field }}
+        </div>
+        <div class="col-sm-5">
+            {{ f.nome|as_crispy_field }}
+        </div>
+        <div class="col-sm-3">
+            {{ f.consegnatore|as_crispy_field }}
+        </div>
+        <div class="col-sm-1">
+        {{ f.ospite|as_crispy_field }}
+        </div>
+    </div>
+    {% endfor %}
+
+</form>
+<input type="button" class="btn btn-secondary" value="Aggiungi squadra" id="add_more">
+<button type="submit" class="btn btn-primary" form='form_set' id="submit">Conferma</button>
+
+
+<div id="empty_form" style="display:none">
+    {{ form.id }}
+    <div class="form-row form-inline m-1">
+        <div class="col-sm-1">
+        {{ form.empty_form.num|as_crispy_field }}
+        </div>
+        <div class="col-sm-5">
+        {{ form.empty_form.nome|as_crispy_field }}
+        </div>
+        <div class="col-sm-3">
+        {{ form.empty_form.consegnatore|as_crispy_field }}
+        </div>
+        {{ form.empty_form.ospite|as_crispy_field }}
+    </div>
+</div>
+{% endblock %}

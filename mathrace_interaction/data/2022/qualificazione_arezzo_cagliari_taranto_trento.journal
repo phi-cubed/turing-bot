@@ -1,0 +1,774 @@
+--- 001 inizializzazione simulatore
+--- 003 35 21 210 10 6 4 1 1 120 100 -- squadre: 35 quesiti: 21
+--- 011 10 8 5 3 2 1 0 0 0 0 0 definizione dei 10 livelli di bonus
+--- 004 1 20 quesito 1 punteggio iniziale 20
+--- 004 2 20 quesito 2 punteggio iniziale 20
+--- 004 3 20 quesito 3 punteggio iniziale 20
+--- 004 4 20 quesito 4 punteggio iniziale 20
+--- 004 5 20 quesito 5 punteggio iniziale 20
+--- 004 6 20 quesito 6 punteggio iniziale 20
+--- 004 7 20 quesito 7 punteggio iniziale 20
+--- 004 8 20 quesito 8 punteggio iniziale 20
+--- 004 9 20 quesito 9 punteggio iniziale 20
+--- 004 10 20 quesito 10 punteggio iniziale 20
+--- 004 11 20 quesito 11 punteggio iniziale 20
+--- 004 12 20 quesito 12 punteggio iniziale 20
+--- 004 13 20 quesito 13 punteggio iniziale 20
+--- 004 14 20 quesito 14 punteggio iniziale 20
+--- 004 15 20 quesito 15 punteggio iniziale 20
+--- 004 16 20 quesito 16 punteggio iniziale 20
+--- 004 17 20 quesito 17 punteggio iniziale 20
+--- 004 18 20 quesito 18 punteggio iniziale 20
+--- 004 19 20 quesito 19 punteggio iniziale 20
+--- 004 20 20 quesito 20 punteggio iniziale 20
+--- 004 21 20 quesito 21 punteggio iniziale 20
+0 200 inizio gara
+0 120 1 8 PROT:1 squadra 1 sceglie 8 come jolly
+0 120 2 19 PROT:2 squadra 2 sceglie 19 come jolly
+0 120 3 4 PROT:3 squadra 3 sceglie 4 come jolly
+0 120 4 21 PROT:4 squadra 4 sceglie 21 come jolly
+0 120 5 5 PROT:5 squadra 5 sceglie 5 come jolly
+0 120 6 1 PROT:6 squadra 6 sceglie 1 come jolly
+0 120 7 16 PROT:7 squadra 7 sceglie 16 come jolly
+0 120 8 1 PROT:8 squadra 8 sceglie 1 come jolly
+0 120 9 9 PROT:9 squadra 9 sceglie 9 come jolly
+0 120 10 12 PROT:10 squadra 10 sceglie 12 come jolly
+0 120 11 1 PROT:11 squadra 11 sceglie 1 come jolly
+0 120 12 15 PROT:12 squadra 12 sceglie 15 come jolly
+0 120 13 12 PROT:13 squadra 13 sceglie 12 come jolly
+0 120 14 18 PROT:14 squadra 14 sceglie 18 come jolly
+0 120 15 12 PROT:15 squadra 15 sceglie 12 come jolly
+0 120 16 18 PROT:16 squadra 16 sceglie 18 come jolly
+0 120 17 7 PROT:17 squadra 17 sceglie 7 come jolly
+0 120 18 19 PROT:18 squadra 18 sceglie 19 come jolly
+0 120 19 1 PROT:19 squadra 19 sceglie 1 come jolly
+0 120 20 18 PROT:20 squadra 20 sceglie 18 come jolly
+0 120 21 20 PROT:21 squadra 21 sceglie 20 come jolly
+0 120 22 4 PROT:22 squadra 22 sceglie 4 come jolly
+0 120 23 11 PROT:23 squadra 23 sceglie 11 come jolly
+0 120 24 4 PROT:24 squadra 24 sceglie 4 come jolly
+0 120 25 20 PROT:25 squadra 25 sceglie 20 come jolly
+0 120 26 18 PROT:26 squadra 26 sceglie 18 come jolly
+0 120 27 1 PROT:27 squadra 27 sceglie 1 come jolly
+0 120 28 13 PROT:28 squadra 28 sceglie 13 come jolly
+0 120 29 10 PROT:29 squadra 29 sceglie 10 come jolly
+0 120 30 19 PROT:30 squadra 30 sceglie 19 come jolly
+0 120 31 4 PROT:31 squadra 31 sceglie 4 come jolly
+0 120 32 8 PROT:32 squadra 32 sceglie 8 come jolly
+0 120 33 18 PROT:33 squadra 33 sceglie 18 come jolly
+0 120 34 9 PROT:34 squadra 34 sceglie 9 come jolly
+0 120 35 8 PROT:35 squadra 35 sceglie 8 come jolly
+60 101 aggiorna punteggio esercizi, orologio: 1
+120 101 aggiorna punteggio esercizi, orologio: 2
+180 101 aggiorna punteggio esercizi, orologio: 3
+224 110 18 1 1 PROT:36 squadra 18, quesito 1: giusto
+240 101 aggiorna punteggio esercizi, orologio: 4
+287 110 30 1 1 PROT:37 squadra 30, quesito 1: giusto
+288 110 4 1 1 PROT:38 squadra 4, quesito 1: giusto
+300 101 aggiorna punteggio esercizi, orologio: 5
+306 110 29 1 1 PROT:39 squadra 29, quesito 1: giusto
+360 101 aggiorna punteggio esercizi, orologio: 6
+368 110 7 1 1 PROT:40 squadra 7, quesito 1: giusto
+393 110 17 1 1 PROT:41 squadra 17, quesito 1: giusto
+420 101 aggiorna punteggio esercizi, orologio: 7
+424 110 25 1 1 PROT:42 squadra 25, quesito 1: giusto
+437 110 8 7 0 PROT:43 squadra 8, quesito 7: sbagliato
+450 110 28 1 1 PROT:44 squadra 28, quesito 1: giusto
+457 110 10 1 0 PROT:45 squadra 10, quesito 1: sbagliato
+469 110 31 1 1 PROT:46 squadra 31, quesito 1: giusto
+475 110 16 1 1 PROT:47 squadra 16, quesito 1: giusto
+480 101 aggiorna punteggio esercizi, orologio: 8
+484 110 4 7 1 PROT:48 squadra 4, quesito 7: giusto
+495 110 34 1 1 PROT:49 squadra 34, quesito 1: giusto
+501 110 10 12 1 PROT:50 squadra 10, quesito 12: giusto
+505 110 30 4 1 PROT:51 squadra 30, quesito 4: giusto
+510 110 9 1 0 PROT:52 squadra 9, quesito 1: sbagliato
+522 110 28 4 1 PROT:53 squadra 28, quesito 4: giusto
+525 110 33 1 1 PROT:54 squadra 33, quesito 1: giusto
+540 101 aggiorna punteggio esercizi, orologio: 9
+543 110 15 1 1 PROT:55 squadra 15, quesito 1: giusto
+547 110 13 1 0 PROT:56 squadra 13, quesito 1: sbagliato
+592 110 7 12 0 PROT:57 squadra 7, quesito 12: sbagliato
+598 110 30 12 1 PROT:58 squadra 30, quesito 12: giusto
+600 101 aggiorna punteggio esercizi, orologio: 10
+606 110 29 12 1 PROT:59 squadra 29, quesito 12: giusto
+620 110 27 1 1 PROT:60 squadra 27, quesito 1: giusto
+660 101 aggiorna punteggio esercizi, orologio: 11
+664 110 11 1 1 PROT:61 squadra 11, quesito 1: giusto
+679 110 20 1 1 PROT:62 squadra 20, quesito 1: giusto
+696 110 9 1 1 PROT:63 squadra 9, quesito 1: giusto
+697 110 34 4 1 PROT:64 squadra 34, quesito 4: giusto
+700 110 30 18 0 PROT:65 squadra 30, quesito 18: sbagliato
+712 110 8 15 0 PROT:66 squadra 8, quesito 15: sbagliato
+720 101 aggiorna punteggio esercizi, orologio: 12
+739 110 14 1 1 PROT:67 squadra 14, quesito 1: giusto
+756 110 26 4 1 PROT:68 squadra 26, quesito 4: giusto
+780 101 aggiorna punteggio esercizi, orologio: 13
+815 110 28 5 0 PROT:69 squadra 28, quesito 5: sbagliato
+840 101 aggiorna punteggio esercizi, orologio: 14
+848 110 17 4 0 PROT:70 squadra 17, quesito 4: sbagliato
+849 110 3 4 1 PROT:71 squadra 3, quesito 4: giusto
+853 110 10 1 0 PROT:72 squadra 10, quesito 1: sbagliato
+855 110 23 1 1 PROT:73 squadra 23, quesito 1: giusto
+855 110 31 4 0 PROT:74 squadra 31, quesito 4: sbagliato
+856 110 30 7 0 PROT:75 squadra 30, quesito 7: sbagliato
+879 110 18 16 1 PROT:76 squadra 18, quesito 16: giusto
+884 110 5 1 1 PROT:77 squadra 5, quesito 1: giusto
+893 110 18 3 1 PROT:78 squadra 18, quesito 3: giusto
+899 110 28 13 0 PROT:79 squadra 28, quesito 13: sbagliato
+900 101 aggiorna punteggio esercizi, orologio: 15
+900 121 timeout jolly
+903 110 29 3 1 PROT:80 squadra 29, quesito 3: giusto
+913 110 15 12 0 PROT:81 squadra 15, quesito 12: sbagliato
+924 110 15 12 1 PROT:82 squadra 15, quesito 12: giusto
+953 110 8 1 1 PROT:83 squadra 8, quesito 1: giusto
+960 101 aggiorna punteggio esercizi, orologio: 16
+964 110 5 7 0 PROT:84 squadra 5, quesito 7: sbagliato
+965 110 25 4 1 PROT:85 squadra 25, quesito 4: giusto
+969 110 18 4 1 PROT:86 squadra 18, quesito 4: giusto
+985 110 30 18 0 PROT:87 squadra 30, quesito 18: sbagliato
+1007 110 18 12 1 PROT:88 squadra 18, quesito 12: giusto
+1017 110 15 8 0 PROT:89 squadra 15, quesito 8: sbagliato
+1017 110 22 1 0 PROT:90 squadra 22, quesito 1: sbagliato
+1020 101 aggiorna punteggio esercizi, orologio: 17
+1021 110 35 18 1 PROT:91 squadra 35, quesito 18: giusto
+1031 110 22 1 0 PROT:92 squadra 22, quesito 1: sbagliato
+1039 110 14 7 0 PROT:93 squadra 14, quesito 7: sbagliato
+1065 110 17 12 0 PROT:94 squadra 17, quesito 12: sbagliato
+1080 101 aggiorna punteggio esercizi, orologio: 18
+1089 110 17 4 1 PROT:95 squadra 17, quesito 4: giusto
+1104 110 32 4 0 PROT:96 squadra 32, quesito 4: sbagliato
+1106 110 2 1 1 PROT:97 squadra 2, quesito 1: giusto
+1122 110 28 5 1 PROT:98 squadra 28, quesito 5: giusto
+1130 110 2 19 1 PROT:99 squadra 2, quesito 19: giusto
+1130 110 33 7 1 PROT:100 squadra 33, quesito 7: giusto
+1131 110 22 4 1 PROT:101 squadra 22, quesito 4: giusto
+1140 101 aggiorna punteggio esercizi, orologio: 19
+1149 110 33 3 1 PROT:102 squadra 33, quesito 3: giusto
+1159 110 4 19 1 PROT:103 squadra 4, quesito 19: giusto
+1159 110 10 1 1 PROT:104 squadra 10, quesito 1: giusto
+1169 110 30 7 1 PROT:105 squadra 30, quesito 7: giusto
+1177 110 21 4 1 PROT:106 squadra 21, quesito 4: giusto
+1191 110 27 4 0 PROT:107 squadra 27, quesito 4: sbagliato
+1200 101 aggiorna punteggio esercizi, orologio: 20
+1201 110 35 1 1 PROT:108 squadra 35, quesito 1: giusto
+1234 110 28 3 1 PROT:109 squadra 28, quesito 3: giusto
+1236 110 5 4 0 PROT:110 squadra 5, quesito 4: sbagliato
+1237 110 16 4 0 PROT:111 squadra 16, quesito 4: sbagliato
+1251 110 12 1 0 PROT:112 squadra 12, quesito 1: sbagliato
+1255 110 28 13 1 PROT:113 squadra 28, quesito 13: giusto
+1260 101 aggiorna punteggio esercizi, orologio: 21
+1264 110 1 7 0 PROT:114 squadra 1, quesito 7: sbagliato
+1271 110 4 8 0 PROT:115 squadra 4, quesito 8: sbagliato
+1305 110 24 4 1 PROT:116 squadra 24, quesito 4: giusto
+1306 110 6 1 1 PROT:117 squadra 6, quesito 1: giusto
+1315 110 25 10 1 PROT:118 squadra 25, quesito 10: giusto
+1318 110 16 18 1 PROT:119 squadra 16, quesito 18: giusto
+1320 101 aggiorna punteggio esercizi, orologio: 22
+1322 110 1 8 1 PROT:120 squadra 1, quesito 8: giusto
+1324 110 35 4 0 PROT:121 squadra 35, quesito 4: sbagliato
+1331 110 15 4 1 PROT:122 squadra 15, quesito 4: giusto
+1356 110 33 4 1 PROT:123 squadra 33, quesito 4: giusto
+1359 110 14 4 1 PROT:124 squadra 14, quesito 4: giusto
+1380 101 aggiorna punteggio esercizi, orologio: 23
+1382 110 5 4 1 PROT:125 squadra 5, quesito 4: giusto
+1404 110 8 4 1 PROT:126 squadra 8, quesito 4: giusto
+1408 110 18 13 1 PROT:127 squadra 18, quesito 13: giusto
+1419 110 11 4 1 PROT:128 squadra 11, quesito 4: giusto
+1421 110 13 1 1 PROT:129 squadra 13, quesito 1: giusto
+1423 110 12 12 1 PROT:130 squadra 12, quesito 12: giusto
+1429 110 30 11 1 PROT:131 squadra 30, quesito 11: giusto
+1434 110 20 4 1 PROT:132 squadra 20, quesito 4: giusto
+1440 101 aggiorna punteggio esercizi, orologio: 24
+1450 110 27 4 1 PROT:133 squadra 27, quesito 4: giusto
+1460 110 18 8 1 PROT:134 squadra 18, quesito 8: giusto
+1500 101 aggiorna punteggio esercizi, orologio: 25
+1503 110 12 15 0 PROT:135 squadra 12, quesito 15: sbagliato
+1511 110 24 1 1 PROT:136 squadra 24, quesito 1: giusto
+1557 110 15 20 1 PROT:137 squadra 15, quesito 20: giusto
+1557 110 1 1 1 PROT:138 squadra 1, quesito 1: giusto
+1560 101 aggiorna punteggio esercizi, orologio: 26
+1565 110 33 18 0 PROT:139 squadra 33, quesito 18: sbagliato
+1565 110 7 17 0 PROT:140 squadra 7, quesito 17: sbagliato
+1575 110 29 7 1 PROT:141 squadra 29, quesito 7: giusto
+1608 110 15 14 0 PROT:142 squadra 15, quesito 14: sbagliato
+1608 110 13 4 1 PROT:143 squadra 13, quesito 4: giusto
+1620 101 aggiorna punteggio esercizi, orologio: 27
+1622 110 22 8 1 PROT:144 squadra 22, quesito 8: giusto
+1641 110 17 7 1 PROT:145 squadra 17, quesito 7: giusto
+1652 110 15 3 0 PROT:146 squadra 15, quesito 3: sbagliato
+1655 110 4 9 1 PROT:147 squadra 4, quesito 9: giusto
+1659 110 5 12 1 PROT:148 squadra 5, quesito 12: giusto
+1680 101 aggiorna punteggio esercizi, orologio: 28
+1690 110 29 10 1 PROT:149 squadra 29, quesito 10: giusto
+1740 101 aggiorna punteggio esercizi, orologio: 29
+1745 110 22 1 0 PROT:150 squadra 22, quesito 1: sbagliato
+1747 110 15 10 1 PROT:151 squadra 15, quesito 10: giusto
+1783 110 4 21 0 PROT:152 squadra 4, quesito 21: sbagliato
+1800 101 aggiorna punteggio esercizi, orologio: 30
+1806 110 8 8 0 PROT:153 squadra 8, quesito 8: sbagliato
+1810 110 27 16 1 PROT:154 squadra 27, quesito 16: giusto
+1815 110 31 20 1 PROT:155 squadra 31, quesito 20: giusto
+1840 110 23 4 1 PROT:156 squadra 23, quesito 4: giusto
+1860 101 aggiorna punteggio esercizi, orologio: 31
+1920 101 aggiorna punteggio esercizi, orologio: 32
+1930 110 7 7 0 PROT:157 squadra 7, quesito 7: sbagliato
+1946 110 1 16 0 PROT:158 squadra 1, quesito 16: sbagliato
+1954 110 25 20 1 PROT:159 squadra 25, quesito 20: giusto
+1968 110 6 7 1 PROT:160 squadra 6, quesito 7: giusto
+1980 101 aggiorna punteggio esercizi, orologio: 33
+1991 110 25 9 0 PROT:161 squadra 25, quesito 9: sbagliato
+1995 110 29 4 1 PROT:162 squadra 29, quesito 4: giusto
+2019 110 35 11 0 PROT:163 squadra 35, quesito 11: sbagliato
+2029 110 22 11 0 PROT:164 squadra 22, quesito 11: sbagliato
+2040 101 aggiorna punteggio esercizi, orologio: 34
+2047 110 4 3 1 PROT:165 squadra 4, quesito 3: giusto
+2066 110 29 11 0 PROT:166 squadra 29, quesito 11: sbagliato
+2077 110 24 11 0 PROT:167 squadra 24, quesito 11: sbagliato
+2083 110 9 5 0 PROT:168 squadra 9, quesito 5: sbagliato
+2087 110 20 5 1 PROT:169 squadra 20, quesito 5: giusto
+2094 110 16 10 0 PROT:170 squadra 16, quesito 10: sbagliato
+2095 110 23 3 0 PROT:171 squadra 23, quesito 3: sbagliato
+2100 101 aggiorna punteggio esercizi, orologio: 35
+2102 110 4 4 1 PROT:172 squadra 4, quesito 4: giusto
+2110 110 16 12 1 PROT:173 squadra 16, quesito 12: giusto
+2137 110 18 15 0 PROT:174 squadra 18, quesito 15: sbagliato
+2146 110 4 12 1 PROT:175 squadra 4, quesito 12: giusto
+2150 110 6 4 1 PROT:176 squadra 6, quesito 4: giusto
+2153 110 28 2 0 PROT:177 squadra 28, quesito 2: sbagliato
+2156 110 2 8 1 PROT:178 squadra 2, quesito 8: giusto
+2157 110 31 18 0 PROT:179 squadra 31, quesito 18: sbagliato
+2158 110 1 4 1 PROT:180 squadra 1, quesito 4: giusto
+2160 101 aggiorna punteggio esercizi, orologio: 36
+2163 110 18 18 1 PROT:181 squadra 18, quesito 18: giusto
+2166 110 34 9 0 PROT:182 squadra 34, quesito 9: sbagliato
+2168 110 4 17 0 PROT:183 squadra 4, quesito 17: sbagliato
+2180 110 21 5 0 PROT:184 squadra 21, quesito 5: sbagliato
+2181 110 16 10 1 PROT:185 squadra 16, quesito 10: giusto
+2191 110 15 7 0 PROT:186 squadra 15, quesito 7: sbagliato
+2203 110 15 15 0 PROT:187 squadra 15, quesito 15: sbagliato
+2203 110 28 6 1 PROT:188 squadra 28, quesito 6: giusto
+2214 110 7 17 1 PROT:189 squadra 7, quesito 17: giusto
+2220 101 aggiorna punteggio esercizi, orologio: 37
+2238 110 34 11 0 PROT:190 squadra 34, quesito 11: sbagliato
+2252 110 15 7 1 PROT:191 squadra 15, quesito 7: giusto
+2273 110 11 10 1 PROT:192 squadra 11, quesito 10: giusto
+2279 110 4 17 0 PROT:193 squadra 4, quesito 17: sbagliato
+2280 101 aggiorna punteggio esercizi, orologio: 38
+2305 110 12 3 1 PROT:194 squadra 12, quesito 3: giusto
+2308 110 22 11 0 PROT:195 squadra 22, quesito 11: sbagliato
+2331 110 5 5 1 PROT:196 squadra 5, quesito 5: giusto
+2332 110 29 8 1 PROT:197 squadra 29, quesito 8: giusto
+2333 110 2 18 0 PROT:198 squadra 2, quesito 18: sbagliato
+2340 101 aggiorna punteggio esercizi, orologio: 39
+2343 110 30 8 1 PROT:199 squadra 30, quesito 8: giusto
+2352 110 33 13 0 PROT:200 squadra 33, quesito 13: sbagliato
+2353 110 14 12 1 PROT:201 squadra 14, quesito 12: giusto
+2366 110 4 16 1 PROT:202 squadra 4, quesito 16: giusto
+2367 110 28 16 1 PROT:203 squadra 28, quesito 16: giusto
+2400 101 aggiorna punteggio esercizi, orologio: 40
+2403 110 16 9 0 PROT:204 squadra 16, quesito 9: sbagliato
+2411 110 23 11 0 PROT:205 squadra 23, quesito 11: sbagliato
+2414 110 28 2 1 PROT:206 squadra 28, quesito 2: giusto
+2418 110 24 11 0 PROT:207 squadra 24, quesito 11: sbagliato
+2460 101 aggiorna punteggio esercizi, orologio: 41
+2473 110 29 5 1 PROT:208 squadra 29, quesito 5: giusto
+2486 110 10 5 1 PROT:209 squadra 10, quesito 5: giusto
+2497 110 32 4 1 PROT:210 squadra 32, quesito 4: giusto
+2502 110 13 11 0 PROT:211 squadra 13, quesito 11: sbagliato
+2519 110 23 3 1 PROT:212 squadra 23, quesito 3: giusto
+2520 101 aggiorna punteggio esercizi, orologio: 42
+2543 110 15 15 0 PROT:213 squadra 15, quesito 15: sbagliato
+2557 110 35 8 1 PROT:214 squadra 35, quesito 8: giusto
+2576 110 7 4 1 PROT:215 squadra 7, quesito 4: giusto
+2580 101 aggiorna punteggio esercizi, orologio: 43
+2586 110 12 15 0 PROT:216 squadra 12, quesito 15: sbagliato
+2591 110 2 12 0 PROT:217 squadra 2, quesito 12: sbagliato
+2611 110 12 18 0 PROT:218 squadra 12, quesito 18: sbagliato
+2623 110 33 12 0 PROT:219 squadra 33, quesito 12: sbagliato
+2633 110 18 9 0 PROT:220 squadra 18, quesito 9: sbagliato
+2640 101 aggiorna punteggio esercizi, orologio: 44
+2645 110 22 1 0 PROT:221 squadra 22, quesito 1: sbagliato
+2651 110 2 4 1 PROT:222 squadra 2, quesito 4: giusto
+2654 110 30 5 1 PROT:223 squadra 30, quesito 5: giusto
+2664 110 3 8 0 PROT:224 squadra 3, quesito 8: sbagliato
+2669 110 30 18 0 PROT:225 squadra 30, quesito 18: sbagliato
+2671 110 16 8 1 PROT:226 squadra 16, quesito 8: giusto
+2688 110 30 19 1 PROT:227 squadra 30, quesito 19: giusto
+2700 101 aggiorna punteggio esercizi, orologio: 45
+2707 110 17 8 0 PROT:228 squadra 17, quesito 8: sbagliato
+2710 110 2 16 0 PROT:229 squadra 2, quesito 16: sbagliato
+2725 110 8 16 1 PROT:230 squadra 8, quesito 16: giusto
+2734 110 24 5 0 PROT:231 squadra 24, quesito 5: sbagliato
+2737 110 31 17 0 PROT:232 squadra 31, quesito 17: sbagliato
+2746 110 18 10 1 PROT:233 squadra 18, quesito 10: giusto
+2760 101 aggiorna punteggio esercizi, orologio: 46
+2762 110 35 10 0 PROT:234 squadra 35, quesito 10: sbagliato
+2768 110 16 9 0 PROT:235 squadra 16, quesito 9: sbagliato
+2778 110 29 17 1 PROT:236 squadra 29, quesito 17: giusto
+2781 110 4 5 0 PROT:237 squadra 4, quesito 5: sbagliato
+2782 110 27 5 0 PROT:238 squadra 27, quesito 5: sbagliato
+2820 101 aggiorna punteggio esercizi, orologio: 47
+2832 110 12 18 0 PROT:239 squadra 12, quesito 18: sbagliato
+2837 110 24 18 0 PROT:240 squadra 24, quesito 18: sbagliato
+2860 110 2 15 0 PROT:241 squadra 2, quesito 15: sbagliato
+2871 110 5 11 0 PROT:242 squadra 5, quesito 11: sbagliato
+2871 110 29 18 1 PROT:243 squadra 29, quesito 18: giusto
+2880 101 aggiorna punteggio esercizi, orologio: 48
+2882 110 16 4 0 PROT:244 squadra 16, quesito 4: sbagliato
+2883 110 28 9 1 PROT:245 squadra 28, quesito 9: giusto
+2890 110 26 1 1 PROT:246 squadra 26, quesito 1: giusto
+2895 110 12 1 1 PROT:247 squadra 12, quesito 1: giusto
+2922 110 35 4 0 PROT:248 squadra 35, quesito 4: sbagliato
+2930 110 2 15 0 PROT:249 squadra 2, quesito 15: sbagliato
+2940 101 aggiorna punteggio esercizi, orologio: 49
+2941 110 29 6 1 PROT:250 squadra 29, quesito 6: giusto
+2942 110 2 16 0 PROT:251 squadra 2, quesito 16: sbagliato
+2955 110 6 5 1 PROT:252 squadra 6, quesito 5: giusto
+2958 110 20 18 0 PROT:253 squadra 20, quesito 18: sbagliato
+2958 110 31 4 1 PROT:254 squadra 31, quesito 4: giusto
+2970 110 33 12 1 PROT:255 squadra 33, quesito 12: giusto
+2978 110 14 8 1 PROT:256 squadra 14, quesito 8: giusto
+2982 110 15 13 0 PROT:257 squadra 15, quesito 13: sbagliato
+2992 110 27 5 0 PROT:258 squadra 27, quesito 5: sbagliato
+3000 101 aggiorna punteggio esercizi, orologio: 50
+3001 110 7 15 0 PROT:259 squadra 7, quesito 15: sbagliato
+3005 110 17 8 1 PROT:260 squadra 17, quesito 8: giusto
+3017 110 4 5 1 PROT:261 squadra 4, quesito 5: giusto
+3032 110 34 7 0 PROT:262 squadra 34, quesito 7: sbagliato
+3034 110 21 17 0 PROT:263 squadra 21, quesito 17: sbagliato
+3037 110 6 16 1 PROT:264 squadra 6, quesito 16: giusto
+3060 101 aggiorna punteggio esercizi, orologio: 51
+3077 110 20 8 0 PROT:265 squadra 20, quesito 8: sbagliato
+3084 110 10 4 1 PROT:266 squadra 10, quesito 4: giusto
+3086 110 12 15 0 PROT:267 squadra 12, quesito 15: sbagliato
+3090 110 1 20 1 PROT:268 squadra 1, quesito 20: giusto
+3100 110 6 11 0 PROT:269 squadra 6, quesito 11: sbagliato
+3104 110 28 15 0 PROT:270 squadra 28, quesito 15: sbagliato
+3115 110 20 8 0 PROT:271 squadra 20, quesito 8: sbagliato
+3120 101 aggiorna punteggio esercizi, orologio: 52
+3142 110 11 9 0 PROT:272 squadra 11, quesito 9: sbagliato
+3146 110 18 17 1 PROT:273 squadra 18, quesito 17: giusto
+3146 110 16 4 1 PROT:274 squadra 16, quesito 4: giusto
+3153 110 7 5 0 PROT:275 squadra 7, quesito 5: sbagliato
+3177 110 33 11 0 PROT:276 squadra 33, quesito 11: sbagliato
+3178 110 17 15 0 PROT:277 squadra 17, quesito 15: sbagliato
+3180 101 aggiorna punteggio esercizi, orologio: 53
+3190 110 2 15 0 PROT:278 squadra 2, quesito 15: sbagliato
+3195 110 25 16 0 PROT:279 squadra 25, quesito 16: sbagliato
+3216 110 18 6 1 PROT:280 squadra 18, quesito 6: giusto
+3224 110 21 17 0 PROT:281 squadra 21, quesito 17: sbagliato
+3229 110 8 7 1 PROT:282 squadra 8, quesito 7: giusto
+3240 101 aggiorna punteggio esercizi, orologio: 54
+3247 110 21 5 0 PROT:283 squadra 21, quesito 5: sbagliato
+3254 110 4 18 1 PROT:284 squadra 4, quesito 18: giusto
+3269 110 6 8 1 PROT:285 squadra 6, quesito 8: giusto
+3288 110 2 16 0 PROT:286 squadra 2, quesito 16: sbagliato
+3294 110 22 11 0 PROT:287 squadra 22, quesito 11: sbagliato
+3295 110 30 17 1 PROT:288 squadra 30, quesito 17: giusto
+3300 101 aggiorna punteggio esercizi, orologio: 55
+3317 110 11 8 0 PROT:289 squadra 11, quesito 8: sbagliato
+3322 110 15 3 1 PROT:290 squadra 15, quesito 3: giusto
+3326 110 23 5 0 PROT:291 squadra 23, quesito 5: sbagliato
+3337 110 5 11 0 PROT:292 squadra 5, quesito 11: sbagliato
+3348 110 8 12 1 PROT:293 squadra 8, quesito 12: giusto
+3349 110 27 20 1 PROT:294 squadra 27, quesito 20: giusto
+3360 101 aggiorna punteggio esercizi, orologio: 56
+3362 110 10 8 1 PROT:295 squadra 10, quesito 8: giusto
+3365 110 33 17 0 PROT:296 squadra 33, quesito 17: sbagliato
+3374 110 22 1 1 PROT:297 squadra 22, quesito 1: giusto
+3381 110 28 12 1 PROT:298 squadra 28, quesito 12: giusto
+3386 110 20 18 1 PROT:299 squadra 20, quesito 18: giusto
+3386 110 24 12 0 PROT:300 squadra 24, quesito 12: sbagliato
+3390 110 16 3 1 PROT:301 squadra 16, quesito 3: giusto
+3399 110 28 15 0 PROT:302 squadra 28, quesito 15: sbagliato
+3412 110 5 8 1 PROT:303 squadra 5, quesito 8: giusto
+3414 110 4 6 1 PROT:304 squadra 4, quesito 6: giusto
+3420 101 aggiorna punteggio esercizi, orologio: 57
+3424 110 25 15 0 PROT:305 squadra 25, quesito 15: sbagliato
+3428 110 34 16 1 PROT:306 squadra 34, quesito 16: giusto
+3429 110 15 9 1 PROT:307 squadra 15, quesito 9: giusto
+3446 110 28 11 0 PROT:308 squadra 28, quesito 11: sbagliato
+3447 110 15 8 1 PROT:309 squadra 15, quesito 8: giusto
+3462 110 24 9 0 PROT:310 squadra 24, quesito 9: sbagliato
+3464 110 29 9 0 PROT:311 squadra 29, quesito 9: sbagliato
+3480 101 aggiorna punteggio esercizi, orologio: 58
+3498 110 12 15 0 PROT:312 squadra 12, quesito 15: sbagliato
+3540 101 aggiorna punteggio esercizi, orologio: 59
+3561 110 22 11 0 PROT:313 squadra 22, quesito 11: sbagliato
+3572 110 22 14 0 PROT:314 squadra 22, quesito 14: sbagliato
+3576 110 26 20 1 PROT:315 squadra 26, quesito 20: giusto
+3577 110 21 17 0 PROT:316 squadra 21, quesito 17: sbagliato
+3584 110 35 12 0 PROT:317 squadra 35, quesito 12: sbagliato
+3600 101 aggiorna punteggio esercizi, orologio: 60
+3608 110 21 17 1 PROT:318 squadra 21, quesito 17: giusto
+3623 110 23 5 0 PROT:319 squadra 23, quesito 5: sbagliato
+3626 110 9 16 1 PROT:320 squadra 9, quesito 16: giusto
+3630 110 4 14 1 PROT:321 squadra 4, quesito 14: giusto
+3634 110 33 17 0 PROT:322 squadra 33, quesito 17: sbagliato
+3650 110 15 16 1 PROT:323 squadra 15, quesito 16: giusto
+3660 101 aggiorna punteggio esercizi, orologio: 61
+3665 110 30 20 1 PROT:324 squadra 30, quesito 20: giusto
+3665 110 14 7 0 PROT:325 squadra 14, quesito 7: sbagliato
+3678 110 28 17 1 PROT:326 squadra 28, quesito 17: giusto
+3678 110 7 18 1 PROT:327 squadra 7, quesito 18: giusto
+3683 110 32 1 1 PROT:328 squadra 32, quesito 1: giusto
+3683 110 17 15 0 PROT:329 squadra 17, quesito 15: sbagliato
+3696 110 13 12 0 PROT:330 squadra 13, quesito 12: sbagliato
+3720 101 aggiorna punteggio esercizi, orologio: 62
+3724 110 1 18 1 PROT:331 squadra 1, quesito 18: giusto
+3756 110 5 18 1 PROT:332 squadra 5, quesito 18: giusto
+3780 101 aggiorna punteggio esercizi, orologio: 63
+3787 110 7 5 1 PROT:333 squadra 7, quesito 5: giusto
+3795 110 24 9 0 PROT:334 squadra 24, quesito 9: sbagliato
+3801 110 18 15 1 PROT:335 squadra 18, quesito 15: giusto
+3840 101 aggiorna punteggio esercizi, orologio: 64
+3843 110 7 11 0 PROT:336 squadra 7, quesito 11: sbagliato
+3843 110 20 9 0 PROT:337 squadra 20, quesito 9: sbagliato
+3851 110 1 15 0 PROT:338 squadra 1, quesito 15: sbagliato
+3874 110 27 5 0 PROT:339 squadra 27, quesito 5: sbagliato
+3881 110 9 9 0 PROT:340 squadra 9, quesito 9: sbagliato
+3887 110 29 9 1 PROT:341 squadra 29, quesito 9: giusto
+3894 110 20 7 0 PROT:342 squadra 20, quesito 7: sbagliato
+3900 101 aggiorna punteggio esercizi, orologio: 65
+3932 110 28 11 0 PROT:343 squadra 28, quesito 11: sbagliato
+3946 110 27 5 0 PROT:344 squadra 27, quesito 5: sbagliato
+3960 101 aggiorna punteggio esercizi, orologio: 66
+3972 110 2 15 0 PROT:345 squadra 2, quesito 15: sbagliato
+3985 110 10 3 1 PROT:346 squadra 10, quesito 3: giusto
+3986 110 29 13 1 PROT:347 squadra 29, quesito 13: giusto
+3997 110 20 2 0 PROT:348 squadra 20, quesito 2: sbagliato
+4011 110 4 11 0 PROT:349 squadra 4, quesito 11: sbagliato
+4018 110 25 17 1 PROT:350 squadra 25, quesito 17: giusto
+4019 110 33 11 0 PROT:351 squadra 33, quesito 11: sbagliato
+4020 101 aggiorna punteggio esercizi, orologio: 67
+4039 110 4 13 0 PROT:352 squadra 4, quesito 13: sbagliato
+4043 110 18 5 1 PROT:353 squadra 18, quesito 5: giusto
+4052 110 32 8 1 PROT:354 squadra 32, quesito 8: giusto
+4080 101 aggiorna punteggio esercizi, orologio: 68
+4092 110 34 15 0 PROT:355 squadra 34, quesito 15: sbagliato
+4094 110 30 15 0 PROT:356 squadra 30, quesito 15: sbagliato
+4095 110 16 5 1 PROT:357 squadra 16, quesito 5: giusto
+4108 110 11 12 0 PROT:358 squadra 11, quesito 12: sbagliato
+4124 110 33 5 0 PROT:359 squadra 33, quesito 5: sbagliato
+4130 110 18 7 1 PROT:360 squadra 18, quesito 7: giusto
+4134 110 34 9 1 PROT:361 squadra 34, quesito 9: giusto
+4139 110 15 13 0 PROT:362 squadra 15, quesito 13: sbagliato
+4140 101 aggiorna punteggio esercizi, orologio: 69
+4155 110 10 9 0 PROT:363 squadra 10, quesito 9: sbagliato
+4164 110 25 12 0 PROT:364 squadra 25, quesito 12: sbagliato
+4172 110 33 18 0 PROT:365 squadra 33, quesito 18: sbagliato
+4182 110 5 7 1 PROT:366 squadra 5, quesito 7: giusto
+4189 110 31 8 1 PROT:367 squadra 31, quesito 8: giusto
+4200 101 aggiorna punteggio esercizi, orologio: 70
+4245 110 4 13 1 PROT:368 squadra 4, quesito 13: giusto
+4251 110 28 15 0 PROT:369 squadra 28, quesito 15: sbagliato
+4260 101 aggiorna punteggio esercizi, orologio: 71
+4266 110 29 11 1 PROT:370 squadra 29, quesito 11: giusto
+4292 110 7 11 0 PROT:371 squadra 7, quesito 11: sbagliato
+4302 110 14 18 1 PROT:372 squadra 14, quesito 18: giusto
+4310 110 10 20 1 PROT:373 squadra 10, quesito 20: giusto
+4311 110 6 20 1 PROT:374 squadra 6, quesito 20: giusto
+4320 101 aggiorna punteggio esercizi, orologio: 72
+4320 110 7 11 1 PROT:375 squadra 7, quesito 11: giusto
+4327 110 33 9 0 PROT:376 squadra 33, quesito 9: sbagliato
+4340 110 30 15 0 PROT:377 squadra 30, quesito 15: sbagliato
+4346 110 15 15 0 PROT:378 squadra 15, quesito 15: sbagliato
+4351 110 9 8 0 PROT:379 squadra 9, quesito 8: sbagliato
+4369 110 26 12 0 PROT:380 squadra 26, quesito 12: sbagliato
+4380 101 aggiorna punteggio esercizi, orologio: 73
+4388 110 14 5 0 PROT:381 squadra 14, quesito 5: sbagliato
+4389 110 9 9 0 PROT:382 squadra 9, quesito 9: sbagliato
+4405 110 24 9 1 PROT:383 squadra 24, quesito 9: giusto
+4412 110 21 20 1 PROT:384 squadra 21, quesito 20: giusto
+4434 110 4 10 1 PROT:385 squadra 4, quesito 10: giusto
+4434 110 25 15 0 PROT:386 squadra 25, quesito 15: sbagliato
+4440 101 aggiorna punteggio esercizi, orologio: 74
+4452 110 4 8 1 PROT:387 squadra 4, quesito 8: giusto
+4459 110 14 7 0 PROT:388 squadra 14, quesito 7: sbagliato
+4460 110 30 9 0 PROT:389 squadra 30, quesito 9: sbagliato
+4465 110 4 2 0 PROT:390 squadra 4, quesito 2: sbagliato
+4472 110 24 13 0 PROT:391 squadra 24, quesito 13: sbagliato
+4473 110 1 16 1 PROT:392 squadra 1, quesito 16: giusto
+4474 110 35 15 1 PROT:393 squadra 35, quesito 15: giusto
+4497 110 3 8 0 PROT:394 squadra 3, quesito 8: sbagliato
+4500 101 aggiorna punteggio esercizi, orologio: 75
+4532 110 6 18 0 PROT:395 squadra 6, quesito 18: sbagliato
+4535 110 25 12 1 PROT:396 squadra 25, quesito 12: giusto
+4542 110 2 16 0 PROT:397 squadra 2, quesito 16: sbagliato
+4560 101 aggiorna punteggio esercizi, orologio: 76
+4560 110 17 5 0 PROT:398 squadra 17, quesito 5: sbagliato
+4569 110 32 7 1 PROT:399 squadra 32, quesito 7: giusto
+4574 110 7 16 0 PROT:400 squadra 7, quesito 16: sbagliato
+4582 110 17 15 1 PROT:401 squadra 17, quesito 15: giusto
+4597 110 3 15 0 PROT:402 squadra 3, quesito 15: sbagliato
+4597 110 27 15 0 PROT:403 squadra 27, quesito 15: sbagliato
+4602 110 28 15 0 PROT:404 squadra 28, quesito 15: sbagliato
+4620 101 aggiorna punteggio esercizi, orologio: 77
+4631 110 19 1 0 PROT:405 squadra 19, quesito 1: sbagliato
+4650 110 3 1 0 PROT:406 squadra 3, quesito 1: sbagliato
+4680 101 aggiorna punteggio esercizi, orologio: 78
+4681 110 17 18 1 PROT:407 squadra 17, quesito 18: giusto
+4716 110 16 7 1 PROT:408 squadra 16, quesito 7: giusto
+4732 110 23 7 0 PROT:409 squadra 23, quesito 7: sbagliato
+4736 110 14 5 1 PROT:410 squadra 14, quesito 5: giusto
+4739 110 27 5 0 PROT:411 squadra 27, quesito 5: sbagliato
+4740 101 aggiorna punteggio esercizi, orologio: 79
+4752 110 22 11 0 PROT:412 squadra 22, quesito 11: sbagliato
+4763 110 9 9 0 PROT:413 squadra 9, quesito 9: sbagliato
+4764 110 15 5 0 PROT:414 squadra 15, quesito 5: sbagliato
+4773 110 30 9 0 PROT:415 squadra 30, quesito 9: sbagliato
+4779 110 15 5 0 PROT:416 squadra 15, quesito 5: sbagliato
+4782 110 28 8 1 PROT:417 squadra 28, quesito 8: giusto
+4789 110 18 9 1 PROT:418 squadra 18, quesito 9: giusto
+4795 110 19 1 0 PROT:419 squadra 19, quesito 1: sbagliato
+4800 101 aggiorna punteggio esercizi, orologio: 80
+4802 110 28 18 1 PROT:420 squadra 28, quesito 18: giusto
+4813 110 15 5 0 PROT:421 squadra 15, quesito 5: sbagliato
+4821 110 4 11 1 PROT:422 squadra 4, quesito 11: giusto
+4846 110 34 15 0 PROT:423 squadra 34, quesito 15: sbagliato
+4860 101 aggiorna punteggio esercizi, orologio: 81
+4894 110 20 9 1 PROT:424 squadra 20, quesito 9: giusto
+4903 110 13 7 0 PROT:425 squadra 13, quesito 7: sbagliato
+4912 110 8 18 1 PROT:426 squadra 8, quesito 18: giusto
+4920 101 aggiorna punteggio esercizi, orologio: 82
+4921 110 4 15 0 PROT:427 squadra 4, quesito 15: sbagliato
+4940 110 3 1 1 PROT:428 squadra 3, quesito 1: giusto
+4941 110 31 12 0 PROT:429 squadra 31, quesito 12: sbagliato
+4942 110 4 2 1 PROT:430 squadra 4, quesito 2: giusto
+4946 110 5 17 0 PROT:431 squadra 5, quesito 17: sbagliato
+4957 110 33 5 1 PROT:432 squadra 33, quesito 5: giusto
+4978 110 9 15 0 PROT:433 squadra 9, quesito 15: sbagliato
+4980 101 aggiorna punteggio esercizi, orologio: 83
+4988 110 15 17 0 PROT:434 squadra 15, quesito 17: sbagliato
+4994 110 21 1 1 PROT:435 squadra 21, quesito 1: giusto
+4999 110 28 15 0 PROT:436 squadra 28, quesito 15: sbagliato
+5010 110 8 10 1 PROT:437 squadra 8, quesito 10: giusto
+5013 110 35 9 0 PROT:438 squadra 35, quesito 9: sbagliato
+5027 110 24 15 0 PROT:439 squadra 24, quesito 15: sbagliato
+5040 101 aggiorna punteggio esercizi, orologio: 84
+5046 110 2 12 1 PROT:440 squadra 2, quesito 12: giusto
+5070 110 24 12 0 PROT:441 squadra 24, quesito 12: sbagliato
+5088 110 25 15 1 PROT:442 squadra 25, quesito 15: giusto
+5100 101 aggiorna punteggio esercizi, orologio: 85
+5121 110 2 7 0 PROT:443 squadra 2, quesito 7: sbagliato
+5130 110 27 11 0 PROT:444 squadra 27, quesito 11: sbagliato
+5142 110 11 7 1 PROT:445 squadra 11, quesito 7: giusto
+5153 110 11 11 0 PROT:446 squadra 11, quesito 11: sbagliato
+5160 101 aggiorna punteggio esercizi, orologio: 86
+5164 110 11 11 0 PROT:447 squadra 11, quesito 11: sbagliato
+5165 110 24 15 1 PROT:448 squadra 24, quesito 15: giusto
+5170 110 15 15 0 PROT:449 squadra 15, quesito 15: sbagliato
+5186 110 31 5 0 PROT:450 squadra 31, quesito 5: sbagliato
+5196 110 1 9 1 PROT:451 squadra 1, quesito 9: giusto
+5196 110 33 9 0 PROT:452 squadra 33, quesito 9: sbagliato
+5202 110 15 17 1 PROT:453 squadra 15, quesito 17: giusto
+5212 110 2 7 0 PROT:454 squadra 2, quesito 7: sbagliato
+5216 110 1 7 1 PROT:455 squadra 1, quesito 7: giusto
+5220 101 aggiorna punteggio esercizi, orologio: 87
+5230 110 9 15 0 PROT:456 squadra 9, quesito 15: sbagliato
+5280 101 aggiorna punteggio esercizi, orologio: 88
+5281 110 10 10 1 PROT:457 squadra 10, quesito 10: giusto
+5301 110 18 19 1 PROT:458 squadra 18, quesito 19: giusto
+5310 110 11 16 0 PROT:459 squadra 11, quesito 16: sbagliato
+5316 110 19 9 0 PROT:460 squadra 19, quesito 9: sbagliato
+5319 110 13 15 0 PROT:461 squadra 13, quesito 15: sbagliato
+5340 101 aggiorna punteggio esercizi, orologio: 89
+5352 110 24 12 1 PROT:462 squadra 24, quesito 12: giusto
+5360 110 22 12 1 PROT:463 squadra 22, quesito 12: giusto
+5360 110 28 7 1 PROT:464 squadra 28, quesito 7: giusto
+5369 110 24 3 1 PROT:465 squadra 24, quesito 3: giusto
+5388 110 16 9 0 PROT:466 squadra 16, quesito 9: sbagliato
+5395 110 6 15 0 PROT:467 squadra 6, quesito 15: sbagliato
+5400 101 aggiorna punteggio esercizi, orologio: 90
+5404 110 19 9 0 PROT:468 squadra 19, quesito 9: sbagliato
+5436 110 18 11 0 PROT:469 squadra 18, quesito 11: sbagliato
+5444 110 35 4 1 PROT:470 squadra 35, quesito 4: giusto
+5448 110 5 17 0 PROT:471 squadra 5, quesito 17: sbagliato
+5449 110 26 11 0 PROT:472 squadra 26, quesito 11: sbagliato
+5454 110 21 3 1 PROT:473 squadra 21, quesito 3: giusto
+5460 101 aggiorna punteggio esercizi, orologio: 91
+5472 110 33 11 0 PROT:474 squadra 33, quesito 11: sbagliato
+5479 110 12 15 0 PROT:475 squadra 12, quesito 15: sbagliato
+5483 110 1 11 1 PROT:476 squadra 1, quesito 11: giusto
+5495 110 6 9 1 PROT:477 squadra 6, quesito 9: giusto
+5505 110 23 8 1 PROT:478 squadra 23, quesito 8: giusto
+5509 110 9 15 0 PROT:479 squadra 9, quesito 15: sbagliato
+5520 101 aggiorna punteggio esercizi, orologio: 92
+5530 110 12 5 0 PROT:480 squadra 12, quesito 5: sbagliato
+5580 101 aggiorna punteggio esercizi, orologio: 93
+5593 110 17 12 1 PROT:481 squadra 17, quesito 12: giusto
+5597 110 30 18 1 PROT:482 squadra 30, quesito 18: giusto
+5602 110 5 15 0 PROT:483 squadra 5, quesito 15: sbagliato
+5616 110 12 7 1 PROT:484 squadra 12, quesito 7: giusto
+5627 110 13 7 0 PROT:485 squadra 13, quesito 7: sbagliato
+5636 110 25 3 1 PROT:486 squadra 25, quesito 3: giusto
+5637 110 35 9 0 PROT:487 squadra 35, quesito 9: sbagliato
+5640 101 aggiorna punteggio esercizi, orologio: 94
+5643 110 30 13 0 PROT:488 squadra 30, quesito 13: sbagliato
+5700 101 aggiorna punteggio esercizi, orologio: 95
+5702 110 28 10 1 PROT:489 squadra 28, quesito 10: giusto
+5723 110 16 16 0 PROT:490 squadra 16, quesito 16: sbagliato
+5734 110 4 15 0 PROT:491 squadra 4, quesito 15: sbagliato
+5734 110 21 15 0 PROT:492 squadra 21, quesito 15: sbagliato
+5740 110 25 16 1 PROT:493 squadra 25, quesito 16: giusto
+5740 110 27 10 1 PROT:494 squadra 27, quesito 10: giusto
+5743 110 3 8 1 PROT:495 squadra 3, quesito 8: giusto
+5744 110 26 18 0 PROT:496 squadra 26, quesito 18: sbagliato
+5745 110 33 15 0 PROT:497 squadra 33, quesito 15: sbagliato
+5760 101 aggiorna punteggio esercizi, orologio: 96
+5785 110 8 5 0 PROT:498 squadra 8, quesito 5: sbagliato
+5787 110 24 13 0 PROT:499 squadra 24, quesito 13: sbagliato
+5806 110 1 5 1 PROT:500 squadra 1, quesito 5: giusto
+5810 110 22 14 0 PROT:501 squadra 22, quesito 14: sbagliato
+5820 101 aggiorna punteggio esercizi, orologio: 97
+5829 110 12 15 1 PROT:502 squadra 12, quesito 15: giusto
+5842 110 31 11 0 PROT:503 squadra 31, quesito 11: sbagliato
+5880 101 aggiorna punteggio esercizi, orologio: 98
+5892 110 10 9 0 PROT:504 squadra 10, quesito 9: sbagliato
+5892 110 32 15 0 PROT:505 squadra 32, quesito 15: sbagliato
+5896 110 11 17 1 PROT:506 squadra 11, quesito 17: giusto
+5910 110 22 14 0 PROT:507 squadra 22, quesito 14: sbagliato
+5926 110 11 18 0 PROT:508 squadra 11, quesito 18: sbagliato
+5940 101 aggiorna punteggio esercizi, orologio: 99
+5983 110 25 14 0 PROT:509 squadra 25, quesito 14: sbagliato
+6000 101 aggiorna punteggio esercizi, orologio: 100
+6002 110 15 5 1 PROT:510 squadra 15, quesito 5: giusto
+6033 110 35 11 0 PROT:511 squadra 35, quesito 11: sbagliato
+6045 110 22 15 0 PROT:512 squadra 22, quesito 15: sbagliato
+6058 110 2 15 0 PROT:513 squadra 2, quesito 15: sbagliato
+6060 101 aggiorna punteggio esercizi, orologio: 101
+6074 110 33 15 0 PROT:514 squadra 33, quesito 15: sbagliato
+6114 110 27 7 0 PROT:515 squadra 27, quesito 7: sbagliato
+6120 101 aggiorna punteggio esercizi, orologio: 102
+6131 110 28 15 1 PROT:516 squadra 28, quesito 15: giusto
+6138 110 1 12 1 PROT:517 squadra 1, quesito 12: giusto
+6142 110 5 17 1 PROT:518 squadra 5, quesito 17: giusto
+6162 110 2 11 1 PROT:519 squadra 2, quesito 11: giusto
+6164 110 33 11 0 PROT:520 squadra 33, quesito 11: sbagliato
+6178 110 21 8 1 PROT:521 squadra 21, quesito 8: giusto
+6180 101 aggiorna punteggio esercizi, orologio: 103
+6183 110 20 7 1 PROT:522 squadra 20, quesito 7: giusto
+6212 110 31 21 0 PROT:523 squadra 31, quesito 21: sbagliato
+6220 110 2 9 0 PROT:524 squadra 2, quesito 9: sbagliato
+6227 110 33 16 1 PROT:525 squadra 33, quesito 16: giusto
+6232 110 18 14 1 PROT:526 squadra 18, quesito 14: giusto
+6240 101 aggiorna punteggio esercizi, orologio: 104
+6253 110 34 17 0 PROT:527 squadra 34, quesito 17: sbagliato
+6264 110 34 17 0 PROT:528 squadra 34, quesito 17: sbagliato
+6281 110 31 18 0 PROT:529 squadra 31, quesito 18: sbagliato
+6300 101 aggiorna punteggio esercizi, orologio: 105
+6327 110 33 17 0 PROT:530 squadra 33, quesito 17: sbagliato
+6344 110 4 15 0 PROT:531 squadra 4, quesito 15: sbagliato
+6360 101 aggiorna punteggio esercizi, orologio: 106
+6377 110 16 2 1 PROT:532 squadra 16, quesito 2: giusto
+6399 110 11 18 0 PROT:533 squadra 11, quesito 18: sbagliato
+6402 110 3 18 0 PROT:534 squadra 3, quesito 18: sbagliato
+6413 110 27 18 0 PROT:535 squadra 27, quesito 18: sbagliato
+6420 101 aggiorna punteggio esercizi, orologio: 107
+6422 110 8 11 0 PROT:536 squadra 8, quesito 11: sbagliato
+6437 110 11 16 0 PROT:537 squadra 11, quesito 16: sbagliato
+6452 110 19 9 0 PROT:538 squadra 19, quesito 9: sbagliato
+6460 110 15 2 0 PROT:539 squadra 15, quesito 2: sbagliato
+6478 110 21 5 1 PROT:540 squadra 21, quesito 5: giusto
+6480 101 aggiorna punteggio esercizi, orologio: 108
+6482 110 15 2 1 PROT:541 squadra 15, quesito 2: giusto
+6488 110 6 10 1 PROT:542 squadra 6, quesito 10: giusto
+6505 110 10 16 1 PROT:543 squadra 10, quesito 16: giusto
+6514 110 30 14 0 PROT:544 squadra 30, quesito 14: sbagliato
+6540 101 aggiorna punteggio esercizi, orologio: 109
+6545 110 28 14 0 PROT:545 squadra 28, quesito 14: sbagliato
+6559 110 30 14 0 PROT:546 squadra 30, quesito 14: sbagliato
+6567 110 7 8 1 PROT:547 squadra 7, quesito 8: giusto
+6568 110 24 13 0 PROT:548 squadra 24, quesito 13: sbagliato
+6583 110 26 11 0 PROT:549 squadra 26, quesito 11: sbagliato
+6600 101 aggiorna punteggio esercizi, orologio: 110
+6600 110 24 13 0 PROT:550 squadra 24, quesito 13: sbagliato
+6608 110 20 16 1 PROT:551 squadra 20, quesito 16: giusto
+6608 110 9 9 0 PROT:552 squadra 9, quesito 9: sbagliato
+6613 110 23 5 1 PROT:553 squadra 23, quesito 5: giusto
+6653 110 17 17 1 PROT:554 squadra 17, quesito 17: giusto
+6654 110 18 20 1 PROT:555 squadra 18, quesito 20: giusto
+6660 101 aggiorna punteggio esercizi, orologio: 111
+6720 101 aggiorna punteggio esercizi, orologio: 112
+6749 110 26 15 0 PROT:556 squadra 26, quesito 15: sbagliato
+6753 110 19 15 0 PROT:557 squadra 19, quesito 15: sbagliato
+6764 110 2 9 0 PROT:558 squadra 2, quesito 9: sbagliato
+6767 110 17 5 1 PROT:559 squadra 17, quesito 5: giusto
+6780 101 aggiorna punteggio esercizi, orologio: 113
+6783 110 25 5 0 PROT:560 squadra 25, quesito 5: sbagliato
+6795 110 25 8 1 PROT:561 squadra 25, quesito 8: giusto
+6807 110 22 7 0 PROT:562 squadra 22, quesito 7: sbagliato
+6818 110 19 15 0 PROT:563 squadra 19, quesito 15: sbagliato
+6818 110 15 14 1 PROT:564 squadra 15, quesito 14: giusto
+6822 110 5 3 1 PROT:565 squadra 5, quesito 3: giusto
+6826 110 35 7 1 PROT:566 squadra 35, quesito 7: giusto
+6833 110 7 15 0 PROT:567 squadra 7, quesito 15: sbagliato
+6837 110 27 17 0 PROT:568 squadra 27, quesito 17: sbagliato
+6840 101 aggiorna punteggio esercizi, orologio: 114
+6841 110 15 6 1 PROT:569 squadra 15, quesito 6: giusto
+6842 110 14 15 0 PROT:570 squadra 14, quesito 15: sbagliato
+6846 110 10 17 1 PROT:571 squadra 10, quesito 17: giusto
+6849 110 25 14 0 PROT:572 squadra 25, quesito 14: sbagliato
+6849 110 3 18 0 PROT:573 squadra 3, quesito 18: sbagliato
+6854 110 13 7 1 PROT:574 squadra 13, quesito 7: giusto
+6863 110 14 14 1 PROT:575 squadra 14, quesito 14: giusto
+6866 110 11 20 1 PROT:576 squadra 11, quesito 20: giusto
+6878 110 29 16 1 PROT:577 squadra 29, quesito 16: giusto
+6900 101 aggiorna punteggio esercizi, orologio: 115
+6902 110 16 13 1 PROT:578 squadra 16, quesito 13: giusto
+6909 110 30 15 0 PROT:579 squadra 30, quesito 15: sbagliato
+6920 110 22 7 0 PROT:580 squadra 22, quesito 7: sbagliato
+6941 110 9 8 0 PROT:581 squadra 9, quesito 8: sbagliato
+6946 110 7 7 0 PROT:582 squadra 7, quesito 7: sbagliato
+6953 110 2 15 0 PROT:583 squadra 2, quesito 15: sbagliato
+6960 101 aggiorna punteggio esercizi, orologio: 116
+6960 110 2 15 0 PROT:584 squadra 2, quesito 15: sbagliato
+6969 110 14 9 1 PROT:585 squadra 14, quesito 9: giusto
+6976 110 21 13 0 PROT:586 squadra 21, quesito 13: sbagliato
+6994 110 14 15 0 PROT:587 squadra 14, quesito 15: sbagliato
+6997 110 29 14 0 PROT:588 squadra 29, quesito 14: sbagliato
+7010 110 5 20 0 PROT:589 squadra 5, quesito 20: sbagliato
+7013 110 16 9 0 PROT:590 squadra 16, quesito 9: sbagliato
+7013 110 15 11 0 PROT:591 squadra 15, quesito 11: sbagliato
+7017 110 27 7 1 PROT:592 squadra 27, quesito 7: giusto
+7020 101 aggiorna punteggio esercizi, orologio: 117
+7020 110 23 18 0 PROT:593 squadra 23, quesito 18: sbagliato
+7025 110 4 15 0 PROT:594 squadra 4, quesito 15: sbagliato
+7025 110 7 15 0 PROT:595 squadra 7, quesito 15: sbagliato
+7041 110 5 19 1 PROT:596 squadra 5, quesito 19: giusto
+7057 110 10 7 0 PROT:597 squadra 10, quesito 7: sbagliato
+7068 110 7 13 1 PROT:598 squadra 7, quesito 13: giusto
+7068 110 12 9 0 PROT:599 squadra 12, quesito 9: sbagliato
+7069 110 14 7 0 PROT:600 squadra 14, quesito 7: sbagliato
+7077 110 14 15 0 PROT:601 squadra 14, quesito 15: sbagliato
+7079 110 35 20 0 PROT:602 squadra 35, quesito 20: sbagliato
+7080 101 aggiorna punteggio esercizi, orologio: 118
+7092 110 6 14 0 PROT:603 squadra 6, quesito 14: sbagliato
+7107 110 26 15 0 PROT:604 squadra 26, quesito 15: sbagliato
+7109 110 35 19 1 PROT:605 squadra 35, quesito 19: giusto
+7114 110 15 11 0 PROT:606 squadra 15, quesito 11: sbagliato
+7123 110 1 15 0 PROT:607 squadra 1, quesito 15: sbagliato
+7124 110 30 3 1 PROT:608 squadra 30, quesito 3: giusto
+7126 110 25 5 0 PROT:609 squadra 25, quesito 5: sbagliato
+7128 110 27 21 0 PROT:610 squadra 27, quesito 21: sbagliato
+7128 110 16 11 0 PROT:611 squadra 16, quesito 11: sbagliato
+7133 110 15 13 0 PROT:612 squadra 15, quesito 13: sbagliato
+7140 101 aggiorna punteggio esercizi, orologio: 119
+7140 110 13 9 0 PROT:613 squadra 13, quesito 9: sbagliato
+7147 110 34 11 0 PROT:614 squadra 34, quesito 11: sbagliato
+7149 110 12 9 0 PROT:615 squadra 12, quesito 9: sbagliato
+7153 110 33 9 0 PROT:616 squadra 33, quesito 9: sbagliato
+7159 110 34 11 0 PROT:617 squadra 34, quesito 11: sbagliato
+7165 110 23 18 1 PROT:618 squadra 23, quesito 18: giusto
+7167 110 25 14 0 PROT:619 squadra 25, quesito 14: sbagliato
+7170 110 13 12 0 PROT:620 squadra 13, quesito 12: sbagliato
+7173 110 19 15 0 PROT:621 squadra 19, quesito 15: sbagliato
+7176 110 2 16 0 PROT:622 squadra 2, quesito 16: sbagliato
+7181 110 1 10 1 PROT:623 squadra 1, quesito 10: giusto
+7189 110 2 16 0 PROT:624 squadra 2, quesito 16: sbagliato
+7195 110 2 16 0 PROT:625 squadra 2, quesito 16: sbagliato
+7197 110 26 7 0 PROT:626 squadra 26, quesito 7: sbagliato
+7200 101 aggiorna punteggio esercizi, orologio: 120
+7500 210 termine gara
+--- 999 fine simulatore

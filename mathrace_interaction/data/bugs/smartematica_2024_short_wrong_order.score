@@ -1,0 +1,27 @@
+# Results of smartematica_2024_short_wrong_order.json with ?ended=false after at least one classification refresh
+# (3 seconds with standard ?computation_rate)
+# Each line contains the score (which is wrong), and the extra penalty compared to the correct score (present
+# in the other file, correct_order.score) due to the bug.
+[727, # -10
+531, # 0
+785, # -10
+508, # 0
+582, # -10
+588, # 0
+503, # -20
+585, # 0
+522, # 0
+420, # 0
+513, # -20
+301, # -10
+341, # -20
+489, # -10
+832, # -10
+638, # -30
+635, # -10
+884, # -20
+542, # -10
+749, # 0
+597, # 0
+546, # 0
+438] # 0

@@ -1,0 +1,9 @@
+{% extends "baseheader.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form method="post">{% csrf_token %}
+    {{ form.errors }}
+    {{ form.as_table }}
+    <input type="submit" value="Modifica">
+</form>
+{% endblock %}

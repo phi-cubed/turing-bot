@@ -1,0 +1,23 @@
+# Settings
+Turing/settings.ini
+
+# Database
+db.sqlite3
+
+# Python cache
+*.pyc
+*/__pycache__/*
+*/migrations/*
+
+# Test
+geckodriver.log
+.coverage
+htmlcov/*
+
+# Allenamenti runtime logs
+logs/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

@@ -1,0 +1,18 @@
+{% extends "basegara.html" %}
+{% block title %}{{object.nome}} reset{% endblock %}
+
+{% block content %}
+<h3>Gara: <a href="{% url 'engine:gara-detail' object.pk %}">{{ object.nome }}</a> - reset gara</h3>
+
+<p>
+È consigliato fare un <a href="{% url 'engine:gara-download' object.pk %}">download</a> dello stato corrente di gara prima di procedere!
+</p>
+<p>
+Questa azione cancellerà tutte le consegne, tutti i jolly e tutti i bonus registrati nella gara, e ne azzererà la data ed ora di inizio. Sei sicuro di voler procedere?<br/>
+<form method="post">{% csrf_token %}
+    <input type="hidden" name="reset" value=1>
+    <input type="submit" value="Sì, procedi al reset della gara!" id="submit">
+</form>
+</p>
+
+{% endblock %}

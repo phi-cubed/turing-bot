@@ -1,0 +1,5 @@
+.container_id
+.network_id
+.network_properties*
+.volume_id
+dockerfile.sh

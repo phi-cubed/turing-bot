@@ -1,0 +1,27 @@
+{% extends "basegara.html" %}
+{% block title %}{{object.nome}} reset{% endblock %}
+
+{% block content %}
+<h3>Gara: <a href="{% url 'engine:gara-detail' object.pk %}">{{ object.nome }}</a> - sospensione gara</h3>
+
+
+{% if object.sospensione is null %}
+    {% if object.inizio is not null %}
+<p>
+È consigliato fare un <a href="{% url 'engine:gara-download' object.pk %}">download</a> dello stato corrente di gara prima di procedere!
+</p>
+<p>
+Questa azione metterà in pausa la gara, sospendendo l'inserimento di nuovi eventi e la visualizzazione della classifica. Sei sicuro di voler procedere?<br/>
+<form method="post">{% csrf_token %}
+    <input type="hidden" name="delete" value=1>
+    <input type="submit" value="Sì, procedi alla sospensione della gara!" id="submit">
+</form>
+</p>
+    {% else %}
+<p>La gara non è iniziata, e dunque non è nemmeno possibile sospenderla.</p>
+    {% endif %}
+{% else %}
+<p>La gara è già temporaneamente sospesa.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,136 @@
+name: mathrace-interaction CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * MON"
+  workflow_dispatch:
+    inputs:
+      full_integration_tests:
+        description: "If yes, run integration tests with --all-data-files. Default value is no"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: without-turing
+            setup_container: |
+              export DEBIAN_FRONTEND="noninteractive"
+              apt install -y -qq chromium chromium-driver python3-pip python3-selenium
+              rm /usr/lib/python3.13/EXTERNALLY-MANAGED
+              mkdir -p /usr/local/lib/python3.13/dist-packages/mockssh
+              touch /usr/local/lib/python3.13/dist-packages/mockssh/py.typed
+          - name: with-turing
+            setup_container: |
+              export DEBIAN_FRONTEND="noninteractive"
+              apt update -y -q
+              apt install -y -qq wget
+              wget https://raw.githubusercontent.com/dsschneidermann/dkr2sh/refs/heads/master/dkr2sh.sed
+              chmod +x dkr2sh.sed
+              echo "#!/bin/bash" > docker/dockerfile.sh
+              echo "set -e" >> docker/dockerfile.sh
+              ./dkr2sh.sed < docker/Dockerfile >> docker/dockerfile.sh
+              sed -i "s/rsync/echo rsync/g" docker/dockerfile.sh
+              sed -i 's|sed -i "/worktree =/d" turing/.git/config|echo "Already a git repo"|g' docker/dockerfile.sh
+              sed -i "s|/root|${PWD}|g" docker/dockerfile.sh
+              sed -i "s|/root|${PWD}|g" docker/entrypoint.sh
+              chmod +x docker/dockerfile.sh
+              docker/dockerfile.sh
+              docker/entrypoint.sh echo "Disabling server startup"
+              echo "DJANGO_SETTINGS_MODULE=Turing.settings" >> $GITHUB_ENV
+              echo "PYTHONPATH=${PWD}/turing" >> $GITHUB_ENV
+      fail-fast: false
+    container: debian:13
+    name: test (${{ matrix.name }})
+    defaults:
+      run:
+        working-directory: mathrace_interaction
+    steps:
+      - name: Install git
+        run: |
+          export DEBIAN_FRONTEND="noninteractive"
+          apt update -y -q
+          apt install -y -qq ca-certificates git
+        working-directory: .
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+      - name: Setup container
+        run: ${{ matrix.setup_container }}
+        working-directory: .
+      - name: Install mathrace-interaction
+        run: |
+          python3 -m pip install .[docs,lint,tests]
+      - name: Clean build files
+        run: |
+          git config --global --add safe.directory $PWD
+          git clean -xdf
+        working-directory: .
+      - name: Run ruff
+        run: |
+          python3 -m ruff check .
+      - name: Run isort
+        run: |
+          python3 -m isort --check --diff .
+      - name: Run mypy
+        run: |
+          python3 -m mypy --exclude=conftest.py .
+          python3 -m mypy tests/functional/conftest.py
+          python3 -m mypy tests/integration/conftest.py
+          python3 -m mypy tests/unit/conftest.py
+      - name: Run yamllint
+        run: |
+          python3 -m yamllint -d "{ignore: turing, extends: default, rules: {document-start: {present: false}, line-length: disable, truthy: {check-keys: false}}}" ../.github
+      - name: Run documentation generation
+        run: |
+          cd docs && python3 -m sphinx -W -b html . build/html
+      - name: Run unit tests
+        run: |
+          COVERAGE_FILE=.coverage_unit python3 -m coverage run --source=mathrace_interaction -m pytest --random-order tests/unit
+      - name: Check unit tests coverage
+        run: |
+          python3 -m coverage combine .coverage*
+          python3 -m coverage report --fail-under=100 --show-missing --skip-covered
+      - name: Run functional tests
+        run: |
+          python3 -m pytest --random-order tests/functional
+      - name: Determine integration tests options
+        id: determine_integration_tests_options
+        run: |
+          WITH_INTEGRATION_TESTS=yes
+          FULL_INTEGRATION_TESTS=${{ inputs.full_integration_tests }}
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            FULL_INTEGRATION_TESTS=yes
+          fi
+          if [ "${{ matrix.name }}" != "with-turing" ]; then
+            WITH_INTEGRATION_TESTS=no
+            FULL_INTEGRATION_TESTS=no
+          fi
+          if [ "${FULL_INTEGRATION_TESTS}" != "yes" ] && [ "${FULL_INTEGRATION_TESTS}" != "no" ]; then
+            FULL_INTEGRATION_TESTS=no
+          fi
+          echo "with_integration_tests=${WITH_INTEGRATION_TESTS}" >> ${GITHUB_OUTPUT}
+          echo "full_integration_tests=${FULL_INTEGRATION_TESTS}" >> ${GITHUB_OUTPUT}
+      - name: Run integration tests (basic)
+        if: steps.determine_integration_tests_options.outputs.with_integration_tests == 'yes' && steps.determine_integration_tests_options.outputs.full_integration_tests != 'yes'
+        run: |
+          python3 -m pytest --random-order tests/integration
+      - name: Run integration tests (full)
+        if: steps.determine_integration_tests_options.outputs.with_integration_tests == 'yes' && steps.determine_integration_tests_options.outputs.full_integration_tests == 'yes'
+        run: |
+          python3 -m pytest --all-data-files --random-order tests/integration
+
+  warn:
+    runs-on: ubuntu-latest
+    if: github.repository == 'dmf-unicatt/turing-dmf' && github.ref == 'refs/heads/main' && github.event_name == 'schedule'
+    steps:
+      - name: Warn if scheduled workflow is about to be disabled
+        uses: fem-on-colab/warn-workflow-about-to-be-disabled-action@58c6022d9aeb22accfa8df9bf5b58c3d8867208c  # v1.0.0
+        with:
+          workflow-filename: mathrace_interaction_ci.yml
+          days-elapsed: 50

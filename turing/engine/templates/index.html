@@ -1,0 +1,155 @@
+{% extends "baseheader.html" %}
+
+{% block title %}Turing homepage{% endblock %}
+
+{% block content %}
+
+{% if gare_attive %}
+<div id="wrapper">
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="pr-3"><i class="fas fa-table"></i>
+      Gare in corso</h5>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Inizio</th>
+              <th>Fine</th>
+              {% if user.is_staff %}
+              <th>Download</th>
+              <th>Sospendi/Riprendi</th>
+              <th>Reset</th>
+              <th>Cancella</th>
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+              {% for gara in gare_attive %}
+            <tr>
+              <td>{{gara.pk}}</td>
+              <td><a href="{% url 'engine:gara-detail' gara.pk%}">{{gara.nome}}</a></td>
+              <td>{{gara.inizio}}</td>
+              {% if gara.sospensione is null %}
+              <td>{{gara.get_ora_fine}}</td>
+              {% else %}
+              <td>Temporaneamente sospesa</td>
+              {% endif %}
+              {% if user.is_staff %}
+              <td><a href="{% url 'engine:gara-download' gara.pk%}" target=_blank><i class="fas fa-download" title="Download gara"></i></a></td>
+              {% if gara.sospensione is null %}
+              <td><a href="{% url 'engine:gara-pause' gara.pk%}" target=_blank><i class="fas fa-pause" title="Sospendi gara"></i></a></td>
+              {% else %}
+              <td><a href="{% url 'engine:gara-resume' gara.pk%}" target=_blank><i class="fas fa-play" title="Riprendi gara"></i></a></td>
+              {% endif %}
+              <td><a href="{% url 'engine:gara-reset' gara.pk%}" target=_blank><i class="fas fa-undo" title="Reset gara"></i></a></td>
+              <td><a href="{% url 'engine:gara-delete' gara.pk%}" target=_blank><i class="fas fa-trash" title="Cancella gara"></i></a></td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div id="wrapper">
+  <div class="card mb-3">
+    <div class="card-header">
+      <div class="d-flex align-items-baseline justify-content-between">
+        <h5 class="pr-3"><i class="fas fa-table"></i> Gare da iniziare</h5>
+        {% if perms.engine.add_gara %}
+          <div><a href="{% url 'engine:gara-new' %}" class="btn btn-primary">Crea nuova gara</a></div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              {% if user.is_staff %}
+              <th>Download</th>
+              <th>Inizia</th>
+              <th>Reset</th>
+              <th>Cancella</th>
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+              {% for gara in gare_da_iniziare %}
+            <tr>
+              <td>{{gara.pk}}</td>
+              <td><a href="{% url 'engine:gara-detail' gara.pk%}">{{gara.nome}}</a></td>
+              {% if user.is_staff %}
+              <td><a href="{% url 'engine:gara-download' gara.pk%}" target=_blank><i class="fas fa-download" title="Download gara"></i></a></td>
+              <td><a href="{% url 'engine:gara-admin' gara.pk%}" target=_blank><i class="fas fa-play" title="Inizia gara"></i></a></td>
+              <td><a href="{% url 'engine:gara-reset' gara.pk%}" target=_blank><i class="fas fa-undo" title="Reset gara"></i></a></td>
+              <td><a href="{% url 'engine:gara-delete' gara.pk%}" target=_blank><i class="fas fa-trash" title="Cancella gara"></i></a></td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if can_view_archive %}
+<div id="wrapper">
+  <div class="card mb-3">
+    <div class="card-header">
+      <div class="d-flex align-items-baseline justify-content-between">
+        <h5 class="pr-3"><i class="fas fa-table"></i> Archivio</h5>
+        {% if perms.engine.add_gara %}
+          <div><a href="{% url 'engine:gara-upload' %}" class="btn btn-primary">Importa gara</a></div>
+        {% endif %}
+      </div>
+    </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Inizio</th>
+                <th>Fine</th>
+                {% if user.is_staff %}
+                <th>Download</th>
+                <th>Reset</th>
+                <th>Cancella</th>
+                {% endif %}
+              </tr>
+            </thead>
+            <tbody>
+                {% for gara in gare_archivio %}
+              <tr>
+              <td>{{gara.pk}}</td>
+              <td><a href="{% url 'engine:gara-detail' gara.pk%}">{{gara.nome}}</a></td>
+                <td>{{gara.inizio}}</td>
+                <td>{{gara.get_ora_fine}}</td>
+                {% if user.is_staff %}
+                <td><a href="{% url 'engine:gara-download' gara.pk%}" target=_blank><i class="fas fa-download" title="Download gara"></i></a></td>
+                <td><a href="{% url 'engine:gara-reset' gara.pk%}" target=_blank><i class="fas fa-undo" title="Reset gara"></i></a></td>
+                <td><a href="{% url 'engine:gara-delete' gara.pk%}" target=_blank><i class="fas fa-trash" title="Cancella gara"></i></a></td>
+                {% endif %}
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

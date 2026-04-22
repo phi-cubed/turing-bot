@@ -1,0 +1,33 @@
+{% extends "classifiche/class_template.html" %}
+
+{% block title %}Problemi {{object.nome}}{% endblock %}
+
+{% block class_type %}problemi{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h3>Gara: <a href="{% url 'engine:gara-detail' object.pk %}">{{object.nome}}</a> - punteggio problemi</h3>
+
+    <div class="row no-gutters justify-content-end">
+        <h3 id="orologio">##:##:##</h3>
+    </div>
+    <table class="table table-borderless table-sm">
+    {% for s in soluzioni %}
+    <tr class="row">
+        <td class="col-7 col-sm-4 col-lg-2 text-truncate font-weight-bold"><span id="label-{{s.problema}}"></span></span></td>
+        <td class="col-sm-8 col-lg-10 small-padding d-none d-sm-block">
+            <div class="progress">
+                <div id="punti-{{s.problema}}" class="progress-bar progress-bar-light" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="animation-direction:reverse"><span id="label-punti-{{s.problema}}" class="points-value"></span></div>
+                <div id="bonus-{{s.problema}}" class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span id="label-bonus-{{s.problema}}" class="points-value"></span></div>
+            </div>
+        </td>
+        <td class="col-5 d-sm-none small-padding" >
+            <span id="label-punti-mobile-{{s.problema}}" class="points-value">0</span>
+        </td>
+    </tr>
+    {% endfor %}
+    </table>
+
+    {% include 'classifiche/replay_control.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "basegara.html" %}
+{% load static %}
+{% block title %}{{object.nome}}{% endblock %}
+
+{% block css %}<link href="{% static 'engine/css/classifiche.css' %}" rel="stylesheet" type="text/css" >{% endblock %}
+
+{% block content %}
+<h3>Gara: {{ object.nome }}  {% if is_admin %}<a href="{% url 'engine:gara-admin' object.pk %}" title="Modifica impostazioni di gara"><i class="fas fa-cogs"></i></a>{% endif %}</h3>
+
+{% if object.inizio is not null and object.sospensione is null %}
+    <p>
+    Iniziata {{object.inizio}};
+    {% if not object.finished %}
+        finisce {{object.get_ora_fine}}.</p>
+        {% if can_insert %}
+        <p>Vai all'<a href="{% url 'engine:inserimento' object.pk %}">inserimento risposte</a>.</p>
+        {% endif %}
+    {% else %}
+        finita {{object.get_ora_fine}}.</p>
+    {% endif %}
+{% else %}
+    {% if object.sospensione is not null %}
+<p>Gara temporaneamente sospesa da {{object.sospensione}}</p>
+    {% else %}
+<p>Gara ancora da iniziare</p>
+    {% endif %}
+{% endif %}
+
+<h5>Visualizza le classifiche:</h5>
+
+<ul class="pl-0 pl-sm-3 pl-lg-5">
+<li class="m-4">
+<a class="nohover" href="{% url 'engine:classifica-unica' object.pk %}" target="_blank">
+    <b>Visualizzazione unica</b>
+</a>
+{% if is_admin %}
+<ul>
+<li>
+<a class="nohover" href="{% url 'engine:classifica-unica' object.pk %}?start_pos=2&end_pos=5" target="_blank">
+    Visualizzazione unica per un range specifico di posizioni (querystring <code>?start_pos=2&end_pos=5</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url 'engine:classifica-unica' object.pk %}?blink=4" target="_blank">
+    Visualizzazione unica con lampeggi per ultime risposte e frecce per cambio posizione (querystring <code>?blink=4</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url 'engine:classifica-unica' object.pk %}?position_warn=3" target="_blank">
+    Visualizzazione unica con animazione per squadre che salgono in posizioni fino alla terza (querystring <code>?position_warn=3</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url 'engine:classifica-unica' object.pk %}?prize=1" target="_blank">
+    Visualizzazione unica per premio alla risposta che ha dato il maggior numero di punti, ignorando gli errori (querystring <code>?prize=1</code>)
+</a>
+</li>
+</ul>
+{% include 'gara/link_querystring.html' with engine_name='engine:classifica-unica' prefix='Visualizzazione unica' %}
+{% endif %}
+</li>
+
+<li class="m-4">
+<a class="nohover" href="{% url 'engine:classifica-squadre' object.pk %}" target="_blank">
+    <b>Punteggi delle squadre</b>
+</a>
+{% if is_admin %}
+{% include 'gara/link_querystring.html' with engine_name='engine:classifica-squadre' prefix='Punteggi delle squadre' %}
+{% endif %}
+</li>
+
+<li class="m-4">
+<a class="nohover" href="{% url 'engine:classifica-problemi' object.pk %}" target="_blank">
+    <b>Punteggi dei problemi</b>
+</a>
+{% if is_admin %}
+{% include 'gara/link_querystring.html' with engine_name='engine:classifica-problemi' prefix='Punteggi dei problemi' %}
+{% endif %}
+</li>
+
+<li class="m-4">
+<a class="nohover" href="{% url 'engine:classifica-stato' object.pk %}" target="_blank">
+    <b>Stato delle risposte</b>
+</a>
+{% if is_admin %}
+{% include 'gara/link_querystring.html' with engine_name='engine:classifica-stato' prefix='Stato delle risposte' %}
+{% endif %}
+</li>
+
+<li class="m-4">
+<a class="nohover" href="{% url 'engine:classifica-scorrimento' object.pk %}" target="_blank">
+    <b>A scorrimento</b>
+</a>
+{% if is_admin %}
+{% include 'gara/link_querystring.html' with engine_name='engine:classifica-scorrimento' prefix='A scorrimento' %}
+{% endif %}
+</li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "basegara.html" %}
+{% block title %}Modifica parametri di gara{% endblock %}
+
+{% block content %}
+
+<div class="container">
+<h3>Modifica parametri di gara</h3>
+
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.errors }}
+
+    {% include 'gara/parametri.html' %}
+
+    <button id="submit" type="submit" class="btn btn-primary">Salva modifiche</button>
+</form>
+</div>
+{% endblock %}

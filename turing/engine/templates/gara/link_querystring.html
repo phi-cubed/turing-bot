@@ -1,0 +1,27 @@
+<ul>
+<li>
+<a class="nohover" href="{% url engine_name object.pk %}?race_time=00:01:00" target="_blank">
+    {{prefix}} ad un tempo specifico (querystring <code>?race_time=00:01:00</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url engine_name object.pk %}?computation_rate=00:00:05" target="_blank">
+    {{prefix}} specificando l'intervallo del ricalcolo punteggi (querystring <code>?computation_rate=00:00:05</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url engine_name object.pk %}?ended=true" target="_blank">
+    {{prefix}} come se la gara fosse finita (querystring <code>?ended=true</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url engine_name object.pk %}?ended=false" target="_blank">
+    {{prefix}} come se la gara <i>non</i> fosse finita (querystring <code>?ended=false</code>)
+</a>
+</li>
+<li>
+<a class="nohover" href="{% url engine_name object.pk %}?race_time=00:01:00&computation_rate=00:00:05&ended=false" target="_blank">
+    Le querystring precedenti si possono combinare a piacere (ad esempio, querystring <code>?race_time=00:01:00&computation_rate=00:00:05&ended=false</code>)
+</a>
+</li>
+</ul>

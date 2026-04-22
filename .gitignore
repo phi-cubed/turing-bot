@@ -1,0 +1,22 @@
+# Settings
+*/Turing/settings.ini
+.ultima_gara_bot
+
+# Database
+db.sqlite3
+
+# Python cache
+*.pyc
+*/__pycache__/*
+*/migrations/*
+
+# Test
+django.log
+geckodriver.log
+.coverage
+*/htmlcov/*
+
+# Elastic Beanstalk Files
+*/.elasticbeanstalk/*
+*/!.elasticbeanstalk/*.cfg.yml
+*/!.elasticbeanstalk/*.global.yml

@@ -1,0 +1,29 @@
+.edit-actions, .event-input, .delete-actions {
+  display: none;
+}
+
+.editable-event .event-actions, .editable-event .event-static, .deletable-event .event-actions {
+  display:none
+}
+
+.editable-event .edit-actions, .editable-event .event-input {
+  display: inline;
+}
+
+.deletable-event .delete-actions {
+  display: inline;
+}
+
+.confirm-delete-button {
+  color: red
+}
+
+.event-input {
+  max-width: 80px
+}
+
+.deleted {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 5px;
+}

@@ -1,0 +1,42 @@
+# http://www.disfida.it/kangourou/2016/moviola/index.php
+# Vedi file del 2014 per la notazione
+# "squadra X, conflitto d'ordine jolly con problema Y per precedente risposta sbagliata"
+# "squadra X, conflitto d'ordine jolly con problema Y per precedente risposta corretta"
+[276,
+174,
+77,
+# squadra 4, conflitto d'ordine jolly con problema 12 per precedente risposta corretta:
+# punteggio originale 212, modificato in 212 + 26 = 238, dove 26 è il valore del problema 12 per quella squadra
+238,
+263,
+227,
+333,
+142,
+240,
+136,
+352,
+222,
+147,
+# squadra 14, conflitto d'ordine jolly con problema 12 per precedente risposta corretta:
+# punteggio originale 34, modificato in 34 + 25 = 126, dove 25 è il valore del problema 12 per quella squadra
+59,
+455,
+244,
+234,
+142,
+286,
+635,
+124,
+213,
+140,
+# squadra 24, conflitto d'ordine jolly con problema 1 per precedente risposta corretta:
+# punteggio originale 113, modificato in 113 + 13 = 126, dove 13 è il valore del problema 1 per quella squadra
+126,
+304,
+397,
+97,
+# squadra 28, conflitto d'ordine jolly con problema 5 per precedente risposta sbagliata:
+# punteggio originale 319, modificato in 309.
+309,
+426,
+515]

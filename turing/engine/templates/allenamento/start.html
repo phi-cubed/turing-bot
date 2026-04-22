@@ -1,0 +1,27 @@
+{% extends "baseheader.html" %}
+
+{% block title %}Avvia allenamento{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+
+  <h3 class="mt-3 mb-3"><i class="fas fa-play"></i> Avvia allenamento</h3>
+
+  <div class="card">
+    <div class="card-body">
+      <p>Stai per avviare l'allenamento <strong>{{ allenamento.gara.nome }}</strong>
+      (gara base {{ allenamento.base_anno }} &ndash; {{ allenamento.base_nome }},
+      {{ allenamento.num_squadre_umane }} squadre umane).</p>
+      <p>Durata prevista: <strong>{{ allenamento.gara.durata }}</strong>.
+      Una volta avviato, il replay dei bot partir&agrave; in background e non pu&ograve; essere
+      interrotto da questa interfaccia.</p>
+      <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Avvia ora</button>
+        <a class="btn btn-secondary" href="{% url 'engine:allenamento-list' %}">Annulla</a>
+      </form>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

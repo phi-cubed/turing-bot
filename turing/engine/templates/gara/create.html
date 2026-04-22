@@ -1,0 +1,34 @@
+{% extends "baseheader.html" %}
+{% block title %}Crea nuova gara{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+<h3>Crea una nuova gara</h3>
+
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.errors }}
+
+    {% include 'gara/parametri.html' %}
+
+    <div class="form-row">
+        <div class="form-group col-md-12">
+        {{ form.nomi_squadre_upload|as_crispy_field }}
+        </div>
+
+        <div class="form-group col-md-12">
+        {{ form.nomi_problemi_upload|as_crispy_field }}
+        </div>
+
+        <div class="form-group col-md-12">
+        {{ form.risposte_problemi_upload|as_crispy_field }}
+        </div>
+    </div>
+
+    <button id="submit" type="submit" class="btn btn-primary">Crea gara</button>
+</form>
+</div>
+{% endblock %}

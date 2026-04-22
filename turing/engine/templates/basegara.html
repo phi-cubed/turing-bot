@@ -1,0 +1,32 @@
+{% extends "baseheader.html" %}
+{% block navitems %}
+{% if object %}
+<li class="nav-item dropdown">
+  <a class="nav-link" href="{% url 'engine:gara-detail' object.pk %}">
+    {{object.nome}} overview <i class="fas fa-home"></i>
+  </a>
+</li>
+{% if not object.finished %}
+<li class="nav-item dropdown">
+    <a class="nav-link" href="{% url 'engine:inserimento' object.pk %}">
+        Inserimento <i class="fas fa-edit"></i>
+    </a>
+</li>
+{% endif %}
+
+<li class=" nav-item dropdown">
+  <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+    Classifiche <i class="fas fa-bars" style="color:gray"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right bg-dark text-white">
+    <li><a class="text-white" href="{% url 'engine:classifica-squadre' object.pk %}" target="_blank">Squadre</a></li>
+    <li><a class="text-white" href="{% url 'engine:classifica-problemi' object.pk %}" target="_blank">Problemi</a></li>
+    <li><a class="text-white" href="{% url 'engine:classifica-stato' object.pk %}" target="_blank">Stato</a></li>
+    {% if object.inizio is not null and object.sospensione is null %}
+    <li><a class="text-white" href="{% url 'engine:classifica-unica' object.pk %}" target="_blank">Unica</a></li>
+    <li><a class="text-white" href="{% url 'engine:classifica-scorrimento' object.pk %}" target="_blank">A scorrimento</a></li>
+    {% endif %}
+  </ul>
+</li>
+{% endif %}
+{% endblock %}

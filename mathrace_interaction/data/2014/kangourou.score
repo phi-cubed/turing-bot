@@ -1,0 +1,69 @@
+# http://www.disfida.it/kangourou/2014/moviola/index.php
+# NOTAZIONE 1:
+# squadra X, conflitto d'ordine jolly con problema Y per precedente risposta sbagliata:
+# sono squadre che prima sbagliano la risposta al problema X, e poi lo scelgono come jolly.
+# La moviola gli lascia il punteggio di -10 senza raddoppiarlo, mentre turing gli radoppia il -10
+# in una penalità pari a -20.
+# Eventuali errori successivi dopo la consegna del jolly vengono raddoppiati in -20 da entrambe le implementazione.
+# Il punteggio riportato in questo file è dunque 10 punti in meno di quello riportato sulla moviola.
+# END - NOTAZIONE 1
+# NOTAZIONE 2:
+# squadra X, conflitto d'ordine jolly con problema Y per precedente risposta corretta:
+# sono squadre che prima rispondono correttamente al problema X, e poi lo scelgono come jolly.
+# La moviola gli lascia il punteggio del quesito senza raddoppiarlo, mentre turing gli radoppia il punteggio
+# anche se hanno consegnato il jolly in modo incorretto, cioè dopo aver saputo di aver risposto
+# correttamente alla domanda.
+# Il punteggio riportato in questo file è dunque la somma tra il punteggio riportato sulla moviola
+# e il valore finale del problema per quella squadra
+# END - NOTAZIONE 2
+# squadra 1, conflitto d'ordine jolly con problema 6 per precedente risposta sbagliata:
+# punteggio originale 216, modificato in 206.
+[206,
+# squadra 2, conflitto d'ordine jolly con problema 9 per precedente risposta sbagliata:
+# punteggio originale 40, modificato in 30.
+30,
+252,
+297,
+449,
+304,
+# squadra 7, conflitto d'ordine jolly con problema 6 per precedente risposta sbagliata:
+# punteggio originale 331, modificato in 321.
+321,
+401,
+119,
+# squadra 10, conflitto d'ordine jolly con problema 11 per precedente risposta corretta:
+# punteggio originale 127, modificato in 127 + 14 = 141, dove 14 è il valore del problema 11 per quella squadra
+141,
+# squadra 11, conflitto d'ordine jolly con problema 5 per precedente risposta sbagliata:
+# punteggio originale 168, modificato in 158.
+158,
+138,
+150,
+# squadra 14, conflitto d'ordine jolly con problema 5 per precedente risposta corretta:
+# punteggio originale 121, modificato in 121 + 14 = 141, dove 14 è il valore del problema 5 per quella squadra
+135,
+461,
+122,
+119,
+144,
+138,
+404,
+113,
+279,
+# squadra 23, conflitto d'ordine jolly con problema 13 per precedente risposta sbagliata:
+# punteggio originale 147, modificato in 137.
+137,
+# squadra 24, conflitto d'ordine jolly con problema 10 per precedente risposta corretta:
+# punteggio originale 133, modificato in 133 + 83 = 216, dove 83 è il valore del problema 10 per quella squadra
+216,
+36,
+221,
+144,
+183,
+# squadra 29, conflitto d'ordine jolly con problema 5 per precedente risposta sbagliata:
+# punteggio originale 215, modificato in 205.
+205,
+229,
+328,
+294,
+169]

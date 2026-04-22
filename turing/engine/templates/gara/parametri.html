@@ -1,0 +1,43 @@
+{% load crispy_forms_tags %}
+
+    <div class="form-row">
+        <div class="col-md-4 form-group">
+            {{ form.nome|as_crispy_field }}
+        </div>
+        <div class="col-md-4 form-group">
+            {{ form.num_problemi|as_crispy_field }}
+        </div>
+        <div class="col-md-4 form-group">
+            {{ form.num_squadre|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 form-group">
+            {{ form.durata|as_crispy_field }}
+        </div>
+        <div class="col-md-6 form-group">
+            {{ form.durata_blocco|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-4 form-group">
+            {{ form.n_blocco|as_crispy_field }}
+        </div>
+        <div class="col-md-4 form-group">
+            {{ form.k_blocco|as_crispy_field }}
+        </div>
+        <div class="col-md-4 form-group">
+            {{ form.punteggio_iniziale_squadre|as_crispy_field }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 form-group">
+            {{ form.fixed_bonus|as_crispy_field }}
+        </div>
+        <div class="col-md-6 form-group">
+            {{ form.super_mega_bonus|as_crispy_field }}
+        </div>
+    </div>
+    {{ form.jolly|as_crispy_field }}
+    {{ form.admin|as_crispy_field }}
+    {{ form.inseritori|as_crispy_field }}

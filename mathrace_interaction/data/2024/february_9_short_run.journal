@@ -1,0 +1,73 @@
+--- 001 inizializzazione simulatore
+# old syntax of race definition. Fourth and fifth values are number of bonus (10) and superbonus (6) values
+# racetype: 1
+#--- 003 26 21 210 10 6 4 1 1 120 100 -- squadre: 26 quesiti: 21
+--- 002 26+0:210 21:20 4.1;1 120-20 -- squadre: 26 quesiti: 21
+--- 011 10 20 15 10 8 6 5 4 3 2 1
+--- 012 6 100 60 40 30 20 10
+--- 004 1 20 0000 quesito 1
+--- 004 2 20 0000 quesito 2
+--- 004 3 20 0000 quesito 3
+--- 004 4 20 0000 quesito 4
+--- 004 5 20 0000 quesito 5
+--- 004 6 20 0000 quesito 6
+--- 004 7 20 0000 quesito 7
+--- 004 8 20 0000 quesito 8
+--- 004 9 20 0000 quesito 9
+--- 004 10 20 0000 quesito 10
+--- 004 11 20 0000 quesito 11
+--- 004 12 20 0000 quesito 12
+--- 004 13 20 0000 quesito 13
+--- 004 14 20 0000 quesito 14
+--- 004 15 20 0000 quesito 15
+--- 004 16 20 0000 quesito 16
+--- 004 17 20 0000 quesito 17
+--- 004 18 20 0000 quesito 18
+--- 004 19 20 0000 quesito 19
+--- 004 20 20 0000 quesito 20
+--- 004 21 20 0000 quesito 21
+--- 005 1 0 Squadra 1 (--)
+--- 005 2 0 Squadra 2 (--)
+--- 005 3 0 Squadra 3 (--)
+--- 005 4 0 Squadra 4 (--)
+--- 005 5 0 Squadra 5 (--)
+--- 005 6 0 Squadra 6 (--)
+--- 005 7 0 Squadra 7 (--)
+--- 005 8 0 Squadra 8 (--)
+--- 005 9 0 Squadra 9 (--)
+--- 005 10 0 Squadra 10 (--)
+--- 005 11 0 Squadra 11 (--)
+--- 005 12 0 Squadra 12 (--)
+--- 005 13 0 Squadra 13 (--)
+--- 005 14 0 Squadra 14 (--)
+--- 005 15 0 Squadra 15 (--)
+--- 005 16 0 Squadra 16 (--)
+--- 005 17 0 Squadra 17 (--)
+--- 005 18 0 Squadra 18 (--)
+--- 005 19 0 Squadra 19 (--)
+--- 005 20 0 Squadra 20 (--)
+--- 005 21 0 Squadra 21 (--)
+--- 005 22 0 Squadra 22 (--)
+--- 005 23 0 Squadra 23 (--)
+--- 005 24 0 Squadra 24 (--)
+--- 005 25 0 Squadra 25 (--)
+--- 005 26 0 Squadra 26 (--)
+00:00:00.000 200 inizio gara
+00:01:00.000 101 aggiorna punteggio esercizi, orologio: 1
+00:02:00.000 101 aggiorna punteggio esercizi, orologio: 2
+00:03:00.000 101 aggiorna punteggio esercizi, orologio: 3
+00:04:00.000 101 aggiorna punteggio esercizi, orologio: 4
+00:04:03.000 120 1 2 PROT:1 squadra 1 sceglie 2 come jolly
+00:04:11.000 120 2 3 PROT:2 squadra 2 sceglie 3 come jolly
+00:04:19.000 120 3 4 PROT:3 squadra 3 sceglie 4 come jolly
+00:05:00.000 101 aggiorna punteggio esercizi, orologio: 5
+00:05:02.000 121 timeout jolly
+00:05:30.000 110 5 5 1 PROT:4 squadra 5, quesito 5: giusto
+00:05:41.000 110 6 6 0 PROT:5 squadra 6, quesito 6: sbagliato
+00:06:00.000 101 aggiorna punteggio esercizi, orologio: 6
+00:07:00.000 101 aggiorna punteggio esercizi, orologio: 7
+00:07:15.000 110 2 3 1 PROT:6 squadra 2, quesito 3: giusto
+00:07:30.000 110 3 4 0 PROT:7 squadra 3, quesito 4: sbagliato
+00:08:00.000 101 aggiorna punteggio esercizi, orologio: 8
+00:08:04.000 210 termine gara
+--- 999 fine simulatore

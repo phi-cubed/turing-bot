@@ -1,0 +1,28 @@
+# https://gas.unipi.it/engine/classifica/17/squadre
+[300,
+200,
+360, # era 370, DMF assegna -10 per risposta sbagliata al problema 7 dopo risposta corretta
+405,
+260,
+200,
+395,
+445,
+865,
+500,
+200,
+190, # era 210, DMF assegna -10 * 2 per doppia risposta sbagliata al problema 3 dopo risposta corretta
+200,
+300,
+500,
+490,
+420,
+225,
+315,
+285,
+195,
+285,
+215,
+235,
+235,
+260,
+285]

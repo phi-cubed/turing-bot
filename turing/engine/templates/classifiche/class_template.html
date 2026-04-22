@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<script src="{% static "engine/js/client.js" %}"></script>
+{% endblock %}
+
+{% block css %}<link href="{% static 'engine/css/classifiche.css' %}" rel="stylesheet" type="text/css" >{% endblock %}
+
+{% block content %}
+{% if object.inizio is not null and object.sospensione is null %}
+{% block main %}{% endblock %}
+
+<script>
+document.updated = false;
+document.client = null;
+document.addEventListener("updated", function(e) {
+  document.updated = true;
+});
+
+// Funzioni ausiliare per la conversione dei tempi
+function integer_to_elapsed_time(seconds) {
+    return new Date(seconds * 1000).toISOString().slice(11, 19);
+}
+
+function elapsed_time_to_integer(elapsed) {
+    return elapsed.split(':').reduce((acc,time) => (60 * acc) + +time);
+}
+
+// Classe per leggere l'ora corrente dal server, anziché dal client
+class ServerDate {
+    static now() {
+        const request = new XMLHttpRequest();
+        request.open("GET", "/engine/now", false); // `false` makes the request synchronous
+        request.send(null);
+
+        if (request.status === 200) {
+            var time_server = Date.parse(request.responseText.trim());
+            var time_client = Date.now();
+            console.log('Client time', time_client, '- server time', time_server, '- offset', time_client - time_server, 'milliseconds');
+            return time_server;
+        }
+        return null;
+    }
+}
+
+// Classe ausiliaria per traslare il tempo corrente in un tempo di gara
+class ServerDateWithOffset {
+    /*
+    Nei disegni seguenti:
+     - ===== rappresenta istanti di tempo durante la gara
+     - ----- rappresenta istanti di tempo prima o dopo la gara
+     - ..... rappresenta istanti di tempo in cui la pagina web
+             classifica è aperta
+     - I è la data di inizio della gara, F la data di fine;
+
+
+    Durante la gara, apriamo la pagina del browser all'istante A (apertura)
+    tipicamente poco dopo l'istante I.
+    Con I e A fissati, il browser aggiorna periodicamente il valore del tempo
+    corrente sul server, che chiameremo S.
+    Graficamente la situazione è rappresentata da:
+
+     ------|==|===========|===============|-------------------------------------->
+           I  A...........S               F
+
+     Il tempo corrente di gara G è chiaramente S.
+
+     Dopo la gara, immaginiamoci di voler rivedere lo svolgersi dal vivo della gara
+     come se fossimo all'istante R (per replay). La lettera S indica ancora il valore
+     corrente dell'orologio sul server, che ovviamente sarà maggiore di F, e quindi
+     da traslare ai fini del calcolo del punteggio. Graficamente
+
+     ------|=====|========================|----------------|-----------|--------->
+           I     R                        F                A...........S
+                 ^<<<<< A deve essere trasformato in R <<<<V
+
+     Il tempo corrente di gara è quindi I + (R - I) + (S - A).
+
+     Nel caso di questo script, l'utente passa come argomento race_time
+     il valore dR := R - I. La formula finale è quindi I + (dR + (S - A)).
+     */
+    constructor(race_time, time_load_page) {
+        this.race_time = race_time;
+        this.time_load_page = time_load_page;
+        this.inizio = null;
+    }
+
+    init(inizio) {
+        this.inizio = inizio;
+    }
+
+    now() {
+        return this.inizio + (this.race_time + (ServerDate.now() - this.time_load_page));
+    }
+}
+
+// Analogo della classe precedente nel caso di gara in corso.
+class ServerDateWithoutOffset {
+    init(inizio_unused) {
+        // La firma prevede di passare il parametro inizio per simmetria con il caso con offset,
+        // ma non lo utilizza davvero.
+    }
+
+    now() {
+        return ServerDate.now();
+    }
+}
+
+$(document).ready(function() {
+    var time_load_page = ServerDate.now();
+
+    {% if race_time is None %}
+    var timer = new ServerDateWithoutOffset();
+    {% else %}
+    var timer = new ServerDateWithOffset({{ race_time }} * 1000, time_load_page);
+    {% endif %}
+
+    var url = "{% url 'engine:status' object.pk %}";
+    var client = new ClassificaClient(url, '{% block class_type %}{% endblock %}', timer);
+    client.init();
+    document.client = client;
+
+    {% if ended %}
+    var maxElapsedTime =  Math.min(
+        Math.floor(time_load_page / 1000 - {{ object.inizio | date:"U" }}),
+        elapsed_time_to_integer("{{object.durata}}"));
+    $("#myRange").attr("max", maxElapsedTime);
+        {% if race_time is None %}
+    $("#myRange").val(maxElapsedTime);
+    $("#elapsedTimeText").val(integer_to_elapsed_time(maxElapsedTime));
+        {% else %}
+    $("#myRange").val({{ race_time }});
+    $("#elapsedTimeText").val(integer_to_elapsed_time({{ race_time }}));
+        {% endif %}
+    $("#myRange").on('input', function() {
+        var elapsedTime = this.value;
+        elapsedTimeText.value = integer_to_elapsed_time(elapsedTime);
+        client.progress = client.gara.inizio.getTime() + elapsedTime * 1000;
+    });
+    $("#elapsedTimeText").on('blur', function() {
+        var elapsedTime = elapsed_time_to_integer(this.value);
+        myRange.value = elapsedTime;
+        client.progress = client.gara.inizio.getTime() + elapsedTime * 1000;
+    });
+    $("#play").click(function() {
+        client.toggleReplay(this, "myRange")
+    });
+    {% else %}
+    setInterval(function() {client.update()}, {{ computation_rate }} * 1000);
+    {% endif %}
+});
+
+</script>
+{% else %}
+    {% if object.sospensione is not null %}
+<p>La classifica non è disponibile in caso di sospensione della gara</p>
+    {% else %}
+<p>La classifica non è disponibile prima dell'inizio della gara</p>
+    {% endif %}
+{% endif %}
+{% endblock %}

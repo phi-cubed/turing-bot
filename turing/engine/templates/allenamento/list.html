@@ -1,0 +1,273 @@
+{% extends "baseheader.html" %}
+
+{% block title %}Allenamento{% endblock %}
+
+{% block content %}
+<div id="wrapper" class="container mt-4 mb-5">
+
+  <!-- Header della pagina -->
+  <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+    <h2 class="mb-0 text-dark"><i class="fas fa-graduation-cap text-primary me-2"></i> Allenamento</h2>
+    <a class="btn btn-primary shadow-sm" href="{% url 'engine:allenamento-create' %}">
+      <i class="fas fa-plus"></i> Crea allenamento
+    </a>
+  </div>
+
+  <!-- Messaggi di sistema -->
+  {% if messages %}
+    <div class="mb-4">
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show shadow-sm" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- SEZIONE: Da iniziare -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+      <h5 class="text-primary mb-0"><i class="fas fa-hourglass-start"></i> Da iniziare</h5>
+    </div>
+    <div class="card-body">
+      {% if allenamenti_da_iniziare %}
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Gara base</th>
+              <th>Squadre umane</th>
+              <th>Creato</th>
+              <th class="text-end">Azione</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in allenamenti_da_iniziare %}
+            <tr>
+              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
+              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none">{{ a.gara.nome }}</a></td>
+              <td>{{ a.base_anno }} &ndash; {{ a.base_nome }}</td>
+              <td><span class="badge bg-secondary rounded-pill px-3">{{ a.num_squadre_umane }}</span></td>
+              <td class="text-muted small">{{ a.created_at|date:"d M Y H:i" }}</td>
+              <td class="text-end">
+                <a class="btn btn-sm btn-success shadow-sm" href="{% url 'engine:allenamento-start' a.pk %}">
+                  <i class="fas fa-play"></i> Avvia
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <div class="text-center py-4 text-muted">
+        <i class="fas fa-clipboard-check fa-2x mb-2 opacity-50"></i>
+        <p class="mb-0">Nessun allenamento in attesa di essere avviato.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- SEZIONE: In corso -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+      <h5 class="text-success mb-0"><i class="fas fa-running"></i> In corso</h5>
+    </div>
+    <div class="card-body">
+      {% if allenamenti_in_corso %}
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Avviato il</th>
+              <th>Fine prevista</th>
+              <th>Stato Processo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in allenamenti_in_corso %}
+            <tr>
+              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
+              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none">{{ a.gara.nome }}</a></td>
+              <td>{{ a.avviato_il|date:"d M Y H:i" }}</td>
+              <td>{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
+              <td>
+                <span class="text-monospace text-muted small">PID: {{ a.runner_pid }}</span>
+                {% if not a.runner_alive %} 
+                  <span class="badge bg-danger ms-2"><i class="fas fa-skull-crossbones"></i> Non vivo</span>
+                {% else %}
+                  <span class="badge bg-success ms-2"><i class="fas fa-heartbeat"></i> Attivo</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <div class="text-center py-4 text-muted">
+        <i class="fas fa-coffee fa-2x mb-2 opacity-50"></i>
+        <p class="mb-0">Nessun allenamento attualmente in corso.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- SEZIONE: Archivio -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+      <h5 class="text-secondary mb-0"><i class="fas fa-archive"></i> Archivio terminati</h5>
+    </div>
+    <div class="card-body">
+      {% if allenamenti_archivio %}
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Avviato il</th>
+              <th>Terminato il</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in allenamenti_archivio %}
+            <tr>
+              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
+              <td><a href="{% url 'engine:gara-detail' a.gara.pk %}" class="fw-bold text-decoration-none text-secondary">{{ a.gara.nome }}</a></td>
+              <td>{{ a.avviato_il|date:"d M Y H:i" }}</td>
+              <td>{{ a.gara.get_ora_fine|date:"d M Y H:i" }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <div class="text-center py-4 text-muted">
+        <i class="fas fa-box-open fa-2x mb-2 opacity-50"></i>
+        <p class="mb-0">L'archivio è vuoto.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- SEZIONE: In Errore -->
+  {% if allenamenti_errore %}
+  <div class="card border-0 shadow-sm border-start border-warning border-4 mb-4">
+    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+      <h5 class="text-warning mb-0"><i class="fas fa-exclamation-triangle"></i> In errore</h5>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Dettaglio Errore (Log)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in allenamenti_errore %}
+            <tr>
+              <td class="text-muted fw-bold">#{{ a.gara.pk }}</td>
+              <td class="fw-bold">{{ a.gara.nome }}</td>
+              <td>
+                <div class="bg-light p-2 rounded text-danger font-monospace small mb-2" style="max-height: 100px; overflow-y: auto;" id="log-{{ a.gara.pk }}">
+                  {{ a.runner_log }}
+                </div>
+                <button class="btn btn-sm btn-outline-primary shadow-sm" onclick="analyzeLog('{{ a.gara.pk }}')">
+                  <i class="fas fa-sparkles"></i> Analizza errore con AI
+                </button>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Modale AI -->
+  <div class="modal fade" id="aiModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header border-bottom-0 pb-0">
+          <h5 class="modal-title fw-bold text-dark"><i class="fas fa-robot text-primary me-2"></i> Analisi Errore con Gemini</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="aiLoading" class="text-center py-5 d-none">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-3 text-muted fw-medium">L'AI sta leggendo i log e formulando un'analisi...</p>
+          </div>
+          <div id="aiResult" class="text-dark"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Script per chiamata Gemini API -->
+<script>
+async function analyzeLog(id) {
+    const logText = document.getElementById('log-' + id).innerText;
+    
+    // Mostra il modale di Bootstrap
+    const modalElement = document.getElementById('aiModal');
+    let modal = bootstrap.Modal.getInstance(modalElement);
+    if (!modal) {
+        modal = new bootstrap.Modal(modalElement);
+    }
+    modal.show();
+
+    // Reset e caricamento
+    document.getElementById('aiLoading').classList.remove('d-none');
+    document.getElementById('aiResult').innerHTML = '';
+
+    const apiKey = ""; // Iniettata dall'ambiente
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+    const payload = {
+        contents: [{
+            parts: [{ text: "Analizza questo log d'errore di un sistema di allenamento/bot. Spiega in modo semplice qual è il problema tecnico e suggerisci una possibile soluzione operativa:\n\n" + logText }]
+        }],
+        systemInstruction: {
+            parts: [{ text: "Sei un assistente per sviluppatori. Rispondi sempre in lingua italiana in modo chiaro e conciso. Usa la formattazione markdown per evidenziare i punti chiave." }]
+        }
+    };
+
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        
+        if (result.candidates && result.candidates[0] && result.candidates[0].content) {
+            const text = result.candidates[0].content.parts[0].text;
+            // Converte il markdown di base in HTML per la visualizzazione
+            let formattedText = text
+                .replace(/\n/g, '<br>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong class="text-primary">$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>');
+            document.getElementById('aiResult').innerHTML = formattedText;
+        } else {
+            document.getElementById('aiResult').innerHTML = "<div class='alert alert-warning'>Impossibile generare un'analisi per questo log.</div>";
+        }
+    } catch (error) {
+        document.getElementById('aiResult').innerHTML = "<div class='alert alert-danger'><i class='fas fa-times-circle'></i> Errore di connessione all'API di Gemini.</div>";
+    } finally {
+        document.getElementById('aiLoading').classList.add('d-none');
+    }
+}
+</script>
+{% endblock %}
