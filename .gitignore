@@ -15,6 +15,8 @@ django.log
 geckodriver.log
 .coverage
 */htmlcov/*
+Testfiles/Credenziali.csv
+backups/
 
 # Elastic Beanstalk Files
 */.elasticbeanstalk/*

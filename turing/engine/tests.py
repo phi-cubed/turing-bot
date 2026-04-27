@@ -1640,7 +1640,7 @@ class PermissionTests(MyTestCase, TuringTests):
         jolly[0]['id'] = -1
         self.assertEqual(jolly, [{'id': -1, 'squadra': 1, 'problema': 1}])
 
-    def test_inserimento_jolly_10min(self):
+    def test_inserimento_jolly_15min(self):
         self.crea_gara(5, [0,0,0])
         self.url = reverse('engine:inserimento', kwargs={'pk': self.gara.pk})
         sq = self.gara.squadre.get(num=1)
@@ -1650,7 +1650,7 @@ class PermissionTests(MyTestCase, TuringTests):
 
         self.go_to_minute(15)
         self.data = {'squadra': sq.pk, 'problema': 1, 'jolly': True}
-        self.view_helper(200, 200, messages_post=[{"tag": "warning", "message": "Non puoi inserire un jolly dopo 10 minuti"}])
+        self.view_helper(200, 200, messages_post=[{"tag": "warning", "message": "Non puoi inserire un jolly dopo 15 minuti"}])
 
         self.assertEqual(self.gara.get_jolly(), [])
 
