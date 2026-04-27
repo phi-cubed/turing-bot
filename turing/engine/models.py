@@ -637,9 +637,9 @@ class Jolly(Evento):
             return (False, "Questa gara non prevede l'inserimento di jolly")
 
         loraesatta = timezone.now()
-        if loraesatta > self.gara.inizio+timedelta(minutes=10):
+        if loraesatta > self.gara.inizio+timedelta(minutes=15):
             if self.creatore == self.squadra.consegnatore:
-                return (False, "Non puoi inserire un jolly dopo 10 minuti")
+                return (False, "Non puoi inserire un jolly dopo 15 minuti")
 
         qs = self.gara.eventi.all()
         events = [x.as_child() for x in qs]
